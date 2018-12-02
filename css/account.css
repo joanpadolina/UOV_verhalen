@@ -1,0 +1,90 @@
+body {
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+  font-size:12px;
+  padding: 10px
+
+}
+
+img {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  z-index: -1;
+  margin-top:-150px;
+
+}
+
+.accountimg {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  border-radius: 100px;
+  position: relative;
+  display: block;
+  margin: auto;
+    margin-top:100px;
+}
+
+.accountbox {}
+
+.accountbox {
+  margin: auto;
+  position: relative;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  box-sizing: border-box;
+  width: 80%;
+  Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
+  border-radius: 10px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  margin: auto;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #eee;
+  transition: border-color .5s ease-out;
+  padding: 10px;
+  display: block;
+
+}
+
+.submitlog {
+  width: 80%;
+  display: block;
+  margin-top:100px;
+  margin: auto;
+  border: none;
+  font-size: .9em;
+  position: relative;
+  text-decoration: none;
+  padding: 9px 15px;
+  border-radius: 10px;
+  color: white;
+  background:lightgrey;
+  /* Box-shadow: 0 8px 18px 0 rgba(231, 119, 43, .3); */
+  cursor:pointer;
+}
+.submitlog:hover{
+  background:#e7772b;
+  transition:.5s ease;
+}
+ form input:required:valid{
+  border-bottom-color: palegreen;
+}
+form input:invalid{
+  border-bottom-color: red;
+
+}
+form :focus{
+  outline:none;
+
+}

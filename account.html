@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/account.css">
+
+  <title>Account</title>
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <ul>
+
+      <li><a href="index.html">home</a></li>
+      <li><a href="verhalen.html">verhalen</a></li>
+      <li><a href="favoriet.html">favoriet</a></li>
+      <li><a href="account.html">account</a></li>
+
+    </ul>
+  </nav>
+  <img src="./assets/logo/uovlogo.png" alt="">
+  <section class="accountimg"></section>
+  <h1>Altijd veilig onderweg</h1>
+  <section class="accountbox">
+    <form action="index.html">
+      <fieldset>
+
+        <input class="namevalid"
+        type="text"
+        pattern="[a-zA-Z][a-zA-Z]{1,20}"
+        title="Gebruikersnaam bevat geen cijfers"
+        placeholder="gebruikersnaam" name="name" required>
+      </fieldset>
+
+      <fieldset>
+        <input type="email"
+        placeholder="emailadres"
+        name="email" required>
+</fieldset>
+
+      <input class="submitlog" type="submit" name="log" value="login">
+    </form>
+
+  </section>
+</body>
+
+
+</html>

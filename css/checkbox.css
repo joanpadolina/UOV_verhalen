@@ -1,0 +1,94 @@
+
+/*
+https://codepen.io/zFunx/pen/dWbevd
+
+*/
+input[type="checkbox"] {
+ display: none;
+
+}
+input[type="checkbox"] {
+  color: #e7772b;
+}
+
+input[type="checkbox"]+ label::before,
+input[type="checkbox"]+ label::after  {
+  content: "";
+  border: 0.1em solid #e7772b;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  color: #e7772b;
+  transition: .2s;
+  cursor: pointer;
+}
+
+input[type="checkbox"]+label::before {
+  content: none;
+}
+
+input[type="checkbox"]:checked+label::after {
+  content: "\2714";
+}
+.filter label{
+  position: relative;
+  /* background-color: blue; */
+  height:100px;
+  padding:5px
+  border: solid 1px black;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    F I L T E R   //////////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+.filter li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.filter input {
+  margin-right: 10px;
+}
+
+.anderook {
+  margin-bottom: 3em;
+}
+
+.button {
+  background: white;
+  text-decoration: none;
+  padding: 4px;
+  color: #54a5dd;
+  border: solid 1px #54a5dd;
+  border-radius: 5px;
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    B O X E S    //////////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+article {
+  background: white;
+  Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
+  width: 250px;
+  height: 240px;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+p {
+  width: 250px;
+  height: 135px;
+  font-size: 14px;
+  overflow: hidden;
+  text-align: center;
+}
