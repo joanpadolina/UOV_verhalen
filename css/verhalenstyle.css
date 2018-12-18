@@ -54,3 +54,6 @@ section:hover{
   margin:auto;
   top:0;
 }
+.filter {
+  background:red;
+}

@@ -10,7 +10,7 @@ body {
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    L O G O   //////////////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-.logo {
+.header {
   background-color: #544a43;
   width: 100%;
   height: 60px;
@@ -26,6 +26,60 @@ body {
   position: fixed;
 }
 
+.header, .searchl, .profile {
+  display: flex;
+  position: fixed;
+  right: 0;
+}
+
+.searchl {
+  right: 50px;
+  margin-top: 23px;
+}
+
+.profile {
+  right: 10px;
+  width: 20px;
+  margin-top: 21px;
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    FILTER NAV  //////////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+.filternav a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  background-color: lightgrey;
+  color:grey;
+
+}
+.filternav {
+  margin-top: 10px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding-left:10px;
+}
+.filternav::-webkit-scrollbar {
+  display: none;
+}
+
+.filternav svg{
+  width:15px;
+  padding-right:10px;
+  opacity: .3;
+  height:10px;
+}
+
+/* PSUEDO  */
+
+.filternav :hover{
+  color:white;
+  font-weight: bold;
+  background-color:#E7772B;
+}
+
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    N A V B A R   //////////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
@@ -36,11 +90,19 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #544a43;
+  background-color: lightgrey;
   display: flex;
   justify-content: center;
   margin-top: 10px;
   z-index: 3;
+  height:50px;
+}
+
+ .prof, .homeicoon {
+   display: block;
+  position: absolute;
+  width: 20px;
+  top:0;
 }
 
 .navbar li {
@@ -57,6 +119,19 @@ body {
   color: #ffffff;
   font-size: 0.9em;
 }
+
+/* PSUEDO */
+
+.navbar svg:hover #profile,
+.navbar svg:hover #profil{
+    fill:#E7772B;
+}
+.navbar svg:hover #home1,
+.navbar svg:hover#homestr {
+  fill:#E7772B;
+}
+
+
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Z O E K   //////////////////////////////// */
@@ -164,4 +239,39 @@ h4 {
   font-weight: 500;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
   transition: .2s ease-in;
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    Mobile screen     /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+@media only screen and (max-width: 768px) {
+
+  /* T O P  */
+  .searchl, .profile {
+    display: none;
+  }
+
+  .boxunder {
+    display: none;
+  }
+
+  .zoeken {
+    height: 80px;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    Tablet screen     /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 768px) {
+  .searchl, .profile {}
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    Wide screen     /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
 }

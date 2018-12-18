@@ -10,21 +10,40 @@
   <link rel="stylesheet" href="./css/checkbox.css">
 </head>
 
-<body id="bodybody">
+<body>
   <!-- -->
-  <section class="logo">
+  <nav class="header">
 
-    <img class="logoov" src="./assets/logo/uovlogo.png" alt="">
-  </section>
+    <img class="logoov" src="./assets/logo/uovlogo.png" alt="uov logo">
+    <img class="searchl" src="./assets/svg/icon/nav/searchFont.svg" alt="search icon">
+    <img class="profile" src="./assets/svg/icon/nav/profil2.svg" alt="profile icon">
+
+  </nav>
 
   <nav class="navbar">
 
     <ul>
 
-      <li><a href="index.html">home</a></li>
-      <li><a href="verhalen.html">verhalen</a></li>
-      <li><a href="favoriet.html">favoriet</a></li>
-      <li><a href="account.html">account</a></li>
+      <li><a href="index.html">
+        <svg id="home1" class="homeicoon" xmlns="http://www.w3.org/2000/svg" width="70" height="69" viewBox="0 0 70 69">
+          <g  fill="none" fill-rule="evenodd" transform="translate(3 2)">
+            <path id="home" fill="#D8D8D8" d="M37.9104482,67 C37.9679596,66.8737918 38,66.7335308 38,66.5857864 L38,52.5857864 C38,52.0335017 37.5522847,51.5857864 37,51.5857864 L28,51.5857864 C27.4477153,51.5857864 27,52.0335017 27,52.5857864 L27,66.5857864 C27,66.7335308 27.0320404,66.8737918 27.0895518,67 L7,67 C5.8954305,67 5,66.1045695 5,65 L5,37 L5.1629509,37 L32.5771645,9.58578644 L59.991378,37 L60,37 L60,37.008622 L60.1543289,37.1629509 L60,37.3172798 L60,65 C60,66.1045695 59.1045695,67 58,67 L37.9104482,67 Z"/>
+            <path id="homestr" stroke="#D8D8D8" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M0.413910818,33.4332175 L32.8492327,0.997895669 C53.2921758,21.4408387 63.5136473,31.6623103 63.5136473,31.6623103"/>
+            <rect width="8" height="12" x="51" y="12" fill="#D8D8D8" rx="1"/>
+          </g>
+        </svg>
+
+        </a></li>
+      <li><a href="account.html">
+
+          <svg class="prof" xmlns="http://www.w3.org/2000/svg" width="52" height="56" viewBox="0 0 52 56">
+            <g fill="none" fill-rule="evenodd">
+              <path id="profile" fill="#868383" d="M15.1439779,34.3635445 C18.3586303,38.7839441 22.4586494,42 26.5,42 C30.4936867,42 34.5446662,38.8593574 37.7419128,34.5194419 L42.2807261,35.4129731 C45.9278753,36.1309673 48.8327546,38.8899023 49.7376295,42.4952336 L51.8787701,51.0262705 C52.416546,53.1689539 51.1155115,55.3418955 48.9728281,55.8796715 C48.6544191,55.9595866 48.3273831,56 47.9990986,56 L3.99994788,56 C1.79080888,56 -5.21214235e-05,54.209139 -5.21214235e-05,52 C-5.21214235e-05,51.6559771 0.0443290285,51.3133915 0.131992505,50.9807251 L2.39532576,42.3918033 C3.33086078,38.8416248 6.2092691,36.135914 9.81047345,35.4215466 L15.1439779,34.3635445 Z" />
+              <path id="profil" fill="#868383" d="M26.5,40 C34.1318885,40 42,26.7723841 42,17.9586597 C42,9.14493532 35.0604136,2 26.5,2 C17.9395864,2 11,9.14493532 11,17.9586597 C11,26.7723841 18.8681115,40 26.5,40 Z" />
+            </g>
+          </svg>
+
+        </a></li>
 
     </ul>
   </nav>
@@ -50,6 +69,7 @@
     <form class="filter" action="verhalen.html">
 
       <h2>Filter</h2>
+
       <h3>Genre</h3>
 
       <input type="checkbox" id="18" name="genre" value="18 + ">
@@ -69,17 +89,17 @@
 
 
 
-        <input type="checkbox" id="verhalend" name="typering" value="">
-        <label for="verhalend">Verhalend</label>
+      <input type="checkbox" id="verhalend" name="typering" value="">
+      <label for="verhalend">Verhalend</label>
 
-        <input type="checkbox" id="volwassen" name="typering" value="">
-        <label for="volwassen">Volwassen</label>
+      <input type="checkbox" id="volwassen" name="typering" value="">
+      <label for="volwassen">Volwassen</label>
 
-        <input type="checkbox" id="informatief" name="typering" value="">
-        <label for="informatief">Informatief</label>
+      <input type="checkbox" id="informatief" name="typering" value="">
+      <label for="informatief">Informatief</label>
 
-        <input type="checkbox" id="jeugd">
-        <label for=jeugd>Jeugd</label>
+      <input type="checkbox" id="jeugd">
+      <label for=jeugd>Jeugd</label>
 
 
 
@@ -89,11 +109,7 @@
     </form>
   </header>
 
-
-
-
-
-  <section>
+  <!-- <section>
     <h2 class=verrasb>
       Verras me
     </h2>
@@ -120,6 +136,38 @@
     </article>
   </section>
   <img src="./assets/svg/icon/icon/book/flatbook.svg" alt="book">
+
+   -->
+  <div class="filternav">
+    <a href="">
+      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="51" viewBox="0 0 56 51">
+        <g fill="none" fill-rule="evenodd">
+          <path class="filt" stroke="#000" stroke-linecap="round" stroke-width="6" d="M.5 9.5L55.3088031 9.5M.5 25.5L55.3088031 25.5M.5 42L55.3088031 42" />
+          <circle cx="21" cy="9" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
+          <circle cx="43" cy="26" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
+          <circle cx="12" cy="42" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
+        </g>
+      </svg>
+      filter</a>
+    <a href="">uitgelicht</a>
+    <a href="">humor</a>
+    <a href="">fantasie</a>
+    <a href="">poëzie</a>
+    <a href="">thrillers</a>
+    <a href="">romatiek</a>
+    <a href="">detective</a>
+  </div>
+
+  <form class="sorteren">
+    <label>Sorteren:</label>
+    <select id="sorten">
+      <option value="populair">populair</option>
+      <option value="alfabetisch">alfabetisch</option>
+      <option value="beoordeel">best beoordeeld</option>
+      <option value="gelezen">meest gelezen</option>
+    </select>
+  </form>
+
   <section class="verderlezen">
     <h2>Verder lezen</h2>
     <article>

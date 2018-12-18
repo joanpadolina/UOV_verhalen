@@ -3,6 +3,10 @@
 https://codepen.io/zFunx/pen/dWbevd
 
 */
+
+.filter{
+  display: none;
+}
 input[type="checkbox"] {
  display: none;
 
@@ -16,12 +20,13 @@ input[type="checkbox"]+ label::after  {
   content: "";
   border: 0.1em solid #e7772b;
   border-radius: 0.2em;
-  display: inline-block;
+  display: inline-flex;
   width: 1em;
   height: 1em;
   padding-left: 0.2em;
   padding-bottom: 0.3em;
   margin-right: 0.2em;
+  margin:.3em;
   color: #e7772b;
   transition: .2s;
   cursor: pointer;
@@ -38,7 +43,7 @@ input[type="checkbox"]:checked+label::after {
   position: relative;
   /* background-color: blue; */
   height:100px;
-  padding:5px
+  padding:5px;
   border: solid 1px black;
 }
 
@@ -92,3 +97,8 @@ p {
   overflow: hidden;
   text-align: center;
 }
+
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    B O X E S    //////////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
