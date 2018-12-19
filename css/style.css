@@ -72,13 +72,15 @@ body {
   height:10px;
 }
 
-/* PSUEDO  */
+
+/* filter PSUEDO  Hover */
 
 .filternav :hover{
   color:white;
   font-weight: bold;
   background-color:#E7772B;
 }
+
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    N A V B A R   //////////////////////////// */
@@ -120,14 +122,13 @@ body {
   font-size: 0.9em;
 }
 
-/* PSUEDO */
+/* home/account hover PSUEDO */
 
 .navbar svg:hover #profile,
 .navbar svg:hover #profil{
     fill:#E7772B;
 }
-.navbar svg:hover #home1,
-.navbar svg:hover#homestr {
+.navbar svg:hover #home{
   fill:#E7772B;
 }
 
@@ -228,6 +229,7 @@ h4 {
   border-radius: 5px;
 }
 
+
 /* HOVER */
 .ontdekverhalen:link {
   border: solid 2px red;
@@ -240,6 +242,53 @@ h4 {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
   transition: .2s ease-in;
 }
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    STORY STYLING     /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+.storypic{
+  width:320px;
+  display:flex;
+  position: relative;
+  top:-20px;
+  justify-content: center;
+}
+
+article {
+  background: white;
+  Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
+  max-width: 80%;
+  height: 300px;
+  border-radius: 10px;
+  display: block;
+  position: flex;
+  top: -200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  flex-wrap: wrap;
+
+}
+h3{
+  display: block;
+  position: relative;
+  top:-35px;
+}
+p {
+  display: flex;
+  position: relative;
+  top:-30px;
+  width: 90%;
+  height: 4.6rem;
+  font-size: .9em;
+  overflow: hidden;
+
+}
+
+h3, p{
+  padding-left:1em;
+}
+
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Mobile screen     /////////////////////// */

@@ -76,27 +76,7 @@ input[type="checkbox"]:checked+label::after {
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    B O X E S    //////////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-article {
-  background: white;
-  Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
-  width: 250px;
-  height: 240px;
-  border-radius: 10px;
-  display: flex;
-  position: relative;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
 
-p {
-  width: 250px;
-  height: 135px;
-  font-size: 14px;
-  overflow: hidden;
-  text-align: center;
-}
 
 
 /*/////////////////////////////////////////////////////////////////////// */
