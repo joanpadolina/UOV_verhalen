@@ -5,8 +5,10 @@ https://codepen.io/zFunx/pen/dWbevd
 */
 
 .filter{
-  display: none;
+display: grid;
+grid-gap: 1.2em;
 }
+
 input[type="checkbox"] {
  display: none;
 
@@ -25,11 +27,12 @@ input[type="checkbox"]+ label::after  {
   height: 1em;
   padding-left: 0.2em;
   padding-bottom: 0.3em;
-  margin-right: 0.2em;
+  margin-right: 0.5em;
   margin:.3em;
   color: #e7772b;
   transition: .2s;
   cursor: pointer;
+  float:left;
 }
 
 input[type="checkbox"]+label::before {
@@ -38,14 +41,18 @@ input[type="checkbox"]+label::before {
 
 input[type="checkbox"]:checked+label::after {
   content: "\2714";
+  font-weight: bold;
 }
 .filter label{
   position: relative;
   /* background-color: blue; */
-  height:100px;
   padding:5px;
-  border: solid 1px black;
+  border-bottom: solid 1px  lightgrey;
+  width:90%;
+  margin-left: 1em;
+
 }
+
 
 
 /*/////////////////////////////////////////////////////////////////////// */
@@ -54,6 +61,10 @@ input[type="checkbox"]:checked+label::after {
 .filter li {
   list-style-type: none;
   padding-top: 10px;
+}
+.filter h3{
+  color:#54a5dd;
+  text-align: center;
 }
 
 .filter input {
@@ -72,13 +83,27 @@ input[type="checkbox"]:checked+label::after {
   border: solid 1px #54a5dd;
   border-radius: 5px;
 }
+.button{
+padding:10px;
+}
 
 /*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    B O X E S    //////////////////////////// */
+/*/////////////////////////    animatie filter    ///////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 
 
+.filter{
+}
 
 /*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    B O X E S    //////////////////////////// */
+/*/////////////////////////    media queries   //////////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (min-width:1020px) and (max-width: 1440px) {
+
+.filter{
+display:grid;
+grid-template-columns: 20%;
+}
+}

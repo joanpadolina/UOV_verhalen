@@ -35,8 +35,13 @@ body {
 .searchl {
   right: 50px;
   margin-top: 23px;
+  cursor: pointer;
+  transition: all 400ms ease;
 }
-
+.searchl.search-move{
+  right: 26.5em;
+  transition: all 400ms ease;
+}
 .profile {
   right: 10px;
   width: 20px;
@@ -52,35 +57,33 @@ body {
   padding: 10px;
   text-decoration: none;
   background-color: lightgrey;
-  color:grey;
-
+  color: grey;
 }
+
 .filternav {
   margin-top: 10px;
   overflow-x: scroll;
   white-space: nowrap;
-  padding-left:10px;
+  padding-left: 10px;
 }
+
 .filternav::-webkit-scrollbar {
   display: none;
 }
 
-.filternav svg{
-  width:15px;
-  padding-right:10px;
+.filternav svg {
+  width: 15px;
+  padding-right: 10px;
   opacity: .3;
-  height:10px;
+  height: 10px;
 }
-
 
 /* filter PSUEDO  Hover */
-
-.filternav :hover{
-  color:white;
+.filternav :hover {
+  color: white;
   font-weight: bold;
-  background-color:#E7772B;
+  background-color: #E7772B;
 }
-
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    N A V B A R   //////////////////////////// */
@@ -97,14 +100,14 @@ body {
   justify-content: center;
   margin-top: 10px;
   z-index: 10;
-  height:50px;
+  height: 50px;
 }
 
- .prof, .homeicoon {
-   display: block;
+.prof, .homeicoon {
+  display: block;
   position: absolute;
   width: 20px;
-  top:0;
+  top: 0;
 }
 
 .navbar li {
@@ -123,16 +126,14 @@ body {
 }
 
 /* home/account hover PSUEDO */
-
 .navbar svg:hover #profile,
-.navbar svg:hover #profil{
-    fill:#E7772B;
-}
-.navbar svg:hover #home{
-  fill:#E7772B;
+.navbar svg:hover #profil {
+  fill: #E7772B;
 }
 
-
+.navbar svg:hover #home {
+  fill: #E7772B;
+}
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Z O E K   //////////////////////////////// */
@@ -146,7 +147,7 @@ body {
 
 .boxunder {
   background: white;
-  width: 80%;
+  width: 40em;
   height: 11em;
   margin-left: auto;
   margin-right: auto;
@@ -156,7 +157,7 @@ body {
 }
 
 h4 {
-  font-size: .5em;
+  font-size: 1em;
   padding: 10px;
   padding-top: 10px;
   color: #e7772b;
@@ -169,24 +170,51 @@ h4 {
 
 .zoekbalk {
   padding: 20px;
-  width: 80%;
+  width: 40em;
   height: 1%;
   margin-top: -10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  border: solid .2px lightgrey;
+  opacity: 1;
 }
+.zoekbalkboven{
+  visibility: hidden;
+  opacity: 0;
+  background: none;
+  padding: 20px;
+  height: .1em;
+  margin-top: .9em;
+  margin-right: 4em;
+  margin-left: auto;
+  display: block;
+  width: 0em;
+
+
+}
+.zoekbalkboven.show-zoekbalk{
+  visibility: visible;
+  opacity: 1;
+  width: 30em;
+  transition: width 300ms ease;
+}
+
+/* .zoekbalkboven:focus {
+  width: 40em;
+} */
 
 .buttonz {
   font-size: .9em;
   position: absolute;
-  right: 11%;
-  top: 200px;
+  right: 14em;
+  top: 12em;
   text-decoration: none;
   background-color: lightgrey;
   padding: 9px 15px;
-  border-radius: 10px;
+  border-radius: 8px;
   color: white;
+  z-index: 1;
 }
 
 .buttonz:hover {
@@ -211,9 +239,7 @@ h4 {
   text-align: center;
   font-size: .6em;
   background: white;
-  margin-top: 60px;
-  width: 50%;
-  height: 60px;
+  height: 8em;
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -227,7 +253,6 @@ h4 {
   border: solid 1px #54a5dd;
   border-radius: 5px;
 }
-
 
 /* HOVER */
 .ontdekverhalen:link {
@@ -243,44 +268,57 @@ h4 {
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    S O R T E R E N   /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+.sorteren {
+  background: white;
+  border-radius: 10px;
+}
+
+.sorteren select value:hover {
+  background-color: #e7772b;
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    STORY STYLING     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-
-
-
-.bookmark svg{
-  width:40px;
+.bookmark svg {
+  width: 40px;
   display: flex;
   position: relative;
   left: 98%;
-  bottom:11.5rem;
+  bottom: 11.5rem;
   z-index: 1;
   transition: all 300ms;
 
 }
 
-.bookmark svg:hover #star{
-  cursor:pointer;
+.bookmark svg:hover #star {
+  cursor: pointer;
+  fill: #fecb37;
+}
+
+.bookmark svg:hover {
+  left: 100%;
+
+}
+.bookmark.bookmark-color path {
   fill:#fecb37;
-}
-
-.bookmark svg:hover{
-  left:100%;
-
+  stroke:none;
 
 }
 
-h2{
-  margin-left:2.4em;
+.smalltext {
+  padding-left: 3em;
   font-size: 1em;
   font-weight: 400;
-  color:grey;
+  color: grey;
 }
-.storypic{
-  width:320px;
-  display:flex;
+
+.storypic {
+  width: 19em;
   position: relative;
-  top:-20px;
+  top: -20px;
   justify-content: center;
 }
 
@@ -288,50 +326,156 @@ article {
   background: white;
   Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
   max-width: 80%;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   height: 300px;
   border-radius: 10px;
   display: block;
-  position: flex;
   top: -200px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  flex-wrap: wrap;
-
-
 }
-h3{
+
+section h3 {
   display: block;
   position: relative;
-  top:-35px;
+  top: -35px;
 }
+
 p {
   display: flex;
   position: relative;
-  top:-30px;
+  top: -30px;
   width: 90%;
   height: 4.6rem;
   font-size: .9em;
   overflow: hidden;
-
 }
 
-h3, p{
-  padding-left:1em;
+h3, p {
+  padding-left: 1em;
 }
 
-section{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
+section {}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    F I L T E R BOx   //////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+/*
+https://codepen.io/zFunx/pen/dWbevd
+
+*/
+.filter {
+  display: grid;
+  grid-gap: 1.2em;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] {
+  color: #e7772b;
+}
+
+input[type="checkbox"]+label::before,
+input[type="checkbox"]+label::after {
+  content: "";
+  border: 0.1em solid #e7772b;
+  border-radius: 0.2em;
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.5em;
+  margin: .3em;
+  color: #e7772b;
+  transition: .2s;
+  cursor: pointer;
+  float: left;
+}
+
+input[type="checkbox"]+label::before {
+  content: none;
+}
+
+input[type="checkbox"]:checked+label::after {
+  content: "\2714";
+  font-weight: bold;
+}
+
+.filter label {
+  position: relative;
+  /* background-color: blue; */
+  padding: 5px;
+  border-bottom: solid 1px lightgrey;
+  width: 90%;
+  margin-left: 1em;
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    F I L T E R   //////////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+.filter li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.filter h3 {
+  color: #54a5dd;
+}
+
+.filter input {
+  margin-right: 10px;
+}
+
+.anderook {
+  margin-bottom: 3em;
+}
+
+.button {
+  background: white;
+  text-decoration: none;
+  padding: 4px;
+  color: #54a5dd;
+  border: solid 1px #54a5dd;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 10px;
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////     filter  styling  ///////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+.filter {
+  background: #e3edf4;
+}
+
+.filter h2 {
+  color: #e7772b;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.filter label {
+  margin-right: 1em;
+  width: 11.8em;
+}
+
+/*//////////////////////   filter media queries   //////////////////////////// */
+@media only screen and (min-width:1020px) and (max-width: 1440px) {
+  .filter {
+    display: grid;
+  }
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Mobile screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width:320px) and (max-width: 425px) {
 
   /* T O P  */
   .searchl, .profile {
@@ -350,15 +494,84 @@ section{
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Tablet screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) and (max-width:768px) {
+  body {}
+
+  header {
+    grid-area: content;
+  }
+
+  .zoeken {
+    grid-column: 2;
+  }
+
+  article, .anderook {
+    grid-column: 1;
+  }
+
   .searchl, .profile {}
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Wide screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 768px) {
-  .navbar {
+@media only screen and (min-width: 1020px) and (max-width:1440px) {
+  body {}
+
+  .navbar ul {
     display: none;
+  }
+
+  .filternav {
+    display: none;
+  }
+
+  .smalltext {
+    margin-left: 20em;
+    margin-top: 3em;
+  }
+
+  /*//////////////////////   ontdek meer verhalen   //////////////////////////// */
+  .verasme {
+    width: 14.5em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
+  }
+
+  .ondekmeer {
+    width: 10em;
+    padding: 1em;
+  }
+
+  /*//////////////////////   filter media queries   //////////////////////////// */
+  .filter {
+    display: grid;
+    float: left;
+    margin-left: 2em;
+  }
+
+  /*//////////////////////   Section article   //////////////////////////// */
+  .wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .anderook {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sorteren {
+    display: flex;
+    right: 0;
+    position: absolute;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .filter h2 {
+    margin-left: 1em;
   }
 }

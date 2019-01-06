@@ -1,0 +1,51 @@
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+img.active {
+  opacity: 0;
+  transform: translateX(120px);
+  transition: 0.5s ease;
+}
+
+div.active {
+  opacity: .8;
+  transform: translateX(0);
+  transition: 0.2s ease-in-out;
+}
+
+div {
+  opacity: 0;
+  transform: translateX(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+div:nth-child(odd){
+  transform: translateX(-10px);
+}
+div {
+  margin: 1em;
+  width: 20em;
+  text-align: center;
+  height: 42em;
+  margin-left: auto;
+  margin-right: auto;
+}

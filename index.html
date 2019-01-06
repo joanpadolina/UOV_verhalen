@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/checkbox.css">
+  <!-- <link rel="stylesheet" href="./css/checkbox.css"> -->
 </head>
 
 <body>
@@ -16,8 +16,9 @@
 
     <img class="logoov" src="./assets/logo/uovlogo.png" alt="uov logo">
     <img class="searchl" src="./assets/svg/icon/nav/searchFont.svg" alt="search icon">
-    <img class="profile" src="./assets/svg/icon/nav/profil2.svg" alt="profile icon">
-
+    <input class="zoekbalkboven" type="text" placeholder="Romantiek, Actie, Thrillers...">
+    <a href="./account.html"><img class="profile" src="./assets/svg/icon/nav/profil2.svg" alt="profile icon">
+</a>
   </nav>
 
   <nav class="navbar">
@@ -61,19 +62,24 @@
           <h2>Ontdek verhalen</h2>
           <a class="ontdekbut" href="ontdekrandom.html">Verras me</a>
         </section>
-        <hr class="dotline">
+        <!-- <hr class="dotline"> -->
 
       </section>
     </section>
 
-    <form class="filter" action="verhalen.html">
+    <!-- Filter extra details -->
+    <div class="verasme">
+      <h2>Ontdenk verhalen!</h2>
+    <button type="button" class="ondekmeer"> verras mij </button>
+    </div>
+    <form class="filter" action="#">
 
       <h2>Filter</h2>
 
       <h3>Genre</h3>
 
-      <input type="checkbox" id="18" name="genre" value="18 + ">
-      <label for="18">18+</label>
+      <input type="checkbox" id="fantasie" name="genre" value="18 + ">
+      <label for="fantasie">Fantasie</label>
       <input type="checkbox" id="humor" name="genre" value="Humor">
       <label for="humor">Humor</label>
       <input type="checkbox" id="po" name="genre" value="Poëzie">
@@ -105,39 +111,11 @@
 
 
 
-      <input class="button" type="submit" value="toon filter">
+      <button id="zoek" class="button" type="submit" value="toon filter">Toon filter</button>
     </form>
   </header>
 
-  <!-- <section>
-    <h2 class=verrasb>
-      Verras me
-    </h2>
 
-  </section>
-  <section class="uitgelicht">
-    <img class="ster" src="assets/svg/icon/star.svg" alt="star">
-    <h2>
-      Uitgelicht
-    </h2>
-    <article>
-      <h3><a href="stoned.html">#73 Stoned</a></h3>
-      <p>
-        Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
-        atmosfeer in.
-      </p>
-    </article>
-    <article>
-      <h3>#60 Regionaal dagblad</h3>
-      <p>
-        De klok slaat twaalf uur in de middag als de beruchte blogger Max J. Molovich op het Stationsplein uit het gemeenteblik stapt. Zijn zoon ligt eindelijk in de armen van Morpheus. Burgers en buitenlui berijden de benenwagen van en naar het
-        station.
-      </p>
-    </article>
-  </section>
-  <img src="./assets/svg/icon/icon/book/flatbook.svg" alt="book">
-
-   -->
   <div class="filternav">
     <a href="">
       <svg xmlns="http://www.w3.org/2000/svg" width="56" height="51" viewBox="0 0 56 51">
@@ -171,77 +149,113 @@
   </form>
 
 
-  <h2>Verder lezen</h2>
-  <article>
-    <header>
-      <img class="storypic" src="./assets/logo/stonedlettering.png" alt="">
-    </header>
-    <h3>Stoned</h3>
-    <p>
-      Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
-      atmosfeer in.
-    </p>
-    <div class="bookmark"><a href="#">
+  <h2 class="smalltext">Verder lezen</h2>
+  <section class="wrap">
+    <article>
+      <header>
+      <a href="./stoned.html"><img class="storypic" src="./assets/logo/stonedlettering.png" alt=""></a>
+      </header>
+      <h3>Stoned</h3>
+      <p>
+        Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
+        atmosfeer in.
+      </p>
+      <div class="bookmark">
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
-          <defs>
-            <style >
-              .cls-1 {
-                fill: none;
-                stroke: #fecb37;
-                stroke-miterlimit: 10;
-                stroke-width: 3px;
-              }
-            </style>
-          </defs>
-          <title>outbookmark</title>
-          <g id="Layer_2" data-name="Layer 2">
-            <g id="Layer_1-2" data-name="Layer 1">
-              <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #fecb37;
+                  stroke-miterlimit: 10;
+                  stroke-width: 3px;
+                }
+              </style>
+            </defs>
+            <title>outbookmark</title>
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
+              </g>
             </g>
-          </g>
-        </svg>
-      </a>
+          </svg>
 
-    </div>
-  </article>
 
-  <article>
-    <header>
-      <img class="storypic" src="./assets/logo/stonedlettering.png" alt="">
-    </header>
-    <h3>Stoned</h3>
-    <p>
-      Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
-      atmosfeer in.
-    </p>
-    <div class="bookmark"><a href="#">
+      </div>
+    </article>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
-          <defs>
-            <style >
-              .cls-1 {
-                fill: none;
-                stroke: #fecb37;
-                stroke-miterlimit: 10;
-                stroke-width: 3px;
-              }
-            </style>
-          </defs>
-          <title>outbookmark</title>
-          <g id="Layer_2" data-name="Layer 2">
-            <g id="Layer_1-2" data-name="Layer 1">
-              <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
+    <article>
+      <header>
+        <img class="storypic" src="./assets/logo/stonedlettering.png" alt="">
+      </header>
+      <h3>Stoned</h3>
+      <p>
+        Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
+        atmosfeer in.
+      </p>
+      <div class="bookmark">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #fecb37;
+                  stroke-miterlimit: 10;
+                  stroke-width: 3px;
+                }
+              </style>
+            </defs>
+            <title>outbookmark</title>
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
+              </g>
             </g>
-          </g>
-        </svg>
-      </a>
+          </svg>
 
-    </div>
-  </article>
 
-  <section class="anderook" id="zoek">
-    <h2>andere lazen ook</h2>
+      </div>
+    </article>
+
+    <article>
+      <header>
+        <img class="storypic" src="./assets/logo/stonedlettering.png" alt="">
+      </header>
+      <h3>Stoned</h3>
+      <p>
+        Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
+        atmosfeer in.
+      </p>
+      <div class="bookmark">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #fecb37;
+                  stroke-miterlimit: 10;
+                  stroke-width: 3px;
+                }
+              </style>
+            </defs>
+            <title>outbookmark</title>
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
+              </g>
+            </g>
+          </svg>
+
+
+      </div>
+    </article>
+  </section>
+
+  <h2 class="smalltext">andere lazen ook</h2>
+  <section class="anderook">
 
     <article>
       <header>
@@ -264,11 +278,11 @@
         lijn 21 terug naar huis. Bij de babywinkel op het Bos en Lommerplein koop ik een paar
         schoenen voor mijn zoon.
       </p>
-      <div class="bookmark"><a href="#">
+      <div class="bookmark">
 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
             <defs>
-              <style >
+              <style>
                 .cls-1 {
                   fill: none;
                   stroke: #fecb37;
@@ -284,7 +298,7 @@
               </g>
             </g>
           </svg>
-        </a>
+
 
       </div>
     </article>
@@ -335,6 +349,7 @@
       </p>
     </article>
   </section>
-
+<script src="./js/animation.js"></script>
 </body>
+
 </html>

@@ -88,3 +88,32 @@ form :focus{
   outline:none;
 
 }
+
+.check{
+  list-style-type: none;
+
+}
+.check li:before {
+
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    content: "\2713";
+    color: #a0e2ad;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    top: 4px;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    Wide screen     /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 1020px) and (max-width:1440px){
+  .accountbox{
+    width:20em;
+  }
+}
