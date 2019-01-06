@@ -17,8 +17,43 @@ img {
   opacity: 1;
   transform: translateX(0);
 }
+img{
+    filter:blur(0);
+    transition: all 200ms ease;
+}
+.smoke{
+  display: flex;
+  position: fixed;
+  top: -10em;
+  width:150%;
+  animation: smokemove 5s ease-in-out infinite;
+  opacity: .4;
+  
+}
 
+@keyframes smokemove{
+0%{
+  transform: scale(0);
+  transform:rotate(0);
+  filter: blur(1em);
+
+
+
+}
+50%{
+  transform: scale(20);
+  transform:rotate(20deg);
+filter: blur(2em);
+}
+100%{
+  transform: scale(0);
+  transform:rotate(0deg);
+ filter: blur(1em);
+
+}
+}
 img.active {
+  filter: blur(2em);
   opacity: 0;
   transform: translateX(120px);
   transition: 0.5s ease;
@@ -29,9 +64,13 @@ div.active {
   transform: translateX(0);
   transition: 0.2s ease-in-out;
 }
-
+div.active{
+    filter:blur(0);
+    transition: all 700ms ease;
+}
 div {
   opacity: 0;
+  filter:blur(2em);
   transform: translateX(10px);
   display: flex;
   justify-content: center;
