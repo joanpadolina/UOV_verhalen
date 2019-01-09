@@ -7,6 +7,68 @@ body {
   box-sizing: border-box;
 }
 
+
+
+@keyframes strobe{
+  0%{
+    margin-left:1em;
+    opacity: .4;
+    filter:hue-rotate(400deg) blur(1px);
+
+  }
+
+
+  100%{
+    margin-left:-1em;
+    opacity: .5;
+    filter:hue-rotate(3.142rad) blur(1px);
+
+}
+
+}
+
+@keyframes strobe2{
+  0%{
+    margin-left:-1em;
+    opacity: .4;
+    filter:hue-rotate(100deg) blur(1px);
+
+  }
+
+
+  100%{
+    margin-left:1em;
+    opacity: .5;
+    filter:hue-rotate(100deg) blur(1px);
+
+}
+
+}
+
+img.stonedpng{
+
+  animation: strobe 500ms infinite ease;
+}
+img.stonedpng2{
+  position: absolute;
+  top:0;
+
+  animation: strobe2 500ms infinite ease;
+}
+.stonedpng1{
+  position: absolute;
+  top:0;
+}
+
+
+img.logoov{
+  width:6em;
+  display: block;
+  position: absolute;
+  top:-10em;
+  opacity: .5;
+
+}
 img {
   width: 95%;
   margin-left: auto;
@@ -16,6 +78,7 @@ img {
   margin-top: 10em;
   opacity: 1;
   transform: translateX(0);
+
 }
 img{
     filter:blur(0);
@@ -28,7 +91,21 @@ img{
   width:150%;
   animation: smokemove 5s ease-in-out infinite;
   opacity: .4;
-  
+
+}
+
+@keyframes scaleanim{
+  0%{
+  transform: scale();
+  }
+  100%{
+
+  }
+
+}
+
+div p{
+  animation: scaleanim 500ms infinite ease;
 }
 
 @keyframes smokemove{
