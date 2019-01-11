@@ -1,3 +1,10 @@
+/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars:
+true, white: true
+
+/eslint-env browser/
+/eslint 'no-console': 0/
+
+//updated 1st time/ */
 /*  Homepage    */
 body {
   font-family: "Roboto";
@@ -5,6 +12,14 @@ body {
   background-color: #f1f1f1;
   margin: 0;
   box-sizing: border-box;
+}
+
+.storytogo {
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: white;
+  margin-left: 5em;
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
@@ -66,7 +81,6 @@ body {
   margin-top: 10px;
   overflow-x: scroll;
   white-space: nowrap;
-  padding-left: 10px;
 }
 
 .filternav::-webkit-scrollbar {
@@ -161,7 +175,7 @@ body {
   width: 40em;
 } */
 /*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    O N T D E K V R   /////////////////////// */
+/*///////////    O N T D E K V E R H A A L   /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 .dotline {
   position: relative;
@@ -383,7 +397,7 @@ input[type="checkbox"]:checked+label::after {
 /*/////////////////////////     filter  styling  ///////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 .filter {
-  background: #e3edf4;
+  background: #ffffff;
 }
 
 .filter h2 {
@@ -401,6 +415,10 @@ input[type="checkbox"]:checked+label::after {
 /*/////////////////////////    Mobile screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width:50px) and (max-width: 616px) {
+  .introplaatje {
+    margin-top: 4em;
+    width: 100%;
+  }
 
   /* T O P  */
   .searchl, .profile {
@@ -413,6 +431,16 @@ input[type="checkbox"]:checked+label::after {
 
   .zoeken {
     height: 80px;
+  }
+
+  .filterknop {
+    margin-left: -1em;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .filternav a {
+    display:
   }
 }
 
@@ -451,8 +479,21 @@ input[type="checkbox"]:checked+label::after {
     display: none;
   }
 
+  #filternavhide {
+    display: none;
+  }
+.introplaatje{
+  width: 100%;
+  margin-top:4em;
+}
   .boxunder {
     display: none;
+  }
+
+  .filterknop {
+    margin-left: -1em;
+    width: 100%;
+    margin-bottom: 1em;
   }
 
   header {
@@ -476,14 +517,37 @@ input[type="checkbox"]:checked+label::after {
     grid-column: auto;
   }
 
-  .searchl, .profile {}
+  .smalltext {
+    margin-left: -1em;
+  }
+
+  .sorteren {
+    right: -1em;
+    margin-top: .8em;
+    display: block;
+    position: absolute;
+  }
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Wide screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 769px) and (max-width:1440px) {
-  body {}
+@media only screen and (min-width: 769px) and (max-width:1866px) {
+  .boxintro {
+    display: block;
+    width: 100%;
+    height: 21.5em;
+    background-color: white;
+    position: absolute;
+  }
+
+  .introplaatje {
+    margin-left: auto;
+    margin-right: auto;
+    width: 55em;
+    display: block;
+    position: relative;
+  }
 
   /*/////////////////////////    Z O E K   //////////////////////////////// */
   .zoeken {
@@ -530,9 +594,9 @@ input[type="checkbox"]:checked+label::after {
 
   .buttonz {
     font-size: .9em;
-    position: absolute;
-    right: 14em;
-    top: 12em;
+    position: relative;
+    left: 40em;
+    top: -2.2em;
     text-decoration: none;
     background-color: lightgrey;
     padding: 9px 15px;
@@ -556,7 +620,7 @@ input[type="checkbox"]:checked+label::after {
   }
 
   .smalltext {
-    margin-left: 20em;
+    margin-left: 15.5em;
     margin-top: 3em;
   }
 
@@ -580,6 +644,7 @@ input[type="checkbox"]:checked+label::after {
     float: left;
     margin-left: 2em;
     position: initial;
+    margin-top: 5.1em;
   }
 
   /*//////////////////////   Section article   //////////////////////////// */
@@ -594,21 +659,14 @@ input[type="checkbox"]:checked+label::after {
   }
 
   .sorteren {
-    display: flex;
     right: 0;
     position: absolute;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    display: block;
+    right: 2em;
+    margin-top: 3em;
   }
 
   .filter h2 {
     margin-left: 1em;
   }
 }
-
-/*//////////////////////   filter media queries   //////////////////////////// */
-/* @media only screen and (min-width:1020px) and (max-width: 1440px) {
-  .filter {
-    display: grid;
-  }
-} */

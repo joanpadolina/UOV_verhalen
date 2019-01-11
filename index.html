@@ -13,7 +13,7 @@
 <body>
   <!-- -->
   <nav class="header">
-
+    <h1 class="storytogo">story-to-go</h1>
     <img class="logoov" src="./assets/logo/uovlogo.png" alt="uov logo">
     <img class="searchl" src="./assets/svg/icon/nav/searchFont.svg" alt="search icon">
     <input class="zoekbalkboven" type="text" placeholder="Romantiek, Actie, Thrillers...">
@@ -50,7 +50,7 @@
   </nav>
 
   <header>
-    <section class="zoeken">
+    <!-- <section class="zoeken">
       <section class="boxunder">
         <h4>ik ga op reis en ik lees...</h4>
         <h2 class="introzoek">
@@ -62,10 +62,11 @@
           <h2>Ontdek verhalen</h2>
           <a class="ontdekbut" href="ontdekrandom.html">Verras me</a>
         </section>
-        <!-- <hr class="dotline"> -->
 
       </section>
-    </section>
+    </section> -->
+    <div class="boxintro"></div>
+    <img class="introplaatje" src="./assets/verhaal/introplaatje.jpg" alt="">
 
     <!-- Filter extra details -->
     <div class="verasme">
@@ -117,17 +118,19 @@
   </form>
 
   <div class="filternav">
-    <a class="filterknop">
-      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="51" viewBox="0 0 56 51">
-        <g fill="none" fill-rule="evenodd">
-          <path class="filt" stroke="#000" stroke-linecap="round" stroke-width="6" d="M.5 9.5L55.3088031 9.5M.5 25.5L55.3088031 25.5M.5 42L55.3088031 42" />
-          <circle cx="21" cy="9" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
-          <circle cx="43" cy="26" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
-          <circle cx="12" cy="42" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
-        </g>
-      </svg>
-      filter</a>
+  <a class="filterknop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="51" viewBox="0 0 56 51">
+      <g fill="none" fill-rule="evenodd">
+        <path class="filt" stroke="#000" stroke-linecap="round" stroke-width="6" d="M.5 9.5L55.3088031 9.5M.5 25.5L55.3088031 25.5M.5 42L55.3088031 42" />
+        <circle cx="21" cy="9" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
+        <circle cx="43" cy="26" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
+        <circle cx="12" cy="42" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
+      </g>
+    </svg>
+    filter</a>
+  </div>
 
+  <div id="filternavhide" class="filternav" >
     <a href="">uitgelicht</a>
     <a href="">humor</a>
     <a href="">fantasie</a>

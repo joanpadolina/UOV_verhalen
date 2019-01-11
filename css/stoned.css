@@ -4,71 +4,75 @@ body {
   background-color: black;
   color: white;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+.infinitescroll {
+  color:red;
+  font-size: 3em;
+  text-align: center;
+font-size: 2em;
+margin: 200px 0;
+}
 
+@keyframes pscalehover {
+  0% {}
 
-@keyframes strobe{
-  0%{
-    margin-left:1em;
+  100% {}
+}
+
+@keyframes strobe {
+  0% {
+    margin-left: 1em;
     opacity: .4;
-    filter:hue-rotate(400deg) blur(1px);
-
+    filter: hue-rotate(400deg) blur(1px);
   }
 
-
-  100%{
-    margin-left:-1em;
+  100% {
+    margin-left: -1em;
     opacity: .5;
-    filter:hue-rotate(3.142rad) blur(1px);
-
+    filter: hue-rotate(3.142rad) blur(1px);
+  }
 }
 
-}
-
-@keyframes strobe2{
-  0%{
-    margin-left:-1em;
+@keyframes strobe2 {
+  0% {
+    margin-left: -1em;
     opacity: .4;
-    filter:hue-rotate(100deg) blur(1px);
-
+    filter: hue-rotate(100deg) blur(1px);
   }
 
-
-  100%{
-    margin-left:1em;
+  100% {
+    margin-left: 1em;
     opacity: .5;
-    filter:hue-rotate(100deg) blur(1px);
-
+    filter: hue-rotate(100deg) blur(1px);
+  }
 }
 
-}
-
-img.stonedpng{
-
+img.stonedpng {
   animation: strobe 500ms infinite ease;
 }
-img.stonedpng2{
-  position: absolute;
-  top:0;
 
+img.stonedpng2 {
+  position: absolute;
+  top: 0;
   animation: strobe2 500ms infinite ease;
 }
-.stonedpng1{
+
+.stonedpng1 {
   position: absolute;
-  top:0;
+  top: 0;
 }
 
-
-img.logoov{
-  width:6em;
+img.logoov {
+  width: 6em;
   display: block;
   position: absolute;
-  top:-10em;
+  top: -10em;
   opacity: .5;
-
 }
+
 img {
   width: 95%;
   margin-left: auto;
@@ -78,57 +82,54 @@ img {
   margin-top: 10em;
   opacity: 1;
   transform: translateX(0);
+}
 
+img {
+  filter: blur(0);
+  transition: all 200ms ease;
 }
-img{
-    filter:blur(0);
-    transition: all 200ms ease;
-}
-.smoke{
+
+.smoke {
   display: flex;
   position: fixed;
   top: -10em;
-  width:150%;
+  width: 150%;
   animation: smokemove 5s ease-in-out infinite;
   opacity: .4;
-
 }
 
-@keyframes scaleanim{
-  0%{
-  transform: scale();
-  }
-  100%{
-
+@keyframes scaleanim {
+  0% {
+    transform: scale();
   }
 
+  100% {}
 }
 
-div p{
+div p {
   animation: scaleanim 500ms infinite ease;
 }
 
-@keyframes smokemove{
-0%{
-  transform: scale(0);
-  transform:rotate(0);
-  filter: blur(1em);
+@keyframes smokemove {
+  0% {
+    transform: scale(0);
+    transform: rotate(0);
+    filter: blur(1em);
+  }
 
+  50% {
+    transform: scale(20);
+    transform: rotate(20deg);
+    filter: blur(2em);
+  }
 
+  100% {
+    transform: scale(0);
+    transform: rotate(0deg);
+    filter: blur(1em);
+  }
+}
 
-}
-50%{
-  transform: scale(20);
-  transform:rotate(20deg);
-filter: blur(2em);
-}
-100%{
-  transform: scale(0);
-  transform:rotate(0deg);
- filter: blur(1em);
-
-}
-}
 img.active {
   filter: blur(2em);
   opacity: 0;
@@ -141,22 +142,26 @@ div.active {
   transform: translateX(0);
   transition: 0.2s ease-in-out;
 }
-div.active{
-    filter:blur(0);
-    transition: all 700ms ease;
+
+div.active {
+  filter: blur(0);
+  transition: all 700ms ease;
 }
+
 div {
   opacity: 0;
-  filter:blur(2em);
+  filter: blur(2em);
   transform: translateX(10px);
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
 }
-div:nth-child(odd){
+
+div:nth-child(odd) {
   transform: translateX(-10px);
 }
+
 div {
   margin: 1em;
   width: 20em;
