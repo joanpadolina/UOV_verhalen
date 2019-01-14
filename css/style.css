@@ -237,19 +237,19 @@ body {
   margin-right: auto;
   animation: loading 3s ease;
   opacity: 0;
-  z-index: 2;
+  z-index: 6;
 }
 
 .boxbus {
   position: absolute;
-  height: 600px;
+  height: 100%;
   top: 3.2em;
   width: 100%;
   background: rgba(0, 0, 0, 0.47);
   box-shadow: 0px 4px 10px -6px rgba(0, 0, 0, 0.75);
   opacity: 0;
   animation: loading 4s ease;
-  z-index: 2;
+  z-index: 5;
 }
 
 @keyframes loading {
@@ -451,20 +451,6 @@ input[type="checkbox"]:checked+label::after {
   width: 11.8em;
 }
 
-/* .comment{
-  top: -3.5em;
-  right: 7em;
-  position: relative;
-  display: block;
-}
-.chat{
-  top: -7.6em;
-  right: 7em;
-  position: relative;
-  cursor: pointer;
-  display: block;
-} */
-
 /*/////////////////////////    chat fave comment   //////////////////// */
 .containchatfave {
   left: 75%;
@@ -484,7 +470,6 @@ input[type="checkbox"]:checked+label::after {
 
 }
 .chat{
-  transition: opacity 100ms ease;
 }
 
 .chatgif {
@@ -494,14 +479,70 @@ input[type="checkbox"]:checked+label::after {
   left: 31%;
   opacity: 0;
   display:inline-block;
-  background:blue;
 }
-.chatgif:hover{
-  opacity: 1;
-}
-.chat:hover{
+.chat.displaynone{
   opacity: 0;
+}
 
+
+/*/////////////////////////    ster animatie   //////////////////// */
+
+.steranimatie{
+    width: 20em;
+    position: absolute;
+    height: 15em;
+    display: block;
+    visibility: hidden;
+    background: #675C54;
+    z-index: 2;
+    margin-right: auto;
+    margin-left: auto;
+    right: 3em;
+    top: 30em;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
+    opacity:0;
+    transition: all 200ms ease;
+
+}
+.steranimatie img{
+  position:static;
+  width:20em;
+  margin-top: -5.5em;
+}
+.steranimatie h2{
+  color:white;
+  text-align: center;
+  position: static;
+  margin-top:-2.1em;
+  font-weight: 400;
+}
+
+.steranimatie.sterappear {
+  visibility: visible;
+  opacity: ;
+  animation: popanim 1s ease;
+}
+@keyframes popanim{
+  0%{
+    opacity: .5;
+  }
+  20%{
+    opacity: 1;
+  }
+  79%{
+    opacity: 1;
+  }
+  80%{
+    opacity: .5;
+
+  }
+  100%{
+
+    opacity: 0;
+    display: none;
+
+  }
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
@@ -559,7 +600,7 @@ input[type="checkbox"]:checked+label::after {
 
 .filter {
   position: absolute;
-  top: 3.5em;
+  top: 0.2em;
   left: -23em;
   transition: left 300ms ease;
   z-index: 9;
@@ -567,7 +608,7 @@ input[type="checkbox"]:checked+label::after {
 
 .filter.filter-show {
   left: 0em;
-  top: -1.8em;
+  top: 0.2em;
   position: relative;
   width: 100%;
   transition: left 400ms ease;
@@ -577,8 +618,9 @@ input[type="checkbox"]:checked+label::after {
 /*/////////////////////////    Tablet screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 617px) and (max-width:768px) {
-  body {}
-
+  .busgif{
+    right: 12em;
+  }
   /* T O P  */
   .searchl, .profile {
     display: none;
@@ -644,6 +686,10 @@ input[type="checkbox"]:checked+label::after {
   comment:hover, comment:hover {
     cursor: pointer;
   }
+
+  .steranimatie{
+    right:13em;
+  }
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
@@ -656,7 +702,7 @@ input[type="checkbox"]:checked+label::after {
 }
 
   .busgif {
-    right: 27em;
+    right: 19em;
   }
 
   .boxbus {
@@ -798,5 +844,9 @@ input[type="checkbox"]:checked+label::after {
 
   .filter h2 {
     margin-left: 1em;
+  }
+
+  .steranimatie{
+    right:30%;
   }
 }

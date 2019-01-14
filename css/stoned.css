@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 @keyframes pscalehover {
@@ -44,39 +43,36 @@ body {
 }
 
 img.stonedpng {
-
   animation: strobe 600ms infinite ease;
 }
+
 #infinite-list {
   /* We need to limit the height and show a scrollbar */
   position: absolute;
-  top:6em;
-  text-align:center;
+  top: 6em;
+  text-align: center;
   width: 90%;
   height: 500px;
   overflow: auto;
   list-style-type: none;
   /* margin-bottom:20em; */
   transition: all 200ms ease;
-  opacity:.7;
-
+  opacity: .7;
 }
 
 li {
-  margin-bottom:30em;
+  margin-bottom: 30em;
   padding: 12px;
   list-style-type: none;
 }
 
 img.stonedpng2 {
   position: absolute;
-
   animation: strobe2 600ms infinite ease;
 }
 
 .stonedpng1 {
   position: absolute;
-
 }
 
 img.logoov {
@@ -104,7 +100,6 @@ img {
   transition: all 500ms ease;
 }
 
-
 @keyframes scaleanim {
   0% {
     transform: scale();
@@ -116,7 +111,6 @@ img {
 div p {
   animation: scaleanim 500ms infinite ease;
 }
-
 
 img.active {
   filter: blur(2em);
@@ -158,6 +152,7 @@ div {
   margin-left: auto;
   margin-right: auto;
 }
+
 /* p{
   color:purple;
   text-align: center;
@@ -167,30 +162,162 @@ div {
   top:9em;
   z-index: -1;
 } */
-p:hover{
-  animation: strobe2 700ms  infinite ease;
+p:hover {
+  animation: strobe2 700ms infinite ease;
   animation: strobe 700ms infinite ease;
 }
-.p3{
+
+.p3 {
   font-size: 3em;
   text-align: center;
   justify-content: center;
   opacity: .4;
   position: absolute;
-
+  z-index: -1;
 }
-.p2{
-  color:pink;
+
+.p2 {
+  color: pink;
   text-align: center;
-  filter:blur(2px);
-  opacity:.2;
+  filter: blur(2px);
+  opacity: .2;
   position: absolute;
-  font-size:2em;
-  top:0em;
+  font-size: 2em;
+  top: 0em;
   z-index: -1;
   animation: left 10s ease infinite;
 }
-.stonedpng, .stonedpng2, .stonedpng1{
+
+.stonedpng, .stonedpng2, .stonedpng1 {
   position: absolute;
-  top:2em;
+  top: 2em;
+}
+
+.commentvlak {
+  border-radius: .5em;
+  height: 13em;
+  width: 90%;
+  background: #675c53;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.commentvlak h2 {
+  margin-left: 1.8em;
+}
+
+textarea {
+  width: 23em;
+  position: absolute;
+  display: block;
+  right: 9em;
+  border-radius: .3em;
+  background: whitesmoke;
+}
+
+.verstuur {
+  margin-left: 28em;
+  position: absolute;
+  margin-top: 0.3em;
+  background: #ffa619;
+  border-radius: .4em;
+  color: white;
+  padding: .5em;
+}
+
+.commentaren {
+  width: 57%;
+  background: #f9f9f9;
+  color: black;
+  padding: 1em;
+  border-radius: .2em;
+  margin-top: -6em;
+  left: 4em;
+  position: absolute;
+  height: 2em;
+}
+
+.verscom {
+  font-size: .5em;
+}
+
+.verscom h2 {
+  margin-top: -.3em;
+  color: orange;
+}
+
+.verscom h3 {
+  color: lightgray;
+  font-weight: 100;
+  font-size: 0.7em;
+  margin-top: -4em;
+  position: absolute;
+  left: 22em;
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    Tablet screen     /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 617px) and (max-width:769px) {
+  .commentvlak {
+
+    height: 13em;
+    width: 52%;
+
+  }
+
+textarea {
+    width: 23em;
+
+    right: 26em;
+
+  }
+
+  .verstuur {
+    margin-left: 28em;
+
+
+  }
+
+  .commentaren {
+    width: 29%;
+
+    padding: 1em;
+
+    left: 14em;
+
+  }
+}
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    Wide screen     /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 769px) and (max-width:1866px) {
+  .commentvlak {
+
+    height: 13em;
+    width: 30em;
+
+  }
+
+textarea {
+    width: 23em;
+
+    right: 46%;
+
+  }
+
+  .verstuur {
+    margin-left: 28em;
+
+
+  }
+
+  .commentaren {
+    width: 14em;
+
+    padding: 1em;
+
+    left: 36%;
+
+  }
 }
