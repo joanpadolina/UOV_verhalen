@@ -193,67 +193,68 @@ p:hover {
   top: 2em;
 }
 
-.commentvlak {
-  border-radius: .5em;
-  height: 13em;
-  width: 90%;
-  background: #675c53;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .commentvlak {
+    border-radius: .5em;
+    height: 13em;
+    width: 90%;
+    background: #675c53;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.commentvlak h2 {
-  margin-left: 1.8em;
-}
+  .commentvlak h2 {
+    margin-left: 1.8em;
+  }
 
-textarea {
-  width: 23em;
-  position: absolute;
-  display: block;
-  right: 9em;
-  border-radius: .3em;
-  background: whitesmoke;
-}
+  textarea {
+    width: 52%;
+    position: absolute;
+    display: block;
+    right: 32%;
+    border-radius: .3em;
+    background: whitesmoke;
+  }
 
-.verstuur {
-  margin-left: 28em;
-  position: absolute;
-  margin-top: 0.3em;
-  background: #ffa619;
-  border-radius: .4em;
-  color: white;
-  padding: .5em;
-}
+  .verstuur {
+    margin-left: 65%;
+    position: absolute;
+    margin-top: 0.3em;
+    background: #ffa619;
+    border-radius: .4em;
+    color: white;
+    padding: .5em;
+  }
 
-.commentaren {
-  width: 57%;
-  background: #f9f9f9;
-  color: black;
-  padding: 1em;
-  border-radius: .2em;
-  margin-top: -6em;
-  left: 4em;
-  position: absolute;
-  height: 2em;
-}
+  .commentaren {
+    width: 63%;
+    background: #f9f9f9;
+    color: black;
+    padding: 1em;
+    border-radius: .2em;
+    margin-top: -6em;
+    left: 14%;
+    position: absolute;
+    height: 2em;
+  }
 
-.verscom {
-  font-size: .5em;
-}
+  .verscom {
+    font-size: .5em;
+  }
 
-.verscom h2 {
-  margin-top: -.3em;
-  color: orange;
-}
+  .verscom h2 {
+    margin-top: -.3em;
+    color: orange;
+  }
 
-.verscom h3 {
-  color: lightgray;
-  font-weight: 100;
-  font-size: 0.7em;
-  margin-top: -4em;
-  position: absolute;
-  left: 22em;
-}
+  .verscom h3 {
+    color: lightgray;
+    font-weight: 100;
+    font-size: 0.7em;
+    margin-top: -4em;
+    position: absolute;
+    left: 22em;
+  }
+
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Tablet screen     /////////////////////// */
@@ -262,29 +263,28 @@ textarea {
   .commentvlak {
 
     height: 13em;
-    width: 52%;
+    width: 25em;
 
   }
 
 textarea {
-    width: 23em;
+    width: 28%;
 
-    right: 26em;
+    right: 42%;
 
   }
 
   .verstuur {
-    margin-left: 28em;
-
+    margin-left: 35%;
 
   }
 
   .commentaren {
-    width: 29%;
+    width: 33%;
 
     padding: 1em;
 
-    left: 14em;
+    left: 29%;
 
   }
 }
@@ -295,29 +295,26 @@ textarea {
   .commentvlak {
 
     height: 13em;
-    width: 30em;
+    width: 37%;
 
   }
 
 textarea {
-    width: 23em;
-
-    right: 46%;
+  width: 21em;
+  right: 41%;
 
   }
 
   .verstuur {
-    margin-left: 28em;
+    margin-left: 28%;
 
 
   }
 
   .commentaren {
-    width: 14em;
-
-    padding: 1em;
-
-    left: 36%;
+    width: 25%;
+      padding: 1em;
+      left: 36%;
 
   }
 }
