@@ -221,8 +221,6 @@ body {
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    S O R T E R E N   /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-.sorteren {}
-
 .sorteren select value:hover {
   background-color: #e7772b;
 }
@@ -230,6 +228,49 @@ body {
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    STORY STYLING     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
+.busgif {
+  position: absolute;
+  width: 22em;
+  top: 20em;
+  right: -2em;
+  margin-left: auto;
+  margin-right: auto;
+  animation: loading 3s ease;
+  opacity: 0;
+  z-index: 2;
+}
+
+.boxbus {
+  position: absolute;
+  height: 600px;
+  top: 3.2em;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.47);
+  box-shadow: 0px 4px 10px -6px rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  animation: loading 4s ease;
+  z-index: 2;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+
+
+
 .bookmark svg {
   width: 40px;
   display: flex;
@@ -252,6 +293,7 @@ body {
 .bookmark.bookmark-color path {
   fill: #fecb37;
   stroke: none;
+  width: 200px;
 }
 
 .smalltext {
@@ -262,9 +304,9 @@ body {
 }
 
 .storypic {
-  width: 19em;
+  width: 15em;
   position: relative;
-  top: -20px;
+  top: -5px;
   justify-content: center;
 }
 
@@ -285,7 +327,7 @@ article {
 section h3 {
   display: block;
   position: relative;
-  top: -35px;
+  top: -15px;
 }
 
 p {
@@ -301,8 +343,6 @@ p {
 h3, p {
   padding-left: 1em;
 }
-
-section {}
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    F I L T E R BOx   //////////////////////// */
@@ -411,6 +451,59 @@ input[type="checkbox"]:checked+label::after {
   width: 11.8em;
 }
 
+/* .comment{
+  top: -3.5em;
+  right: 7em;
+  position: relative;
+  display: block;
+}
+.chat{
+  top: -7.6em;
+  right: 7em;
+  position: relative;
+  cursor: pointer;
+  display: block;
+} */
+
+/*/////////////////////////    chat fave comment   //////////////////// */
+.containchatfave {
+  left: 75%;
+  width: 100px;
+  position: relative;
+  top: -3em;
+
+}
+.comment {
+  float: left;
+  margin-right: 1em;
+    display:block;
+}
+
+.containchatfave:hover {
+  cursor: pointer;
+
+}
+.chat{
+  transition: opacity 100ms ease;
+}
+
+.chatgif {
+  position: absolute;
+  bottom: 14.3%;
+  width: 46px;
+  left: 31%;
+  opacity: 0;
+  display:inline-block;
+  background:blue;
+}
+.chatgif:hover{
+  opacity: 1;
+}
+.chat:hover{
+  opacity: 0;
+
+}
+
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Mobile screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
@@ -420,6 +513,18 @@ input[type="checkbox"]:checked+label::after {
     width: 100%;
   }
 
+  /* .comment{
+    position: relative;
+    top: -3.1em;
+    width: 23px;
+    right: -43vh;
+  }
+  .chat{
+    position: relative;
+    top: -5.2em;
+    width: 23px;
+    left: 47vh;
+  } */
   /* T O P  */
   .searchl, .profile {
     display: none;
@@ -479,13 +584,21 @@ input[type="checkbox"]:checked+label::after {
     display: none;
   }
 
+.containchatfave{
+  left: 75%;
+    width: 100px;
+    position: relative;
+    top: -3em;
+}
   #filternavhide {
     display: none;
   }
-.introplaatje{
-  width: 100%;
-  margin-top:4em;
-}
+
+  .introplaatje {
+    width: 100%;
+    margin-top: 4em;
+  }
+
   .boxunder {
     display: none;
   }
@@ -527,12 +640,29 @@ input[type="checkbox"]:checked+label::after {
     display: block;
     position: absolute;
   }
+
+  comment:hover, comment:hover {
+    cursor: pointer;
+  }
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Wide screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 769px) and (max-width:1866px) {
+.containchatfave{
+  left:68%;
+
+}
+
+  .busgif {
+    right: 27em;
+  }
+
+  .boxbus {
+    height: 100%;
+  }
+
   .boxintro {
     display: block;
     width: 100%;

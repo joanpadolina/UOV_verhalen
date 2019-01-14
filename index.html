@@ -18,7 +18,7 @@
     <img class="searchl" src="./assets/svg/icon/nav/searchFont.svg" alt="search icon">
     <input class="zoekbalkboven" type="text" placeholder="Romantiek, Actie, Thrillers...">
     <a href="./account.html"><img class="profile" src="./assets/svg/icon/nav/profil2.svg" alt="profile icon">
-</a>
+    </a>
   </nav>
 
   <nav class="navbar">
@@ -71,7 +71,7 @@
     <!-- Filter extra details -->
     <div class="verasme">
       <h2>Ontdenk verhalen!</h2>
-    <button type="button" class="ondekmeer"> verras mij </button>
+      <button type="button" class="ondekmeer"> verras mij </button>
     </div>
 
   </header>
@@ -118,19 +118,19 @@
   </form>
 
   <div class="filternav">
-  <a class="filterknop">
-    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="51" viewBox="0 0 56 51">
-      <g fill="none" fill-rule="evenodd">
-        <path class="filt" stroke="#000" stroke-linecap="round" stroke-width="6" d="M.5 9.5L55.3088031 9.5M.5 25.5L55.3088031 25.5M.5 42L55.3088031 42" />
-        <circle cx="21" cy="9" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
-        <circle cx="43" cy="26" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
-        <circle cx="12" cy="42" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
-      </g>
-    </svg>
-    filter</a>
+    <a class="filterknop">
+      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="51" viewBox="0 0 56 51">
+        <g fill="none" fill-rule="evenodd">
+          <path class="filt" stroke="#000" stroke-linecap="round" stroke-width="6" d="M.5 9.5L55.3088031 9.5M.5 25.5L55.3088031 25.5M.5 42L55.3088031 42" />
+          <circle cx="21" cy="9" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
+          <circle cx="43" cy="26" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
+          <circle cx="12" cy="42" r="7" fill="#FFF" stroke="#000" stroke-width="4" />
+        </g>
+      </svg>
+      filter</a>
   </div>
 
-  <div id="filternavhide" class="filternav" >
+  <div id="filternavhide" class="filternav">
     <a href="">uitgelicht</a>
     <a href="">humor</a>
     <a href="">fantasie</a>
@@ -150,146 +150,251 @@
       <option value="gelezen">meest gelezen</option>
     </select>
   </form>
-
+  <!-- <div class="boxbus"></div>
+  <img class="busgif" src="./assets/gif/bus.gif" alt=""> -->
 
   <h2 class="smalltext">Verder lezen</h2>
   <section class="wrap">
     <article>
       <header>
-      <a href="./stoned.html"><img class="storypic" src="./assets/logo/stonedlettering.png" alt=""></a>
+        <a href="./stoned.html"><img class="storypic" src="./assets/logo/stonedlettering.png" alt=""></a>
       </header>
       <h3>Stoned</h3>
       <p>
         Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
         atmosfeer in.
       </p>
-      <div class="bookmark 1">
+      <div class="bookmark" id="sterID">
 
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                  stroke: #fecb37;
-                  stroke-miterlimit: 10;
-                  stroke-width: 3px;
-                }
-              </style>
-            </defs>
-            <title>outbookmark</title>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
-              </g>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+                stroke: #fecb37;
+                stroke-miterlimit: 10;
+                stroke-width: 3px;
+              }
+            </style>
+          </defs>
+          <title>outbookmark</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
             </g>
-          </svg>
+          </g>
+        </svg>
 
 
       </div>
 
-    </article>
-    <article>
-      <header>
-      <a href="./stoned.html"><img class="storypic" src="./assets/logo/stonedlettering.png" alt=""></a>
-      </header>
-      <h3>Stoned</h3>
-      <p>
-        Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
-        atmosfeer in.
-      </p>
-      <div class="bookmark">
-
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                  stroke: #fecb37;
-                  stroke-miterlimit: 10;
-                  stroke-width: 3px;
-                }
-              </style>
-            </defs>
-            <title>outbookmark</title>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
+      <div class="containchatfave">
+          <div class="comment">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 44 30">
+              <g fill="none" fill-rule="evenodd" transform="translate(0 2)">
+                <path stroke="#000" stroke-width="2.1" d="M1.16098722,16.5 C4.24766195,22.824279 10.742164,26.95 18,26.95 C25.257836,26.95 31.752338,22.824279 34.8390128,16.5 C31.752338,10.175721 25.257836,6.05 18,6.05 C10.742164,6.05 4.24766195,10.175721 1.16098722,16.5 Z" />
+                <path stroke="#000" stroke-linecap="square" stroke-width="2.8" d="M36 10.6428571L42 6M29 5.625L35 0" />
+                <path fill="#000" d="M18.2610372,10.5761626 L18.7969796,10.0540606 C20.9197188,7.98613996 24.3035955,7.98613996 26.4263348,10.0540606 C28.4787164,12.0534407 28.5216827,15.3380426 26.5223026,17.3904242 C26.4907331,17.4228306 26.4587411,17.4548226 26.4263348,17.4863921 L25.8903924,18.0084941 L19.0149723,24.7063603 C18.5954329,25.1150654 17.9266415,25.1150654 17.5071021,24.7063603 L13.3883428,20.6939657 L9.57366524,16.9778 C7.52128359,14.9784199 7.47831732,11.693818 9.47769739,9.64143637 C9.50926687,9.60903002 9.54125889,9.577038 9.57366524,9.54546852 C11.6964045,7.47754783 15.0802812,7.47754783 17.2030204,9.54546852 L18.2610372,10.5761626 Z" />
+                <path fill="#FFF" d="M21.6920497,12.5444959 C22.8151042,12.5444959 24,13.5693801 24,12.5444959 C24,11.5196116 22.8151042,11 21.6920497,11 C20.5689952,11 19,11.5196116 19,12.5444959 C19,13.5693801 20.5689952,12.5444959 21.6920497,12.5444959 Z" />
               </g>
-            </g>
-          </svg>
+            </svg>
+          </div>
+          <img class="chatgif" src="./assets/gif/comment.gif" alt="">
 
+          <div class="chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="34" viewBox="0 0 46 34">
+              <g fill="none" fill-rule="evenodd">
+                <path stroke="#000" stroke-width="3" d="M34.8402013,31.2531262 L34.8402013,25.5 L39,25.5 C42.0375661,25.5 44.5,23.0375661 44.5,20 L44.5,7 C44.5,3.96243388 42.0375661,1.5 39,1.5 L7,1.5 C3.96243388,1.5 1.5,3.96243388 1.5,7 L1.5,20 C1.5,23.0375661 3.96243388,25.5 7,25.5 L25.8871308,25.5 L34.8402013,31.2531262 Z" />
+                <circle cx="12" cy="13" r="3" fill="#000" />
+                <circle cx="23" cy="13" r="3" fill="#000" />
+                <circle cx="34" cy="13" r="3" fill="#000" />
+              </g>
+            </svg>
 
-      </div>
+          </div>
+        </div>
+      </article>
 
-    </article>
 
     <article>
       <header>
-        <img class="storypic" src="./assets/logo/stonedlettering.png" alt="">
+        <img class="storypic" src="./assets/randombg/04.jpg" alt="">
       </header>
-      <h3>Stoned</h3>
+      <h3>Terugspoelen</h3>
       <p>
-        Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
-        atmosfeer in.
+        In een babywinkel op het Bos en Lommerplein koop ik babyschoentjes. Teleurgesteld verlaat ik de bibliotheek. Dat geloof je toch niet? Ik ben de hele tijd al op de tweede verdieping aan het zoeken. Mailtje van het magazijn: Stijloefeningen
+        ligt waar het hoort te liggen: op de tweede verdieping. Ik wacht een kwartiertje. Ik stuur
       </p>
       <div class="bookmark">
 
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                  stroke: #fecb37;
-                  stroke-miterlimit: 10;
-                  stroke-width: 3px;
-                }
-              </style>
-            </defs>
-            <title>outbookmark</title>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
-              </g>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+                stroke: #fecb37;
+                stroke-miterlimit: 10;
+                stroke-width: 3px;
+              }
+            </style>
+          </defs>
+          <title>outbookmark</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
             </g>
-          </svg>
+          </g>
+        </svg>
 
 
       </div>
+      <div class="containchatfave">
+          <div class="comment">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 44 30">
+              <g fill="none" fill-rule="evenodd" transform="translate(0 2)">
+                <path stroke="#000" stroke-width="2.1" d="M1.16098722,16.5 C4.24766195,22.824279 10.742164,26.95 18,26.95 C25.257836,26.95 31.752338,22.824279 34.8390128,16.5 C31.752338,10.175721 25.257836,6.05 18,6.05 C10.742164,6.05 4.24766195,10.175721 1.16098722,16.5 Z" />
+                <path stroke="#000" stroke-linecap="square" stroke-width="2.8" d="M36 10.6428571L42 6M29 5.625L35 0" />
+                <path fill="#000" d="M18.2610372,10.5761626 L18.7969796,10.0540606 C20.9197188,7.98613996 24.3035955,7.98613996 26.4263348,10.0540606 C28.4787164,12.0534407 28.5216827,15.3380426 26.5223026,17.3904242 C26.4907331,17.4228306 26.4587411,17.4548226 26.4263348,17.4863921 L25.8903924,18.0084941 L19.0149723,24.7063603 C18.5954329,25.1150654 17.9266415,25.1150654 17.5071021,24.7063603 L13.3883428,20.6939657 L9.57366524,16.9778 C7.52128359,14.9784199 7.47831732,11.693818 9.47769739,9.64143637 C9.50926687,9.60903002 9.54125889,9.577038 9.57366524,9.54546852 C11.6964045,7.47754783 15.0802812,7.47754783 17.2030204,9.54546852 L18.2610372,10.5761626 Z" />
+                <path fill="#FFF" d="M21.6920497,12.5444959 C22.8151042,12.5444959 24,13.5693801 24,12.5444959 C24,11.5196116 22.8151042,11 21.6920497,11 C20.5689952,11 19,11.5196116 19,12.5444959 C19,13.5693801 20.5689952,12.5444959 21.6920497,12.5444959 Z" />
+              </g>
+            </svg>
+          </div>
+          <!-- <img class="chatgif" src="./assets/gif/comment.gif" alt=""> -->
+
+          <div class="chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="34" viewBox="0 0 46 34">
+              <g fill="none" fill-rule="evenodd">
+                <path stroke="#000" stroke-width="3" d="M34.8402013,31.2531262 L34.8402013,25.5 L39,25.5 C42.0375661,25.5 44.5,23.0375661 44.5,20 L44.5,7 C44.5,3.96243388 42.0375661,1.5 39,1.5 L7,1.5 C3.96243388,1.5 1.5,3.96243388 1.5,7 L1.5,20 C1.5,23.0375661 3.96243388,25.5 7,25.5 L25.8871308,25.5 L34.8402013,31.2531262 Z" />
+                <circle cx="12" cy="13" r="3" fill="#000" />
+                <circle cx="23" cy="13" r="3" fill="#000" />
+                <circle cx="34" cy="13" r="3" fill="#000" />
+              </g>
+            </svg>
+
+          </div>
+        </div>
+    </article>
+    <article>
+      <header>
+        <img class="storypic" src="./assets/randombg/05.jpg" alt="">
+      </header>
+      <h3>Moe</h3>
+      <p>
+        De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik wou dat ik hem was. De mensen lopen in zichzelf gekeerd over het plein. De regen doet z’n
+        best mij wakker te houden, maar mijn oogleden voelen zwaar
+      </p>
+      <div class="bookmark">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+                stroke: #fecb37;
+                stroke-miterlimit: 10;
+                stroke-width: 3px;
+              }
+            </style>
+          </defs>
+          <title>outbookmark</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
+            </g>
+          </g>
+        </svg>
+
+
+      </div>
+      <div class="containchatfave">
+          <div class="comment">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 44 30">
+              <g fill="none" fill-rule="evenodd" transform="translate(0 2)">
+                <path stroke="#000" stroke-width="2.1" d="M1.16098722,16.5 C4.24766195,22.824279 10.742164,26.95 18,26.95 C25.257836,26.95 31.752338,22.824279 34.8390128,16.5 C31.752338,10.175721 25.257836,6.05 18,6.05 C10.742164,6.05 4.24766195,10.175721 1.16098722,16.5 Z" />
+                <path stroke="#000" stroke-linecap="square" stroke-width="2.8" d="M36 10.6428571L42 6M29 5.625L35 0" />
+                <path fill="#000" d="M18.2610372,10.5761626 L18.7969796,10.0540606 C20.9197188,7.98613996 24.3035955,7.98613996 26.4263348,10.0540606 C28.4787164,12.0534407 28.5216827,15.3380426 26.5223026,17.3904242 C26.4907331,17.4228306 26.4587411,17.4548226 26.4263348,17.4863921 L25.8903924,18.0084941 L19.0149723,24.7063603 C18.5954329,25.1150654 17.9266415,25.1150654 17.5071021,24.7063603 L13.3883428,20.6939657 L9.57366524,16.9778 C7.52128359,14.9784199 7.47831732,11.693818 9.47769739,9.64143637 C9.50926687,9.60903002 9.54125889,9.577038 9.57366524,9.54546852 C11.6964045,7.47754783 15.0802812,7.47754783 17.2030204,9.54546852 L18.2610372,10.5761626 Z" />
+                <path fill="#FFF" d="M21.6920497,12.5444959 C22.8151042,12.5444959 24,13.5693801 24,12.5444959 C24,11.5196116 22.8151042,11 21.6920497,11 C20.5689952,11 19,11.5196116 19,12.5444959 C19,13.5693801 20.5689952,12.5444959 21.6920497,12.5444959 Z" />
+              </g>
+            </svg>
+          </div>
+          <!-- <img class="chatgif" src="./assets/gif/comment.gif" alt=""> -->
+
+          <div class="chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="34" viewBox="0 0 46 34">
+              <g fill="none" fill-rule="evenodd">
+                <path stroke="#000" stroke-width="3" d="M34.8402013,31.2531262 L34.8402013,25.5 L39,25.5 C42.0375661,25.5 44.5,23.0375661 44.5,20 L44.5,7 C44.5,3.96243388 42.0375661,1.5 39,1.5 L7,1.5 C3.96243388,1.5 1.5,3.96243388 1.5,7 L1.5,20 C1.5,23.0375661 3.96243388,25.5 7,25.5 L25.8871308,25.5 L34.8402013,31.2531262 Z" />
+                <circle cx="12" cy="13" r="3" fill="#000" />
+                <circle cx="23" cy="13" r="3" fill="#000" />
+                <circle cx="34" cy="13" r="3" fill="#000" />
+              </g>
+            </svg>
+
+          </div>
+        </div>
     </article>
 
     <article>
       <header>
-        <img class="storypic" src="./assets/logo/stonedlettering.png" alt="">
+        <a href="./stoned.html"><img class="storypic" src="./assets/randombg/06.jpeg" alt=""></a>
       </header>
-      <h3>Stoned</h3>
+      <h3>Gedempt</h3>
       <p>
-        Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
-        atmosfeer in.
+        06.14 uur. Ik besluit maar op te staan. Ik herinner me weer het opwindende email-verkeer van gisteravond met GK (Gemeen Kutwijf), waarin ze bijvoorbeeld zei: ‘Ik kom langs, om je abstracte kunst te zien, en ik kom morgenmiddag om twee uur
+        vijftien, dus ben je dan thuis?’ Laat ik eerst maar eens een glaasje Mariënburg tot
       </p>
       <div class="bookmark">
 
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                  stroke: #fecb37;
-                  stroke-miterlimit: 10;
-                  stroke-width: 3px;
-                }
-              </style>
-            </defs>
-            <title>outbookmark</title>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
-              </g>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+                stroke: #fecb37;
+                stroke-miterlimit: 10;
+                stroke-width: 3px;
+              }
+            </style>
+          </defs>
+          <title>outbookmark</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
             </g>
-          </svg>
+          </g>
+        </svg>
 
 
       </div>
+      <!-- <div class="containchatfave">
+          <div class="comment">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 44 30">
+              <g fill="none" fill-rule="evenodd" transform="translate(0 2)">
+                <path stroke="#000" stroke-width="2.1" d="M1.16098722,16.5 C4.24766195,22.824279 10.742164,26.95 18,26.95 C25.257836,26.95 31.752338,22.824279 34.8390128,16.5 C31.752338,10.175721 25.257836,6.05 18,6.05 C10.742164,6.05 4.24766195,10.175721 1.16098722,16.5 Z" />
+                <path stroke="#000" stroke-linecap="square" stroke-width="2.8" d="M36 10.6428571L42 6M29 5.625L35 0" />
+                <path fill="#000" d="M18.2610372,10.5761626 L18.7969796,10.0540606 C20.9197188,7.98613996 24.3035955,7.98613996 26.4263348,10.0540606 C28.4787164,12.0534407 28.5216827,15.3380426 26.5223026,17.3904242 C26.4907331,17.4228306 26.4587411,17.4548226 26.4263348,17.4863921 L25.8903924,18.0084941 L19.0149723,24.7063603 C18.5954329,25.1150654 17.9266415,25.1150654 17.5071021,24.7063603 L13.3883428,20.6939657 L9.57366524,16.9778 C7.52128359,14.9784199 7.47831732,11.693818 9.47769739,9.64143637 C9.50926687,9.60903002 9.54125889,9.577038 9.57366524,9.54546852 C11.6964045,7.47754783 15.0802812,7.47754783 17.2030204,9.54546852 L18.2610372,10.5761626 Z" />
+                <path fill="#FFF" d="M21.6920497,12.5444959 C22.8151042,12.5444959 24,13.5693801 24,12.5444959 C24,11.5196116 22.8151042,11 21.6920497,11 C20.5689952,11 19,11.5196116 19,12.5444959 C19,13.5693801 20.5689952,12.5444959 21.6920497,12.5444959 Z" />
+              </g>
+            </svg>
+          </div>
+        -- <img class="chatgif" src="./assets/gif/comment.gif" alt="">
+
+          <div class="chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="34" viewBox="0 0 46 34">
+              <g fill="none" fill-rule="evenodd">
+                <path stroke="#000" stroke-width="3" d="M34.8402013,31.2531262 L34.8402013,25.5 L39,25.5 C42.0375661,25.5 44.5,23.0375661 44.5,20 L44.5,7 C44.5,3.96243388 42.0375661,1.5 39,1.5 L7,1.5 C3.96243388,1.5 1.5,3.96243388 1.5,7 L1.5,20 C1.5,23.0375661 3.96243388,25.5 7,25.5 L25.8871308,25.5 L34.8402013,31.2531262 Z" />
+                <circle cx="12" cy="13" r="3" fill="#000" />
+                <circle cx="23" cy="13" r="3" fill="#000" />
+                <circle cx="34" cy="13" r="3" fill="#000" />
+              </g>
+            </svg>
+
+          </div>
+        </div> -->
     </article>
+
+
+
+
   </section>
 
   <h2 class="smalltext">andere lazen ook</h2>
@@ -297,9 +402,9 @@
 
     <article>
       <header>
-        <img class="storypic" src="./assets/logo/stonedlettering.png" alt="">
+        <img class="storypic" src="./assets/randombg/01.jpg" alt="">
       </header>
-      <h3>Notitie</h3>
+      <h3>Doof</h3>
       <p>
         Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen.
         Ik loop langs de winderige bouwputten naar de Openbare Bibliotheek. Voor de trap van de
@@ -318,32 +423,68 @@
       </p>
       <div class="bookmark">
 
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                  stroke: #fecb37;
-                  stroke-miterlimit: 10;
-                  stroke-width: 3px;
-                }
-              </style>
-            </defs>
-            <title>outbookmark</title>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
-              </g>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+                stroke: #fecb37;
+                stroke-miterlimit: 10;
+                stroke-width: 3px;
+              }
+            </style>
+          </defs>
+          <title>outbookmark</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
             </g>
-          </svg>
+          </g>
+        </svg>
 
 
       </div>
+      <div class="containchatfave">
+          <div class="comment">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 44 30">
+              <g fill="none" fill-rule="evenodd" transform="translate(0 2)">
+                <path stroke="#000" stroke-width="2.1" d="M1.16098722,16.5 C4.24766195,22.824279 10.742164,26.95 18,26.95 C25.257836,26.95 31.752338,22.824279 34.8390128,16.5 C31.752338,10.175721 25.257836,6.05 18,6.05 C10.742164,6.05 4.24766195,10.175721 1.16098722,16.5 Z" />
+                <path stroke="#000" stroke-linecap="square" stroke-width="2.8" d="M36 10.6428571L42 6M29 5.625L35 0" />
+                <path fill="#000" d="M18.2610372,10.5761626 L18.7969796,10.0540606 C20.9197188,7.98613996 24.3035955,7.98613996 26.4263348,10.0540606 C28.4787164,12.0534407 28.5216827,15.3380426 26.5223026,17.3904242 C26.4907331,17.4228306 26.4587411,17.4548226 26.4263348,17.4863921 L25.8903924,18.0084941 L19.0149723,24.7063603 C18.5954329,25.1150654 17.9266415,25.1150654 17.5071021,24.7063603 L13.3883428,20.6939657 L9.57366524,16.9778 C7.52128359,14.9784199 7.47831732,11.693818 9.47769739,9.64143637 C9.50926687,9.60903002 9.54125889,9.577038 9.57366524,9.54546852 C11.6964045,7.47754783 15.0802812,7.47754783 17.2030204,9.54546852 L18.2610372,10.5761626 Z" />
+                <path fill="#FFF" d="M21.6920497,12.5444959 C22.8151042,12.5444959 24,13.5693801 24,12.5444959 C24,11.5196116 22.8151042,11 21.6920497,11 C20.5689952,11 19,11.5196116 19,12.5444959 C19,13.5693801 20.5689952,12.5444959 21.6920497,12.5444959 Z" />
+              </g>
+            </svg>
+          </div>
+          <!-- <img class="chatgif" src="./assets/gif/comment.gif" alt=""> -->
+
+          <div class="chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="34" viewBox="0 0 46 34">
+              <g fill="none" fill-rule="evenodd">
+                <path stroke="#000" stroke-width="3" d="M34.8402013,31.2531262 L34.8402013,25.5 L39,25.5 C42.0375661,25.5 44.5,23.0375661 44.5,20 L44.5,7 C44.5,3.96243388 42.0375661,1.5 39,1.5 L7,1.5 C3.96243388,1.5 1.5,3.96243388 1.5,7 L1.5,20 C1.5,23.0375661 3.96243388,25.5 7,25.5 L25.8871308,25.5 L34.8402013,31.2531262 Z" />
+                <circle cx="12" cy="13" r="3" fill="#000" />
+                <circle cx="23" cy="13" r="3" fill="#000" />
+                <circle cx="34" cy="13" r="3" fill="#000" />
+              </g>
+            </svg>
+
+          </div>
+        </div>
     </article>
 
     <article class="notitie">
       <header>
-        <img class="storypic" src="./assets/logo/stonedlettering.png" alt="">
+        <img class="storypic" src="./assets/randombg/02.jpg" alt="">
+      </header>
+      <h3>Iphone</h3>
+      <p>
+        Om een uur of 12 stapte ik op CS bus 21 uitomdat ik naar de Ipenbare Bibliotheek op weg was, waar ik Stijloefeningen van Q-No wilde lenen. Was ik al een tijdje naar op zoek. Kutweer’ dat het was. En een chaos, bouwputten e.d. Afijn, voordat
+        ik de bieb in wilde gaan werd ik aangehouden </p>
+
+    </article>
+
+    <article class="notitie">
+      <header>
+        <img class="storypic" src="./assets/randombg/03.jpeg" alt="">
       </header>
       <h3>#1 Notitie</h3>
       <p>
@@ -362,68 +503,45 @@
         lijn 21 terug naar huis. Bij de babywinkel op het Bos en Lommerplein koop ik een paar
         schoenen voor mijn zoon.
       </p>
-    </article>
 
-    <article class="notitie">
-      <header>
-        <img class="storypic" src="./assets/logo/stonedlettering.png" alt="">
-      </header>
-      <h3>#1 Notitie</h3>
-      <p>
-        Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen.
-        Ik loop langs de winderige bouwputten naar de Openbare Bibliotheek. Voor de trap van de
-        bibliotheek klampt een vrouw mij aan. Zwart krullend haar. In stokbrodenengels vraagt ze
-        waar het postkantoor is. Ik verwijs haar naar de Raadhuisstraat. Een auto met een Frans
-        nummerbord rijdt achteruit rijdend weg. De vrouw zwaait, maar krijgt geen contact met
-        de bestuurder. Ze rent er achteraan.
-        Bij de Q zijn meerdere boeken van Raymond Queneau te vinden, maar niet
-        Stijloefeningen, het boek waarnaar ik al een week op zoek ben. Ik kijk op de computer.
-        Volgens de catalogus van de OBA is er wel degelijk nog een exemplaar aanwezig. Samen
-        met een medewerker kijk ik nog een keer. Maar niks. ‘Stuur een mailtje naar het magazijn,’
-        zegt hij. Dat doe ik. Het magazijn mailt terug: ‘Het door u gezochte exemplaar is op de
-        verdieping aanwezig.’ Ik neem de lift naar beneden, wandel de bibliotheek uit en ga met
-        lijn 21 terug naar huis. Bij de babywinkel op het Bos en Lommerplein koop ik een paar
-        schoenen voor mijn zoon.
-      </p>
     </article>
 
     <article>
       <header>
-      <a href="./stoned.html"><img class="storypic" src="./assets/logo/stonedlettering.png" alt=""></a>
+        <a href="./stoned.html"><img class="storypic" src="./assets/randombg/07.jpg" alt=""></a>
       </header>
-      <h3>Stoned</h3>
+      <h3>Arostichon</h3>
       <p>
-        Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de
-        atmosfeer in.
+        Ronkend en zuchtend komt de bus tot stilstand Amsterdam Centraal, stationsplein, mijn bloedeigen Y-chromosoompje slaapt in zijn mobiele mand Miezerig weer, drilboren drillen, heipalen hijgen Op naar de Openbare Bieb, ik ben op zoek Naar
+        Stijloefeningen, een legendarisch boek Dat ik helemaal nergens meer kan krijgen Quasi-nonchalant luister ik naar een vrouw Uit Frankrijk, ze
       </p>
       <div class="bookmark">
 
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                  stroke: #fecb37;
-                  stroke-miterlimit: 10;
-                  stroke-width: 3px;
-                }
-              </style>
-            </defs>
-            <title>outbookmark</title>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
-              </g>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.44 52.13">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+                stroke: #fecb37;
+                stroke-miterlimit: 10;
+                stroke-width: 3px;
+              }
+            </style>
+          </defs>
+          <title>outbookmark</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path id="star" class="cls-1" d="M29.11,2.67l6.31,12.8A2.11,2.11,0,0,0,37,16.62l14.12,2.06a2.1,2.1,0,0,1,1.17,3.59l-10.22,10a2.08,2.08,0,0,0-.6,1.86l2.41,14.07a2.11,2.11,0,0,1-3.06,2.22L28.2,43.74a2.12,2.12,0,0,0-2,0L13.61,50.38a2.11,2.11,0,0,1-3.06-2.22L13,34.09a2.1,2.1,0,0,0-.6-1.86l-10.22-10a2.1,2.1,0,0,1,1.17-3.59l14.12-2.06A2.1,2.1,0,0,0,19,15.47l6.32-12.8A2.11,2.11,0,0,1,29.11,2.67Z" />
             </g>
-          </svg>
+          </g>
+        </svg>
 
 
-      </div>
 
     </article>
 
   </section>
-<script src="./js/animation.js"></script>
+  <script src="./js/animation.js"></script>
 </body>
 
 </html>

@@ -6,14 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
 
-.infinitescroll {
-  color:red;
-  font-size: 3em;
-  text-align: center;
-font-size: 2em;
-margin: 200px 0;
 }
 
 @keyframes pscalehover {
@@ -51,52 +44,66 @@ margin: 200px 0;
 }
 
 img.stonedpng {
-  animation: strobe 500ms infinite ease;
+
+  animation: strobe 600ms infinite ease;
+}
+#infinite-list {
+  /* We need to limit the height and show a scrollbar */
+  position: absolute;
+  top:6em;
+  text-align:center;
+  width: 90%;
+  height: 500px;
+  overflow: auto;
+  list-style-type: none;
+  /* margin-bottom:20em; */
+  transition: all 200ms ease;
+  opacity:.7;
+
+}
+
+li {
+  margin-bottom:30em;
+  padding: 12px;
+  list-style-type: none;
 }
 
 img.stonedpng2 {
   position: absolute;
-  top: 0;
-  animation: strobe2 500ms infinite ease;
+
+  animation: strobe2 600ms infinite ease;
 }
 
 .stonedpng1 {
   position: absolute;
-  top: 0;
+
 }
 
 img.logoov {
   width: 6em;
   display: block;
   position: absolute;
-  top: -10em;
+  top: -5em;
   opacity: .5;
 }
 
 img {
+  cursor: pointer;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
-  margin-top: 10em;
+  margin-top: 5em;
   opacity: 1;
   transform: translateX(0);
 }
 
 img {
   filter: blur(0);
-  transition: all 200ms ease;
+  transition: all 500ms ease;
 }
 
-.smoke {
-  display: flex;
-  position: fixed;
-  top: -10em;
-  width: 150%;
-  animation: smokemove 5s ease-in-out infinite;
-  opacity: .4;
-}
 
 @keyframes scaleanim {
   0% {
@@ -110,25 +117,6 @@ div p {
   animation: scaleanim 500ms infinite ease;
 }
 
-@keyframes smokemove {
-  0% {
-    transform: scale(0);
-    transform: rotate(0);
-    filter: blur(1em);
-  }
-
-  50% {
-    transform: scale(20);
-    transform: rotate(20deg);
-    filter: blur(2em);
-  }
-
-  100% {
-    transform: scale(0);
-    transform: rotate(0deg);
-    filter: blur(1em);
-  }
-}
 
 img.active {
   filter: blur(2em);
@@ -169,4 +157,40 @@ div {
   height: 42em;
   margin-left: auto;
   margin-right: auto;
+}
+/* p{
+  color:purple;
+  text-align: center;
+  filter:blur(1px);
+  opacity:.4;
+  position: absolute;
+  top:9em;
+  z-index: -1;
+} */
+p:hover{
+  animation: strobe2 700ms  infinite ease;
+  animation: strobe 700ms infinite ease;
+}
+.p3{
+  font-size: 3em;
+  text-align: center;
+  justify-content: center;
+  opacity: .4;
+  position: absolute;
+
+}
+.p2{
+  color:pink;
+  text-align: center;
+  filter:blur(2px);
+  opacity:.2;
+  position: absolute;
+  font-size:2em;
+  top:0em;
+  z-index: -1;
+  animation: left 10s ease infinite;
+}
+.stonedpng, .stonedpng2, .stonedpng1{
+  position: absolute;
+  top:2em;
 }

@@ -1,20 +1,38 @@
 body {
   box-sizing: border-box;
 }
-h1{
-  text-align: center;
-  font-size:12px;
-  padding: 10px
 
+h1, h2 {
+  margin-left: 1em;
 }
 
-img {
-  display: flex;
+.inloggen {
   position: absolute;
-  width: 50%;
-  z-index: -1;
-  margin-top:-150px;
+  width: 100%;
+  margin-top: -4em;
+  height: 200px;
+  background: #fcd900;
+}
 
+a{
+  text-decoration: none;
+  color:orange;
+}
+.vergeten, .registreren{
+  margin-top:1em;
+  color:#54a5dd;
+}
+img {
+  width: 100px;
+  margin-top: -1.5em;
+}
+
+.navbrown {
+  width: 100%;
+  height: 60px;
+  background-color: #675c53;
+  position: absolute;
+  z-index: -1;
 }
 
 .accountimg {
@@ -25,7 +43,7 @@ img {
   position: relative;
   display: block;
   margin: auto;
-    margin-top:100px;
+  margin-top: 100px;
 }
 
 .accountbox {}
@@ -37,9 +55,11 @@ img {
   padding: 10px;
   background: white;
   box-sizing: border-box;
-  width: 80%;
+  width: 90%;
   Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
   border-radius: 10px;
+  margin-top: 4em;
+  height: 400px;
 }
 
 fieldset {
@@ -54,13 +74,12 @@ fieldset input {
   transition: border-color .5s ease-out;
   padding: 10px;
   display: block;
-
 }
 
 .submitlog {
-  width: 80%;
-  display: block;
-  margin-top:100px;
+  width: 10em;
+  left: 1em;
+  margin-top: 100px;
   margin: auto;
   border: none;
   font-size: .9em;
@@ -69,51 +88,91 @@ fieldset input {
   padding: 9px 15px;
   border-radius: 10px;
   color: white;
-  background:lightgrey;
+  background: lightgrey;
   /* Box-shadow: 0 8px 18px 0 rgba(231, 119, 43, .3); */
-  cursor:pointer;
+  cursor: pointer;
 }
-.submitlog:hover{
-  background:#e7772b;
-  transition:.5s ease;
+
+.vergeten {
+  display: block;
+  left: 1em;
+  position: relative;
 }
- form input:required:valid{
+}
+
+.submitlog:hover {
+  background: #e7772b;
+  transition: .5s ease;
+}
+
+form input:required:valid {
   border-bottom-color: palegreen;
 }
-form input:invalid{
+
+form input:invalid {
   border-bottom-color: red;
-
-}
-form :focus{
-  outline:none;
-
 }
 
-.check{
+form :focus {
+  outline: none;
+}
+
+.check {
   list-style-type: none;
-
 }
+
 .check li:before {
-
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    content: "\2713";
-    color: #a0e2ad;
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    top: 4px;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  content: "\2713";
+  color: #a0e2ad;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  top: 4px;
 }
 
+.nieuwinlog{
+  position: absolute;
+  top:24em;
+  left:3em;
+  z-index: 2;
+
+}
+.nieuwbg{
+  background:lightgrey;
+  width:90vw;
+  left:-5vw;
+  bottom:;
+  height:180px;
+  position: absolute;
+  z-index:-1;
+}
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    tablet screen     /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 426px) and (max-width:1023px) {
+  .accountbox {
+    width:20em;
+}
+
+.nieuwinlog{
+  left: 29%;
+}
+  }
 
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Wide screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 1020px) and (max-width:1440px){
-  .accountbox{
+@media only screen and (min-width: 1024px) and (max-width:1440px) {
+  .accountbox {
     width:20em;
-  }
 }
+
+.nieuwinlog{
+  left: 37%;
+}
+  }

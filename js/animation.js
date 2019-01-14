@@ -1,11 +1,6 @@
+
 var ster = document.querySelector('.bookmark');
-
-// ster.onclick = function() {
-//   ster.classList.toggle('bookmark-color');
-//
-// };
-
-function toggleClass( element ) {
+function toggleClass() {
     ster.classList.toggle('bookmark-color');
 }
 
@@ -19,7 +14,7 @@ var search = document.querySelector('.searchl');
 search.onclick = function() {
   search.classList.toggle('search-move');
   hidezoek.classList.toggle('show-zoekbalk');
-};
+}
 
 var filterAnim = document.querySelector('.filter');
 var filterKnop = document.querySelector('.filterknop');
@@ -28,8 +23,22 @@ var toonFilt = document.querySelector('#zoek');
 
 filterKnop.onclick = function() {
   filterAnim.classList.toggle('filter-show');
-};
+}
 
-toonFilt.onclick = function(){
+toonFilt.onclick = function() {
   filterAnim.classList.toggle('filter-unshow');
-};
+}
+
+function changeImage()
+{
+element=document.getElementById('sterID')
+if (element.src.match("out"))
+  {
+  element.src="./assets/gif/ster.gif";
+  }
+else
+  {
+  }
+}
+var sterklik = document.getElementById('sterID');
+sterklik.addEventListener('click', changeImage);
