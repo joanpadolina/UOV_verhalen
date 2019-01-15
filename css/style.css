@@ -685,7 +685,7 @@ position: absolute;
     background-color: #fbd731;
   }
 
-  section {
+  section.wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -711,6 +711,9 @@ position: absolute;
 
   .steranimatie{
     right:13em;
+  }
+  .registreren{
+        margin-left: 2em;
   }
 }
 
