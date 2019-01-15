@@ -48,14 +48,14 @@ body {
 }
 
 .searchl {
-  right: 50px;
+  right: 5%;
   margin-top: 23px;
   cursor: pointer;
   transition: all 400ms ease;
 }
 
 .searchl.search-move {
-  right: 26.5em;
+  right: 18em;
   transition: all 400ms ease;
 }
 
@@ -544,6 +544,22 @@ input[type="checkbox"]:checked+label::after {
 
   }
 }
+.filteractive{
+  background-color:lightgrey;
+  width: 20%;
+  text-align: center;
+  border-radius: 10px;
+  padding:.1em;
+  color:grey;
+  margin:.5em;
+  cursor:pointer;
+}
+.klikverdwijn{
+  position: absolute;
+  width:15em;
+  bottom:25%;
+  right:65%;
+}
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Mobile screen     /////////////////////// */
@@ -552,6 +568,11 @@ input[type="checkbox"]:checked+label::after {
   .introplaatje {
     margin-top: 4em;
     width: 100%;
+  }
+  .sorteren{
+    right: -3%;
+margin-top: .7em;
+position: absolute;
   }
 
   /* .comment{
@@ -567,7 +588,8 @@ input[type="checkbox"]:checked+label::after {
     left: 47vh;
   } */
   /* T O P  */
-  .searchl, .profile {
+
+ .profile {
     display: none;
   }
 
@@ -622,7 +644,7 @@ input[type="checkbox"]:checked+label::after {
     right: 12em;
   }
   /* T O P  */
-  .searchl, .profile {
+   .profile {
     display: none;
   }
 
