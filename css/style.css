@@ -48,8 +48,9 @@ body {
 }
 
 .searchl {
-  right: 5%;
-  margin-top: 23px;
+  right: 4%;
+    margin-top: -.3em;
+
   cursor: pointer;
   transition: all 400ms ease;
 }
