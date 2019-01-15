@@ -570,7 +570,7 @@ input[type="checkbox"]:checked+label::after {
     width: 100%;
   }
   .sorteren{
-    right: -3%;
+    right: 2%;
 margin-top: .7em;
 position: absolute;
   }
@@ -699,7 +699,7 @@ position: absolute;
   }
 
   .sorteren {
-    right: -1em;
+    right: 2em;
     margin-top: .8em;
     display: block;
     position: absolute;
