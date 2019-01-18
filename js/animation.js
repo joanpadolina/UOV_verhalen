@@ -4,10 +4,12 @@
 
 var ster = document.querySelector('.bookmark');
 var popup= document.querySelector('.steranimatie');
+var spanophaal = document.querySelector('span');
 
 function toggleClass() {
     ster.classList.toggle('bookmark-color');
     popup.classList.toggle('sterappear');
+    spanophaal.classList.toggle('spananimate');
 }
 
 ster.addEventListener('click', toggleClass);

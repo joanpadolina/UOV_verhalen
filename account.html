@@ -13,9 +13,16 @@
 
 <body>
   <nav class="navbar">
-    <div class="boxbus"></div>
-    <img class="busgif" src="./assets/gif/bus.gif" alt="">
-
+    <!-- <div class="boxbus"></div>
+    <img class="busgif" src="./assets/gif/bus.gif" alt=""> -->
+    <div class="searchl">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="72" viewBox="0 0 70 72">
+      <g fill="none" fill-rule="evenodd">
+        <circle cx="31" cy="31" r="28" stroke="#ffff" stroke-width="10"/>
+        <path stroke="#ffff" stroke-linecap="round" stroke-width="6" d="M52.5,52.5 L69.5,71.5"/>
+      </g>
+    </svg>
+    </div>
     <ul>
 
       <li><a href="index.html">
@@ -43,19 +50,19 @@
   </nav>
   <div class="navbrown"></div>
   <a href="index.html"><img src="./assets/logo/uovlogo.png" alt="">
-</a>
+  </a>
   <section class="inloggen">
-  <h1>Altijd veilig onderweg</h1>
-  <h2>Inloggen</h>
+    <h1>Altijd veilig onderweg</h1>
   </section>
 
 
   <section class="accountbox">
     <form action="index.html">
-      <label class="jouwgegevens">
-        Jouw gegevens
-      </label>
-      <!-- <fieldset>
+      <fieldset>
+        <legend class="jouwgegevens">
+          Inloggen
+        </legend>
+        <!-- <fieldset>
 
         <input class="namevalid"
         type="text"
@@ -64,22 +71,22 @@
         placeholder="gebruikersnaam" name="name" required>
       </fieldset> -->
 
-      <fieldset>
-        <input type="email" placeholder="emailadres" name="email" required>
-      </fieldset>
-      <fieldset>
-        <input type="password" required placeholder="wachtwoord">
-      </fieldset>
+
+        <label>E-mailadres</label>
+        <input type="email" placeholder="abc@hotmail.com" name="email" required>
+
+        <label>wachtwoord</label>
+        <input type="password" required placeholder="*******">
+
       </fieldset>
 
       <input class="submitlog" type="submit" name="log" value="login">
-<a class="vergeten" href="wachtwoordvergeten.html">wachtwoord vergeten? <a/>
 
     </form>
+    <a class="vergeten" href="wachtwoordvergeten.html">wachtwoord vergeten? <a />
 
   </section>
-  <div class="nieuwinlog">
-
+<section class="nieuwinlog">
     <h2 class="nieuw">
       Nieuw?
     </h2>
@@ -91,7 +98,8 @@
     </ul>
 
     <a class="registreren" href="registreren.html">Registreren</a>
-  </div>
+</section>
+<script src="./js/animation.js"></script>
 </body>
 
 

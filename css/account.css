@@ -1,9 +1,7 @@
-body {
-  box-sizing: border-box;
-}
+body {}
 
-h1, h2 {
-  margin-left: 1em;
+section.inloggen h1 {
+  text-align: center;
 }
 
 .inloggen {
@@ -14,14 +12,11 @@ h1, h2 {
   background: #fcd900;
 }
 
-a{
+section a {
   text-decoration: none;
-  color:orange;
 }
-.vergeten, .registreren{
-  margin-top:1em;
-  color:#54a5dd;
-}
+
+
 img {
   width: 100px;
   margin-top: -1.5em;
@@ -46,28 +41,37 @@ img {
   margin-top: 100px;
 }
 
-.accountbox {}
-
 .accountbox {
   margin: auto;
   position: relative;
   align-items: center;
-  padding: 10px;
+  padding: 1em;
   background: white;
   box-sizing: border-box;
-  width: 90%;
+  width: 20em;
   Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
   border-radius: 10px;
   margin-top: 4em;
-  height: 400px;
+  height: 27em;
 }
 
 fieldset {
   border: none;
 }
 
+form label{
+  color:dimgrey;
+}
+form .jouwgegevens {
+  font-weight: 600;
+  color: #e7772b;
+  position: relative;
+  left: -.1em;
+  margin-bottom: .4em;
+}
+
 fieldset input {
-  margin: auto;
+  margin-top: 1em;
   width: 90%;
   border: none;
   border-bottom: 1px solid #eee;
@@ -76,10 +80,9 @@ fieldset input {
   display: block;
 }
 
-.submitlog {
+form .submitlog {
   width: 10em;
   left: 1em;
-  margin-top: 100px;
   margin: auto;
   border: none;
   font-size: .9em;
@@ -93,15 +96,9 @@ fieldset input {
   cursor: pointer;
 }
 
-.vergeten {
-  display: block;
-  left: 1em;
-  position: relative;
-}
-}
-
-.submitlog:hover {
+form .submitlog:hover {
   background: #e7772b;
+  font-weight: 500;
   transition: .5s ease;
 }
 
@@ -117,9 +114,22 @@ form :focus {
   outline: none;
 }
 
-.check {
-  list-style-type: none;
+section.accountbox a.vergeten {
+  margin-top: 1em;
+  color: #54a5dd;
+  display: block;
+  width: 20em;
+  width: 6em;
+  border-radius: 3px;
+  padding: .3em;
+  position: absolute;
+  bottom: 22em;
+  right: 3em;
+  text-align: center;
+  font-size: 0.6em;
 }
+
+
 
 .check li:before {
   speak: none;
@@ -132,47 +142,79 @@ form :focus {
   height: auto;
   background-color: transparent;
   top: 4px;
+  padding: 1em;
 }
 
-.nieuwinlog{
-  position: absolute;
-  top:24em;
-  left:3em;
+section ul.check {
+  text-decoration: none;
+  margin-left: -1em;
+  list-style-type: none;
+
+}
+
+section.nieuwinlog {
+  position: relative;
+  width: 20em;
+  bottom: 13em;
   z-index: 2;
+  margin: 0 auto;
+  background: #f1f1f1;
+}
 
+section.nieuwinlog h2 {
+  padding-top: .4em;
+  margin-left:1.2em;
 }
-.nieuwbg{
-  background:lightgrey;
-  width:90vw;
-  left:-5vw;
-  bottom:;
-  height:180px;
+
+section a.registreren {
+  color: grey;
+  font-weight: 700;
+  position: relative;
+  background: lightgrey;
+  align-items: center;
+  text-align: center;
+  padding: .2em;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 20em;
+  border-radius: 0 0 10px 10px;
+  top: 1em;
+  display: block;
+}
+
+section a.registreren:hover {
+  color: white;
+  height: 2em;
+  background: #e7772b;
+  transition: all 100ms ease;
+  border-radius: 0 0 10px 10px;
+}
+
+.nieuwbg {
+  background: lightgrey;
+  width: 90vw;
+  left: -5vw;
+  height: 180px;
   position: absolute;
-  z-index:-1;
+  z-index: -1;
 }
+
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    tablet screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 426px) and (max-width:1023px) {
   .accountbox {
-    width:20em;
-}
-
-.nieuwinlog{
-  left: 29%;
-}
+    width: 20em;
   }
 
+  .nieuwinlog {}
+}
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Wide screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 1024px) and (max-width:1440px) {
   .accountbox {
-    width:20em;
-}
-
-.nieuwinlog{
-  left: 40%;
-}
+    width: 20em;
   }
+}

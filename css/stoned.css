@@ -110,6 +110,7 @@ img {
 
 div p {
   animation: scaleanim 500ms infinite ease;
+  line-height: 1.5em;
 }
 
 img.active {

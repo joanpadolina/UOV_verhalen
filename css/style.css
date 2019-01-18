@@ -9,7 +9,7 @@ true, white: true
 body {
   font-family: "Roboto";
   font-size: 16px;
-  background-color: #f1f1f1;
+  background-color: #fefefe;
   margin: 0;
   box-sizing: border-box;
 }
@@ -49,8 +49,7 @@ body {
 
 .searchl {
   right: 4%;
-    margin-top: -.3em;
-
+  margin-top: -.3em;
   cursor: pointer;
   transition: all 400ms ease;
 }
@@ -230,6 +229,7 @@ body {
 /*/////////////////////////    STORY STYLING     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 .busgif {
+  visibility: hidden;
   position: absolute;
   width: 22em;
   top: 20em;
@@ -242,6 +242,7 @@ body {
 }
 
 .boxbus {
+  visibility: hidden;
   position: absolute;
   height: 100%;
   top: 3.2em;
@@ -255,6 +256,7 @@ body {
 
 @keyframes loading {
   0% {
+    visibility: visible;
     opacity: 1;
   }
 
@@ -268,27 +270,22 @@ body {
   }
 }
 
-
-
-
-
 .bookmark svg {
-  width: 40px;
+  width: 2.5em;
   display: flex;
   position: relative;
-  left: 98%;
   bottom: 11.5rem;
   z-index: 1;
-  transition: all 300ms;
+  left: 95%;
+}
+
+section.bookmark {
+  position: absolute;
 }
 
 .bookmark svg:hover #star {
   cursor: pointer;
   fill: #fecb37;
-}
-
-.bookmark svg:hover {
-  left: 100%;
 }
 
 .bookmark.bookmark-color path {
@@ -297,45 +294,65 @@ body {
   width: 200px;
 }
 
-.smalltext {
+.smalltext, .smalltext2 {
   padding-left: 3em;
   font-size: 1em;
   font-weight: 400;
   color: grey;
 }
 
-.storypic {
-  width: 15em;
+section.wrap, section.wrap2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrap h2 {
+  margin-left: .3em;
+  margin-top: -2.1em;
   position: relative;
-  top: -5px;
-  justify-content: center;
 }
 
 article {
   background: white;
-  Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
-  max-width: 80%;
-  margin-bottom: 40px;
-  height: 300px;
+  Box-shadow: 0 2px 8px 0 rgba(103, 92, 83, .1);
+  max-width: 21em;
+  margin-bottom: 4em;
   border-radius: 10px;
   display: block;
   top: -200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  transition: all 300ms ease;
+}
+
+article:hover {
+  /* border: solid #e7772b 6px; */
+  z-index: 1;
+  Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
+}
+
+article header img.storypic {
+  width: 100%;
+  height: 11em;
+  display: block;
+  border-radius: 7px;
+  position: relative;
+  justify-content: center;
 }
 
 section h3 {
   display: block;
   position: relative;
-  top: -15px;
+  top: 1em;
+  margin-left: .5em;
 }
 
-p {
+section p {
   display: flex;
   position: relative;
-  top: -30px;
-  width: 90%;
+  top: 1em;
+  width: 80%;
+  margin-left: 1em;
   height: 4.6rem;
   font-size: .9em;
   overflow: hidden;
@@ -457,21 +474,21 @@ input[type="checkbox"]:checked+label::after {
   left: 75%;
   width: 100px;
   position: relative;
-  top: -3em;
-
+  top: -.2em;
+  display: block;
 }
+
 .comment {
   float: left;
   margin-right: 1em;
-    display:block;
+  display: block;
 }
 
 .containchatfave:hover {
   cursor: pointer;
+}
 
-}
-.chat{
-}
+.chat {}
 
 .chatgif {
   position: absolute;
@@ -479,87 +496,134 @@ input[type="checkbox"]:checked+label::after {
   width: 46px;
   left: 31%;
   opacity: 0;
-  display:inline-block;
+  display: inline-block;
 }
-.chat.displaynone{
+
+.chat.displaynone {
   opacity: 0;
 }
 
-
 /*/////////////////////////    ster animatie   //////////////////// */
-
-.steranimatie{
-    width: 20em;
-    position: absolute;
-    height: 15em;
-    display: block;
-    visibility: hidden;
-    background: #675C54;
-    z-index: 2;
-    margin-right: auto;
-    margin-left: auto;
-    right: 3em;
-    top: 30em;
-    border-radius: 10px;
-    box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
-    opacity:0;
-    transition: all 200ms ease;
-
+.steranimatie {
+  width: 20em;
+  position: absolute;
+  height: 15em;
+  display: block;
+  visibility: hidden;
+  background: #675C54;
+  z-index: 2;
+  margin-right: auto;
+  margin-left: auto;
+  right: 3em;
+  top: 30em;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
+  opacity: 0;
+  transition: all 200ms ease;
 }
-.steranimatie img{
-  position:static;
-  width:20em;
+
+.steranimatie img {
+  position: static;
+  width: 20em;
   margin-top: -5.5em;
 }
-.steranimatie h2{
-  color:white;
+
+.steranimatie h2 {
+  color: white;
   text-align: center;
   position: static;
-  margin-top:-2.1em;
+  margin-top: -2.1em;
   font-weight: 400;
 }
 
 .steranimatie.sterappear {
   visibility: visible;
   opacity: ;
-  animation: popanim 1s ease;
+  animation: popanim 3s ease;
 }
-@keyframes popanim{
-  0%{
-    opacity: .5;
+
+span {
+  color: red;
+  z-index: 99;
+  position: fixed;
+  top: 35.5em;
+  font-size: 1em;
+  opacity: 0;
+  right: 0em;
+  text-align: right;
+  padding-right: 10em;
+  /* background: greenyellow; */
+  width: 100%;
+}
+
+span.spananimate {
+  animation: spanan 400ms ease;
+  animation-iteration-count: 10;
+}
+
+@keyframes spanan {
+  0% {
+    opacity: 1;
+    transform: rotate(0);
   }
-  20%{
+
+  50% {
+    transform: rotate(1deg);
     opacity: 1;
   }
-  79%{
+
+  100% {
+    transform: rotate(0deg;
+    opacity: 1;
+    );
+  }
+}
+
+@keyframes popanim {
+  0% {
+    opacity: .5;
+  }
+
+  20% {
     opacity: 1;
   }
-  80%{
-    opacity: .5;
 
+  79% {
+    opacity: 1;
   }
-  100%{
 
+  80% {
+    opacity: .5;
+  }
+
+  100% {
     opacity: 0;
     display: none;
-
   }
 }
-.filteractive{
-  background-color:lightgrey;
+
+.filteractive {
+  background-color: lightgrey;
   width: 20%;
   text-align: center;
   border-radius: 10px;
-  padding:.1em;
-  color:grey;
-  margin:.5em;
-  cursor:pointer;
+  padding: .1em;
+  color: grey;
+  margin: .5em;
+  cursor: pointer;
 }
-.klikverdwijn{
+
+.klikverdwijn {
   position: absolute;
-  width:15em;
-  bottom:25%;
-  right:65%;
+  width: 15em;
+  bottom: 25%;
+  right: 65%;
+}
+
+footer {
+  height: 10em;
+  background-color: #675c53;
+  width: 100%;
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
@@ -570,10 +634,11 @@ input[type="checkbox"]:checked+label::after {
     margin-top: 4em;
     width: 100%;
   }
-  .sorteren{
+
+  .sorteren {
     right: 2%;
-margin-top: .7em;
-position: absolute;
+    margin-top: .7em;
+    position: absolute;
   }
 
   /* .comment{
@@ -589,8 +654,7 @@ position: absolute;
     left: 47vh;
   } */
   /* T O P  */
-
- .profile {
+  .profile {
     display: none;
   }
 
@@ -641,20 +705,22 @@ position: absolute;
 /*/////////////////////////    Tablet screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 617px) and (max-width:768px) {
-  .busgif{
+  .busgif {
     right: 12em;
   }
+
   /* T O P  */
-   .profile {
+  .profile {
     display: none;
   }
 
-.containchatfave{
-  left: 75%;
+  .containchatfave {
+    left: 75%;
     width: 100px;
     position: relative;
     top: -3em;
-}
+  }
+
   #filternavhide {
     display: none;
   }
@@ -686,11 +752,6 @@ position: absolute;
     background-color: #fbd731;
   }
 
-  section.wrap {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   article, .anderook {
     grid-column: auto;
   }
@@ -710,22 +771,29 @@ position: absolute;
     cursor: pointer;
   }
 
-  .steranimatie{
-    right:13em;
+  .steranimatie {
+    right: 13em;
   }
-  .registreren{
-        margin-left: 2em;
+
+  .registreren {
+    margin-left: 2em;
+  }
+
+  span {
+    padding-right: 21em;
   }
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    Wide screen     /////////////////////// */
+/*/////////////////////////    1024 screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 769px) and (max-width:1866px) {
-.containchatfave{
-  left:68%;
-
+@media only screen and (min-width: 769px) and (max-width:1440px) {
+span{
+  display: none;
 }
+  .containchatfave {
+    left: 68%;
+  }
 
   .busgif {
     right: 19em;
@@ -850,16 +918,6 @@ position: absolute;
   }
 
   /*//////////////////////   Section article   //////////////////////////// */
-  .wrap {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .anderook {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .sorteren {
     right: 0;
     position: absolute;
@@ -872,7 +930,159 @@ position: absolute;
     margin-left: 1em;
   }
 
-  .steranimatie{
-    right:30%;
+  .steranimatie {
+    right: 30%;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    Wide screen     /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 1025px) and (max-width:1866px) {
+  .containchatfave {
+    left: 68%;
+  }
+
+  .busgif {
+    right: 19em;
+  }
+
+  .boxbus {
+    height: 100%;
+  }
+
+  .boxintro {
+    display: block;
+    width: 100%;
+    height: 21.5em;
+    background-color: white;
+    position: absolute;
+  }
+
+  .introplaatje {
+    margin-left: auto;
+    margin-right: auto;
+    width: 55em;
+    display: block;
+    position: relative;
+  }
+
+  /*/////////////////////////    Z O E K   //////////////////////////////// */
+  .zoeken {
+    padding-top: 20px;
+    width: 100%;
+    height: 300px;
+    background-color: #fbd731;
+  }
+
+  .boxunder {
+    background: white;
+    width: 40em;
+    height: 11em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-top: 60px;
+    Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
+  }
+
+  h4 {
+    font-size: 1em;
+    padding: 10px;
+    padding-top: 10px;
+    color: #e7772b;
+  }
+
+  .introzoek, h4 {
+    margin-top: -6px;
+    padding-left: 20px;
+  }
+
+  .zoekbalk {
+    padding: 20px;
+    width: 40em;
+    height: 1%;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: solid .2px lightgrey;
+    opacity: 1;
+  }
+
+  .buttonz {
+    font-size: .9em;
+    position: relative;
+    left: 40em;
+    top: -2.2em;
+    text-decoration: none;
+    background-color: lightgrey;
+    padding: 9px 15px;
+    border-radius: 8px;
+    color: white;
+    z-index: 1;
+  }
+
+  .buttonz:hover {
+    background: #e7772b;
+    transition: .2s ease-in;
+    Box-shadow: 0 8px 18px 0 rgba(231, 119, 43, .3);
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .filternav {
+    display: none;
+  }
+
+  .smalltext {
+    margin-left: 15.5em;
+    margin-top: 3em;
+  }
+
+  /*//////////////////////   ontdek meer verhalen   //////////////////////////// */
+  .verasme {
+    width: 14.5em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
+  }
+
+  .ondekmeer {
+    width: 10em;
+    padding: 1em;
+  }
+
+  /*//////////////////////   filter media queries   //////////////////////////// */
+  .filter {
+    display: grid;
+    float: left;
+    margin-left: 2em;
+    position: initial;
+    margin-top: 5.1em;
+  }
+
+  /*//////////////////////   Section article   //////////////////////////// */
+  .sorteren {
+    right: 0;
+    position: absolute;
+    display: block;
+    right: 2em;
+    margin-top: 3em;
+  }
+
+  .filter h2 {
+    margin-left: 1em;
+  }
+
+  .steranimatie {
+    right: 30%;
+  }
+
+  h2.smalltext2 {
+    margin-left: 1.6em;
   }
 }
