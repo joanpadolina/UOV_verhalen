@@ -308,7 +308,6 @@ section.wrap, section.wrap2 {
 
 .wrap h2 {
   margin-left: .3em;
-  margin-top: -2.1em;
   position: relative;
 }
 
@@ -476,31 +475,100 @@ input[type="checkbox"]:checked+label::after {
   position: relative;
   top: -.2em;
   display: block;
+  transition: all 200ms ease;
+}
+
+div.chat svg {
+  position: relative;
+  left: 2.2em;
+  bottom: 2.1em;
 }
 
 .comment {
-  float: left;
   margin-right: 1em;
   display: block;
 }
 
-.containchatfave:hover {
+.containchatfave:active {
   cursor: pointer;
+  /* padding-bottom: 9em;
+  transition: all 300ms ease; */
+}
+div.containchatfave.show-reviewcontent{
+  padding-bottom: 1em;
+  transition: all 300ms ease;
+}
+.chat:focus path {
+  stroke: red;
 }
 
-.chat {}
-
-.chatgif {
-  position: absolute;
-  bottom: 14.3%;
-  width: 46px;
-  left: 31%;
-  opacity: 0;
-  display: inline-block;
+img.chatgif {
+  width: 44.1px;
+  position: relative;
+  left: 1.6em;
+  bottom: 1.9em;
+  display: none;
 }
-
+div img.chatgif.show-comment-gif{
+  display:block;
+}
 .chat.displaynone {
   opacity: 0;
+}
+
+div.commentvlak {
+  padding: 1em;
+}
+
+div.commentaren {
+  margin-top: 1em;
+  padding: 1em;
+}
+
+div.commentaren h2 {
+  font-size: 1em;
+}
+
+div.commentaren h3 {
+  width: 5em;
+  font-size: .7em;
+  position: relative;
+  top: -2.6em;
+  color: #c78499;
+  right: -9em;
+}
+
+div.commentaren div.commenttext {
+  top: -2em;
+  right: -.3em;
+  position: relative;
+  font-style: italic;
+}
+
+div.commentaren div.verscom {
+  border-radius: .3em;
+  /* background: #f9f9f9; */
+  height: 4em;
+}
+
+div.commentverschijn {
+  display: none;
+  background:#e7772b91;
+  color:white;
+}
+
+div.commentverschijn.show-comment {
+  display: block;
+}
+
+@keyframes showcomment {
+  0% {
+    padding-bottom: 0em;
+  }
+
+  100% {
+    padding-bottom: 4em;
+  }
 }
 
 /*/////////////////////////    ster animatie   //////////////////// */
@@ -552,7 +620,7 @@ span {
   right: 0em;
   text-align: right;
   padding-right: 10em;
-  /* background: greenyellow; */
+  background: greenyellow;
   width: 100%;
 }
 
@@ -573,9 +641,8 @@ span.spananimate {
   }
 
   100% {
-    transform: rotate(0deg;
+    transform: rotate(0deg);
     opacity: 1;
-    );
   }
 }
 
@@ -625,6 +692,22 @@ footer {
   background-color: #675c53;
   width: 100%;
 }
+
+img.humorklikgif{
+  position: absolute;
+  width: 13em;
+  bottom: 14em;
+}
+div.humorballon{
+background: blueviolet;
+width:5em;
+padding:;
+border-radius: .4em;
+}
+div.humorballon div{
+color:white;
+}
+
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Mobile screen     /////////////////////// */
@@ -718,7 +801,6 @@ footer {
     left: 75%;
     width: 100px;
     position: relative;
-    top: -3em;
   }
 
   #filternavhide {
@@ -788,18 +870,19 @@ footer {
 /*/////////////////////////    1024 screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 769px) and (max-width:1440px) {
-span{
-  display: none;
-}
+  span {
+    display: none;
+  }
+
   .containchatfave {
     left: 68%;
   }
 
-  .busgif {
+  div.busgif {
     right: 19em;
   }
 
-  .boxbus {
+  div.boxbus {
     height: 100%;
   }
 
@@ -943,15 +1026,15 @@ span{
     left: 68%;
   }
 
-  .busgif {
+  div.busgif {
     right: 19em;
   }
 
-  .boxbus {
+  div.boxbus {
     height: 100%;
   }
 
-  .boxintro {
+  header div.boxintro {
     display: block;
     width: 100%;
     height: 21.5em;
@@ -959,7 +1042,7 @@ span{
     position: absolute;
   }
 
-  .introplaatje {
+  header img.introplaatje {
     margin-left: auto;
     margin-right: auto;
     width: 55em;
@@ -975,7 +1058,7 @@ span{
     background-color: #fbd731;
   }
 
-  .boxunder {
+  div.boxunder {
     background: white;
     width: 40em;
     height: 11em;

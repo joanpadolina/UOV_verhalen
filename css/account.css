@@ -4,7 +4,7 @@ section.inloggen h1 {
   text-align: center;
 }
 
-.inloggen {
+section.inloggen {
   position: absolute;
   width: 100%;
   margin-top: -4em;
@@ -14,6 +14,9 @@ section.inloggen h1 {
 
 section a {
   text-decoration: none;
+}
+section.accountbox a:hover{
+  text-decoration: underline;
 }
 
 
