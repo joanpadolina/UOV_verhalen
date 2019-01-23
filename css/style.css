@@ -17,9 +17,10 @@ body {
 .storytogo {
   text-align: center;
   width: 100%;
-  display: block;
+  position: fixed;
   color: white;
-  margin-left: 5em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
@@ -59,10 +60,10 @@ body {
   transition: all 400ms ease;
 }
 
-.profile {
-  right: 10px;
-  width: 20px;
-  margin-top: 21px;
+nav.header a img.profile {
+  right: 1em;
+  width: 1.3em;
+  margin-top: 1.2em;
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
@@ -269,6 +270,16 @@ body {
     display: none;
   }
 }
+
+img.bus_achter_animatie {
+  width: 15em;
+  bottom: 2em;
+  position: absolute;
+  z-index: 2;
+  right: -4em;
+}
+
+@keyframes busaccountachtergrondanim {}
 
 .bookmark svg {
   width: 2.5em;
@@ -494,10 +505,12 @@ div.chat svg {
   /* padding-bottom: 9em;
   transition: all 300ms ease; */
 }
-div.containchatfave.show-reviewcontent{
+
+div.containchatfave.show-reviewcontent {
   padding-bottom: 1em;
   transition: all 300ms ease;
 }
+
 .chat:focus path {
   stroke: red;
 }
@@ -509,9 +522,11 @@ img.chatgif {
   bottom: 1.9em;
   display: none;
 }
-div img.chatgif.show-comment-gif{
-  display:block;
+
+div img.chatgif.show-comment-gif {
+  display: block;
 }
+
 .chat.displaynone {
   opacity: 0;
 }
@@ -553,8 +568,8 @@ div.commentaren div.verscom {
 
 div.commentverschijn {
   display: none;
-  background:#e7772b91;
-  color:white;
+  background: #e7772b91;
+  color: white;
 }
 
 div.commentverschijn.show-comment {
@@ -610,22 +625,23 @@ div.commentverschijn.show-comment {
   animation: popanim 3s ease;
 }
 
+/*nummer 1 toevoeging bij favoriet */
 span {
   color: red;
   z-index: 99;
   position: fixed;
-  top: 35.5em;
   font-size: 1em;
+  font-weight: 800;
+  bottom: 0;
+  padding-left: 13em;
+  padding-bottom: 1.5em;
   opacity: 0;
-  right: 0em;
-  text-align: right;
-  padding-right: 10em;
-  background: greenyellow;
+  /* background: greenyellow; */
   width: 100%;
 }
 
 span.spananimate {
-  animation: spanan 400ms ease;
+  animation: spanan 400ms cubic-bezier(0.07, 0.76, 0.73, 0.27);
   animation-iteration-count: 10;
 }
 
@@ -693,21 +709,22 @@ footer {
   width: 100%;
 }
 
-img.humorklikgif{
+img.humorklikgif {
   position: absolute;
   width: 13em;
   bottom: 14em;
 }
-div.humorballon{
-background: blueviolet;
-width:5em;
-padding:;
-border-radius: .4em;
-}
-div.humorballon div{
-color:white;
+
+div.humorballon {
+  background: blueviolet;
+  width: 5em;
+  padding: ;
+  border-radius: .4em;
 }
 
+div.humorballon div {
+  color: white;
+}
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Mobile screen     /////////////////////// */

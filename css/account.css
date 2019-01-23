@@ -1,4 +1,9 @@
-body {}
+body {
+  box-sizing: border-box;
+  width:100%;
+  overflow-x:hidden;
+
+}
 
 section.inloggen h1 {
   text-align: center;
@@ -6,19 +11,20 @@ section.inloggen h1 {
 
 section.inloggen {
   position: absolute;
+  color: white;
   width: 100%;
   margin-top: -4em;
   height: 200px;
-  background: #fcd900;
+  background: #e7772b;
 }
 
 section a {
   text-decoration: none;
 }
-section.accountbox a:hover{
+
+section.accountbox a:hover {
   text-decoration: underline;
 }
-
 
 img {
   width: 100px;
@@ -54,17 +60,19 @@ img {
   width: 20em;
   Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
   border-radius: 10px;
-  margin-top: 4em;
+  margin-top: 7em;
   height: 27em;
+  z-index: 2;
 }
 
 fieldset {
   border: none;
 }
 
-form label{
-  color:dimgrey;
+form label {
+  color: dimgrey;
 }
+
 form .jouwgegevens {
   font-weight: 600;
   color: #e7772b;
@@ -117,6 +125,24 @@ form :focus {
   outline: none;
 }
 
+section.accountbox input:focus {
+  border: solid red .2em;
+  border-radius: .2em;
+  transition: all 300ms ease;
+}
+
+section.accountbox input:required:valid:focus {
+  border: solid palegreen .2em;
+  border-radius: .2em;
+  transition: all 300ms ease;
+}
+
+section.accountbox input:required:valid {
+  border: solid palegreen .2em;
+  color: #492619;
+  font-weight: 800;
+}
+
 section.accountbox a.vergeten {
   margin-top: 1em;
   color: #54a5dd;
@@ -131,8 +157,6 @@ section.accountbox a.vergeten {
   text-align: center;
   font-size: 0.6em;
 }
-
-
 
 .check li:before {
   speak: none;
@@ -152,7 +176,6 @@ section ul.check {
   text-decoration: none;
   margin-left: -1em;
   list-style-type: none;
-
 }
 
 section.nieuwinlog {
@@ -166,7 +189,7 @@ section.nieuwinlog {
 
 section.nieuwinlog h2 {
   padding-top: .4em;
-  margin-left:1.2em;
+  margin-left: 1.2em;
 }
 
 section a.registreren {
@@ -202,6 +225,23 @@ section a.registreren:hover {
   z-index: -1;
 }
 
+
+img.bus_achter_animatie {
+  top: 12.4em;
+  position: absolute;
+  z-index: 1;
+  animation: busaccountachtergrondanim 30s infinite;
+
+}
+@keyframes busaccountachtergrondanim {
+  from{
+    right:-14em;
+  }
+  to{
+    right:30em;
+  }
+}
+
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    tablet screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
@@ -210,7 +250,21 @@ section a.registreren:hover {
     width: 20em;
   }
 
-  .nieuwinlog {}
+  img.bus_achter_animatie {
+    top: 12.4em;
+    position: absolute;
+    z-index: 1;
+    animation: busaccountachtergrondanim 60s infinite;
+
+  }
+  @keyframes busaccountachtergrondanim {
+    from{
+      right:-14em;
+    }
+    to{
+      right:50em;
+    }
+
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
@@ -220,4 +274,20 @@ section a.registreren:hover {
   .accountbox {
     width: 20em;
   }
+
+
+    img.bus_achter_animatie {
+      top: 12.4em;
+      position: absolute;
+      z-index: 1;
+      animation: busaccountachtergrondanim 120s infinite;
+
+    }
+    @keyframes busaccountachtergrondanim {
+      from{
+        right:-14em;
+      }
+      to{
+        right:80em;
+      }
 }
