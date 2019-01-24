@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
 }
 
-.storytogo {
+nav.header h1.storytogo {
   text-align: center;
   width: 100%;
   position: fixed;
@@ -26,7 +26,7 @@ body {
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    L O G O   //////////////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-.header {
+nav.header {
   background-color: #544a43;
   width: 100%;
   height: 60px;
@@ -35,27 +35,27 @@ body {
   z-index: 10;
 }
 
-.logoov {
+nav.header img.logoov {
   margin-top: -10px;
   width: 5em;
   display: flex;
   position: fixed;
 }
 
-.header, .searchl, .profile {
+nav.header, div.searchl, .profile {
   display: flex;
   position: fixed;
   right: 0;
 }
 
-.searchl {
+div.searchl {
   right: 4%;
   margin-top: -.3em;
   cursor: pointer;
   transition: all 400ms ease;
 }
 
-.searchl.search-move {
+div.searchl.search-move {
   right: 28%;
   transition: all 400ms ease;
 }
@@ -69,7 +69,7 @@ nav.header a img.profile {
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    FILTER NAV  //////////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-.filternav a {
+div.filternav a {
   display: inline-block;
   text-align: center;
   padding: 10px;
@@ -78,17 +78,17 @@ nav.header a img.profile {
   color: grey;
 }
 
-.filternav {
+div.filternav {
   margin-top: 10px;
   overflow-x: scroll;
   white-space: nowrap;
 }
 
-.filternav::-webkit-scrollbar {
+div.filternav::-webkit-scrollbar {
   display: none;
 }
 
-.filternav svg {
+div.filternav svg {
   width: 15px;
   padding-right: 10px;
   opacity: .3;
@@ -96,7 +96,7 @@ nav.header a img.profile {
 }
 
 /* filter PSUEDO  Hover */
-.filternav :hover {
+div.filternav a:hover {
   color: white;
   font-weight: bold;
   background-color: #E7772B;
@@ -105,7 +105,8 @@ nav.header a img.profile {
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    N A V B A R   //////////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-.navbar ul {
+/* nav.navbar */
+nav.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -120,19 +121,19 @@ nav.header a img.profile {
   height: 50px;
 }
 
-.prof, .homeicoon {
+svg.prof, .homeicoon {
   display: block;
   position: absolute;
   width: 20px;
   top: 0;
 }
 
-.navbar li {
+nav.navbar li {
   float: left;
   align-items: center;
 }
 
-.navbar li a {
+nav.navbar li a {
   display: block;
   color: black;
   text-align: center;
@@ -143,16 +144,16 @@ nav.header a img.profile {
 }
 
 /* home/account hover PSUEDO */
-.navbar svg:hover #profile,
-.navbar svg:hover #profil {
+nav.navbar svg:hover #profile,
+nav.navbar svg:hover #profil {
   fill: #E7772B;
 }
 
-.navbar svg:hover #home {
+nav.navbar svg:hover #home {
   fill: #E7772B;
 }
 
-.zoekbalkboven {
+input.zoekbalkboven {
   visibility: hidden;
   opacity: 0;
   background: none;
@@ -172,64 +173,21 @@ nav.header a img.profile {
   transition: width 300ms ease;
 }
 
-/* .zoekbalkboven:focus {
-  width: 40em;
-} */
-/*/////////////////////////////////////////////////////////////////////// */
-/*///////////    O N T D E K V E R H A A L   /////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
-.dotline {
-  position: relative;
-  display: flex;
-  width: 100%;
-  margin-top: -20px;
-  border-top: dotted 2px #544a43;
-}
-
-.ontdekverhalen {
-  position: relative;
-  text-align: center;
-  font-size: .6em;
-  background: white;
-  height: 8em;
-  padding: 2px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-}
-
-.ontdekbut {
-  text-decoration: none;
-  padding: 3px;
-  color: #54a5dd;
-  border: solid 1px #54a5dd;
-  border-radius: 5px;
-}
-
-/* HOVER */
-.ontdekverhalen:link {
-  border: solid 2px red;
-}
-
-.ontdekbut:hover {
-  background-color: #54a5dd;
-  color: white;
-  font-weight: 500;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-  transition: .2s ease-in;
-}
-
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    S O R T E R E N   /////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
-.sorteren select value:hover {
+/* Form sorteren populair */
+form.sorteren select value:hover {
   background-color: #e7772b;
+}
+
+form.sorteren {
+  right: 2%;
+  margin-top: 1.9vh;
+  position: absolute;
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    STORY STYLING     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-.busgif {
+img.busgif {
   visibility: hidden;
   position: absolute;
   width: 22em;
@@ -242,7 +200,7 @@ nav.header a img.profile {
   z-index: 6;
 }
 
-.boxbus {
+div.boxbus {
   visibility: hidden;
   position: absolute;
   height: 100%;
@@ -281,7 +239,7 @@ img.bus_achter_animatie {
 
 @keyframes busaccountachtergrondanim {}
 
-.bookmark svg {
+div.bookmark svg {
   width: 2.5em;
   display: flex;
   position: relative;
@@ -294,18 +252,18 @@ section.bookmark {
   position: absolute;
 }
 
-.bookmark svg:hover #star {
+div.bookmark svg:hover #star {
   cursor: pointer;
   fill: #fecb37;
 }
 
-.bookmark.bookmark-color path {
+div.bookmark.bookmark-color path {
   fill: #fecb37;
   stroke: none;
   width: 200px;
 }
 
-.smalltext, .smalltext2 {
+h2.smalltext, h2.smalltext2 {
   padding-left: 3em;
   font-size: 1em;
   font-weight: 400;
@@ -317,7 +275,7 @@ section.wrap, section.wrap2 {
   flex-wrap: wrap;
 }
 
-.wrap h2 {
+section.wrap h2 {
   margin-left: .3em;
   position: relative;
 }
@@ -378,7 +336,19 @@ h3, p {
 https://codepen.io/zFunx/pen/dWbevd
 
 */
-.filter {
+form.filter h2 {
+  margin-left: 1em;
+  background: #FF9800;
+  color: white;
+  margin-bottom: -1em;
+  height: 2em;
+  text-align: center;
+  padding-top: 1em;
+  border-radius: 2px;
+  width:100%;
+}
+
+form.filter {
   display: grid;
   grid-gap: 1.2em;
 }
@@ -418,36 +388,32 @@ input[type="checkbox"]:checked+label::after {
   font-weight: bold;
 }
 
-.filter label {
+form.filter label {
   position: relative;
   /* background-color: blue; */
   padding: 5px;
   border-bottom: solid 1px lightgrey;
-  width: 90%;
   margin-left: 1em;
 }
 
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    F I L T E R   //////////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-.filter li {
+form.filter li {
   list-style-type: none;
   padding-top: 10px;
 }
 
-.filter h3 {
+form.filter h3 {
   color: #54a5dd;
 }
 
-.filter input {
+form.filter input {
   margin-right: 10px;
 }
 
-.anderook {
-  margin-bottom: 3em;
-}
-
-.button {
+button.button {
+  /*toon filter*/
   background: white;
   text-decoration: none;
   padding: 4px;
@@ -463,7 +429,7 @@ input[type="checkbox"]:checked+label::after {
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////     filter  styling  ///////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
-.filter {
+form.filter {
   background: #ffffff;
 }
 
@@ -479,13 +445,13 @@ input[type="checkbox"]:checked+label::after {
 }
 
 /*/////////////////////////    chat fave comment   //////////////////// */
-.containchatfave {
+div.containchatfave {
   left: 75%;
   width: 100px;
   position: relative;
   top: -.2em;
   display: block;
-  cursor:pointer;
+  cursor: pointer;
   transition: all 200ms ease;
 }
 
@@ -587,7 +553,7 @@ div.commentverschijn.show-comment {
 }
 
 /*/////////////////////////    ster animatie   //////////////////// */
-.steranimatie {
+div.steranimatie {
   width: 20em;
   position: absolute;
   height: 15em;
@@ -605,13 +571,13 @@ div.commentverschijn.show-comment {
   transition: all 200ms ease;
 }
 
-.steranimatie img {
+div.steranimatie img {
   position: static;
   width: 20em;
   margin-top: -5.5em;
 }
 
-.steranimatie h2 {
+div.steranimatie h2 {
   color: white;
   text-align: center;
   position: static;
@@ -628,37 +594,33 @@ div.commentverschijn.show-comment {
 /*nummer 1 toevoeging bij favoriet */
 div.eentje {
   color: red;
-  z-index:89;
+  z-index: 89;
   position: fixed;
   font-size: 1em;
   font-weight: 800;
   bottom: 0;
-  padding-left: 13em;
+  padding-left: 5em;
   padding-bottom: 1.5em;
-  opacity: 0;
+  display: none;
   /* background: greenyellow; */
-  width: 100%;
 }
 
-.eentje.spananimate {
+div.eentje.spananimate {
   animation: spanan 400ms cubic-bezier(0.07, 0.76, 0.73, 0.27);
   animation-iteration-count: 10;
 }
 
 @keyframes spanan {
   0% {
-    opacity: 1;
     transform: rotate(0);
   }
 
-  50% {
+  80% {
     transform: rotate(1deg);
-    opacity: 1;
   }
 
   100% {
-    transform: rotate(0deg);
-    opacity: 1;
+    display: none;
   }
 }
 
@@ -696,30 +658,38 @@ div.eentje {
   cursor: pointer;
 }
 
-.klikverdwijn {
-  position: absolute;
-  width: 15em;
-  bottom: 25%;
-  right: 65%;
-}
-
 footer {
   height: 10em;
   background-color: #675c53;
   width: 100%;
 }
 
+div.humorgifalles img {
+  width: 14em;
+}
+
+img.humorpng {
+  position: relative;
+}
+
+img.humorpng:hover {
+  cursor: pointer;
+  content: url('../assets/gif/hover-button1.gif');
+}
+
 img.humorklikgif {
   position: absolute;
-  width: 13em;
-  bottom: 14em;
+  margin-top: 0.2em;
+  z-index: 1;
+  display: none;
 }
 
 div.humorballon {
   background: blueviolet;
-  width: 5em;
-  padding: ;
+  width: 10em;
+  padding: .5em;
   border-radius: .4em;
+  display: block;
 }
 
 div.humorballon div {
@@ -730,15 +700,9 @@ div.humorballon div {
 /*/////////////////////////    Mobile screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width:50px) and (max-width: 616px) {
-  .introplaatje {
+  header img.introplaatje {
     margin-top: 4em;
     width: 100%;
-  }
-
-  .sorteren {
-    right: 2%;
-    margin-top: .7em;
-    position: absolute;
   }
 
   /* .comment{
@@ -754,25 +718,17 @@ div.humorballon div {
     left: 47vh;
   } */
   /* T O P  */
-  .profile {
+  img.profile {
     display: none;
   }
 
-  .boxunder {
-    display: none;
-  }
-
-  .zoeken {
-    height: 80px;
-  }
-
-  .filterknop {
+  a.filterknop {
     margin-left: -1em;
     width: 100%;
     margin-bottom: 1em;
   }
 
-  .filternav a {
+  div.filternav a {
     display:
   }
 }
@@ -781,11 +737,11 @@ div.humorballon div {
   display: none;
 }
 
-.filter {
+form.filter {
   justify-content: center;
 }
 
-.filter {
+form.filter {
   position: absolute;
   top: 0.2em;
   left: -23em;
@@ -856,15 +812,8 @@ div.humorballon div {
     grid-column: auto;
   }
 
-  .smalltext {
+  h2.smalltext {
     margin-left: -1em;
-  }
-
-  .sorteren {
-    right: 2em;
-    margin-top: .8em;
-    display: block;
-    position: absolute;
   }
 
   comment:hover, comment:hover {
@@ -888,6 +837,10 @@ div.humorballon div {
 /*/////////////////////////    1024 screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 769px) and (max-width:1440px) {
+  form.sorteren {
+    margin-top: 4.9vh;
+  }
+
   span {
     display: none;
   }
@@ -982,7 +935,7 @@ div.humorballon div {
     Box-shadow: 0 8px 18px 0 rgba(231, 119, 43, .3);
   }
 
-  .navbar ul {
+  nav.navbar ul {
     display: none;
   }
 
@@ -990,13 +943,13 @@ div.humorballon div {
     display: none;
   }
 
-  .smalltext {
-    margin-left: 15.5em;
+  h2.smalltext {
+    margin-left: 11.3em;
     margin-top: 3em;
   }
 
   /*//////////////////////   ontdek meer verhalen   //////////////////////////// */
-  .verasme {
+  div.verasme {
     width: 14.5em;
     margin-left: 2em;
     margin-bottom: 1em;
@@ -1004,13 +957,13 @@ div.humorballon div {
     Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
   }
 
-  .ondekmeer {
+  button.ondekmeer {
     width: 10em;
     padding: 1em;
   }
 
   /*//////////////////////   filter media queries   //////////////////////////// */
-  .filter {
+  form.filter {
     display: grid;
     float: left;
     margin-left: 2em;
@@ -1019,19 +972,11 @@ div.humorballon div {
   }
 
   /*//////////////////////   Section article   //////////////////////////// */
-  .sorteren {
-    right: 0;
-    position: absolute;
-    display: block;
-    right: 2em;
-    margin-top: 3em;
-  }
-
-  .filter h2 {
+  form.filter h2 {
     margin-left: 1em;
   }
 
-  .steranimatie {
+  div.steranimatie {
     right: 30%;
   }
 }
@@ -1040,6 +985,10 @@ div.humorballon div {
 /*/////////////////////////    Wide screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 1025px) and (max-width:1866px) {
+  img.humorklikgif {
+    margin-left: 16.5em;
+  }
+
   .containchatfave {
     left: 68%;
   }
@@ -1094,43 +1043,7 @@ div.humorballon div {
     color: #e7772b;
   }
 
-  .introzoek, h4 {
-    margin-top: -6px;
-    padding-left: 20px;
-  }
-
-  .zoekbalk {
-    padding: 20px;
-    width: 40em;
-    height: 1%;
-    margin-top: -10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border: solid .2px lightgrey;
-    opacity: 1;
-  }
-
-  .buttonz {
-    font-size: .9em;
-    position: relative;
-    left: 40em;
-    top: -2.2em;
-    text-decoration: none;
-    background-color: lightgrey;
-    padding: 9px 15px;
-    border-radius: 8px;
-    color: white;
-    z-index: 1;
-  }
-
-  .buttonz:hover {
-    background: #e7772b;
-    transition: .2s ease-in;
-    Box-shadow: 0 8px 18px 0 rgba(231, 119, 43, .3);
-  }
-
-  .navbar ul {
+  nav.navbar ul {
     display: none;
   }
 
@@ -1138,13 +1051,13 @@ div.humorballon div {
     display: none;
   }
 
-  .smalltext {
-    margin-left: 15.5em;
+  h2.smalltext {
+    margin-left: 11.3em;
     margin-top: 3em;
   }
 
   /*//////////////////////   ontdek meer verhalen   //////////////////////////// */
-  .verasme {
+  div.verasme {
     width: 14.5em;
     margin-left: 2em;
     margin-bottom: 1em;
@@ -1152,13 +1065,13 @@ div.humorballon div {
     Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
   }
 
-  .ondekmeer {
+  button.ondekmeer {
     width: 10em;
     padding: 1em;
   }
 
   /*//////////////////////   filter media queries   //////////////////////////// */
-  .filter {
+  form.filter {
     display: grid;
     float: left;
     margin-left: 2em;
@@ -1167,23 +1080,19 @@ div.humorballon div {
   }
 
   /*//////////////////////   Section article   //////////////////////////// */
-  .sorteren {
-    right: 0;
-    position: absolute;
-    display: block;
-    right: 2em;
-    margin-top: 3em;
-  }
-
-  .filter h2 {
+  form.filter h2 {
     margin-left: 1em;
   }
 
-  .steranimatie {
+  div.steranimatie {
     right: 30%;
   }
 
   h2.smalltext2 {
     margin-left: 1.6em;
+  }
+
+  form.sorteren {
+    margin-top: 4.9vh;
   }
 }

@@ -8,6 +8,9 @@ ster.addEventListener('click', function(){
   ster.classList.toggle('bookmark-color');
   popup.classList.toggle('sterappear');
   spanophaal.classList.toggle('spananimate');
+  spanophaal.style.display = 'block';
+  window.setTimeout(function(){
+  spanophaal.style.display = 'none';}, 3000);
 });
 
 // Zoekicoon vergroot
@@ -56,6 +59,22 @@ commentgif.addEventListener('click', function(){
     chatknop.style.display ='block';
     reviewtext.style.display = 'none';
 });
+
+
+//animation humor klik blubble verdwijn
+
+var humorknop = document.querySelector('.humorpng');
+var humorweg = document.querySelector('.humorklikgif');
+
+humorknop.addEventListener('click', function(){
+  humorweg.style.display = 'block';
+  humorknop.style.opacity = '0';
+  window.setInterval(function(){
+  humorweg.style.display = 'none';}, 500);
+});
+
+
+
 
 
 // // Account meer laten zien
