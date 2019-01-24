@@ -6,13 +6,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x:hidden;
 }
 
-@keyframes pscalehover {
-  0% {}
-
-  100% {}
-}
 
 @keyframes strobe {
   0% {
@@ -71,7 +67,7 @@ img.stonedpng2 {
   animation: strobe2 600ms infinite ease;
 }
 
-.stonedpng1 {
+img.stonedpng1 {
   position: absolute;
 }
 
@@ -163,12 +159,15 @@ div {
   top:9em;
   z-index: -1;
 } */
-p:hover {
-  animation: strobe2 700ms infinite ease;
-  animation: strobe 700ms infinite ease;
-}
 
-.p3 {
+
+p.herhaling-hover{
+  display: none;
+  font-size: 3em;
+  font-weight:800;
+  transition: all 500ms ease;
+}
+p.p3 {
   font-size: 3em;
   text-align: center;
   justify-content: center;
@@ -177,7 +176,7 @@ p:hover {
   z-index: -1;
 }
 
-.p2 {
+p.p2 {
   color: pink;
   text-align: center;
   filter: blur(2px);
@@ -189,9 +188,14 @@ p:hover {
   animation: left 10s ease infinite;
 }
 
-.stonedpng, .stonedpng2, .stonedpng1 {
+img.stonedpng, img.stonedpng2, img.stonedpng1 {
   position: absolute;
   top: 2em;
+
+}
+section.stonedverzamelpng{
+  position: sticky;
+  top:-1em;
 }
 
   .commentvlak {

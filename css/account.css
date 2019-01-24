@@ -1,8 +1,7 @@
 body {
   box-sizing: border-box;
-  width:100%;
-  overflow-x:hidden;
-
+  width: 100%;
+  overflow-x: hidden;
 }
 
 section.inloggen h1 {
@@ -14,7 +13,7 @@ section.inloggen {
   color: white;
   width: 100%;
   margin-top: -4em;
-  height: 200px;
+  height: 12.5em;
   background: #e7772b;
 }
 
@@ -31,26 +30,7 @@ img {
   margin-top: -1.5em;
 }
 
-.navbrown {
-  width: 100%;
-  height: 60px;
-  background-color: #675c53;
-  position: absolute;
-  z-index: -1;
-}
-
-.accountimg {
-  width: 70px;
-  height: 70px;
-  background-color: red;
-  border-radius: 100px;
-  position: relative;
-  display: block;
-  margin: auto;
-  margin-top: 100px;
-}
-
-.accountbox {
+section.accountbox {
   margin: auto;
   position: relative;
   align-items: center;
@@ -61,8 +41,9 @@ img {
   Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
   border-radius: 10px;
   margin-top: 7em;
-  height: 27em;
+  height: 28.4em;
   z-index: 2;
+  transition: all 300ms ease;
 }
 
 fieldset {
@@ -73,7 +54,8 @@ form label {
   color: dimgrey;
 }
 
-form .jouwgegevens {
+section .jouwgegevens {
+  font-size:1em;
   font-weight: 600;
   color: #e7772b;
   position: relative;
@@ -87,8 +69,27 @@ fieldset input {
   border: none;
   border-bottom: 1px solid #eee;
   transition: border-color .5s ease-out;
-  padding: 10px;
+  padding: 1em;
   display: block;
+}
+
+form div.buttonnieuw {
+  position: relative;
+  float: right;
+  top: -2em;
+}
+
+form div.buttonnieuw:hover {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+form label.herhaalww, .herhaalwwinput {
+  display: none;
+}
+
+.accountbox.appear-herhaalpw {
+  height: 33.4em;
 }
 
 form .submitlog {
@@ -99,7 +100,7 @@ form .submitlog {
   font-size: .9em;
   position: relative;
   text-decoration: none;
-  padding: 9px 15px;
+  padding: .4em .1em;
   border-radius: 10px;
   color: white;
   background: lightgrey;
@@ -119,6 +120,7 @@ form input:required:valid {
 
 form input:invalid {
   border-bottom-color: red;
+  margin-bottom: 1em;
 }
 
 form :focus {
@@ -168,7 +170,7 @@ section.accountbox a.vergeten {
   width: auto;
   height: auto;
   background-color: transparent;
-  top: 4px;
+  top: 4em;
   padding: 1em;
 }
 
@@ -216,29 +218,20 @@ section a.registreren:hover {
   border-radius: 0 0 10px 10px;
 }
 
-.nieuwbg {
-  background: lightgrey;
-  width: 90vw;
-  left: -5vw;
-  height: 180px;
-  position: absolute;
-  z-index: -1;
-}
-
-
 img.bus_achter_animatie {
   top: 12.4em;
   position: absolute;
   z-index: 1;
   animation: busaccountachtergrondanim 30s infinite;
-
 }
+
 @keyframes busaccountachtergrondanim {
-  from{
-    right:-14em;
+  from {
+    right: -14em;
   }
-  to{
-    right:30em;
+
+  to {
+    right: 30em;
   }
 }
 
@@ -255,39 +248,39 @@ img.bus_achter_animatie {
     position: absolute;
     z-index: 1;
     animation: busaccountachtergrondanim 60s infinite;
-
   }
+
   @keyframes busaccountachtergrondanim {
-    from{
-      right:-14em;
-    }
-    to{
-      right:50em;
+    from {
+      right: -14em;
     }
 
-}
-
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    Wide screen     /////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 1024px) and (max-width:1440px) {
-  .accountbox {
-    width: 20em;
+    to {
+      right: 50em;
+    }
   }
 
+  /*/////////////////////////////////////////////////////////////////////// */
+  /*/////////////////////////    Wide screen     /////////////////////// */
+  /*/////////////////////////////////////////////////////////////////////// */
+  @media only screen and (min-width: 1024px) and (max-width:1440px) {
+    .accountbox {
+      width: 20em;
+    }
 
     img.bus_achter_animatie {
       top: 12.4em;
       position: absolute;
       z-index: 1;
       animation: busaccountachtergrondanim 120s infinite;
-
     }
+
     @keyframes busaccountachtergrondanim {
-      from{
-        right:-14em;
+      from {
+        right: -14em;
       }
-      to{
-        right:80em;
+
+      to {
+        right: 80em;
       }
-}
+    }

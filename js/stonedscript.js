@@ -33,3 +33,5 @@ listElm.addEventListener('scroll', function() {
 
 // Initially load some items.
 loadMore();
+var textherhaal = document.querySelector('.herhaling-hover');
+var standaardtext= document.querySelector('p');
