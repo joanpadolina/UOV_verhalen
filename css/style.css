@@ -421,6 +421,15 @@ button.button {
   border: solid 1px #54a5dd;
   border-radius: 5px;
 }
+button.button a{
+  text-decoration: none;
+}
+
+button.button:hover{
+  cursor:pointer;
+  font-weight: 500;
+  background:#54a5dd;
+}
 
 .button {
   padding: 10px;
@@ -499,6 +508,9 @@ div img.chatgif.show-comment-gif {
 
 div.commentvlak {
   padding: 1em;
+}
+div.commentvlak textarea{
+  margin-left: .6em;
 }
 
 div.commentaren {
@@ -666,6 +678,7 @@ footer {
 
 div.humorgifalles img {
   width: 14em;
+      margin-bottom: -2em;
 }
 
 img.humorpng {
@@ -1052,7 +1065,7 @@ form.filter {
   }
 
   h2.smalltext {
-    margin-left: 11.3em;
+    margin-left: 15.3em;
     margin-top: 3em;
   }
 
