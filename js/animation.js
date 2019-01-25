@@ -46,6 +46,7 @@ var commentgif = document.querySelector('.chatgif');
 var chatknop = document.querySelector('.chat');
 var chatcontainer = document.querySelector('.containchatfave');
 var reviewtext = document.querySelector('.commentverschijn');
+
 chatknop.addEventListener('click', function() {
     commentgif.classList.toggle('show-comment-gif');
     chatcontainer.classList.toggle('show-reviewcontent', 'show-comment');

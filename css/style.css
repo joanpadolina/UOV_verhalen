@@ -12,7 +12,17 @@ body {
   background-color: #fefefe;
   margin: 0;
   box-sizing: border-box;
+
 }
+
+/****** NAVBARTOP *******/
+
+/*| navbartop bevat de volgende elementen
+-- Logo van uov
+-- Storytogo tekst
+-- vergrootglas svg
+-- account svg
+|*/
 
 nav.header h1.storytogo {
   text-align: center;
@@ -23,23 +33,13 @@ nav.header h1.storytogo {
   margin-right: auto;
 }
 
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    L O G O   //////////////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
 nav.header {
   background-color: #544a43;
   width: 100%;
-  height: 60px;
+  height: 4em;
   position: fixed;
   top: 0;
   z-index: 10;
-}
-
-nav.header img.logoov {
-  margin-top: -10px;
-  width: 5em;
-  display: flex;
-  position: fixed;
 }
 
 nav.header, div.searchl, .profile {
@@ -48,6 +48,7 @@ nav.header, div.searchl, .profile {
   right: 0;
 }
 
+/* svg vergrootglas in een div container */
 div.searchl {
   right: 4%;
   margin-top: -.3em;
@@ -66,98 +67,21 @@ nav.header a img.profile {
   margin-top: 1.2em;
 }
 
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    FILTER NAV  //////////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
-div.filternav a {
-  display: inline-block;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  background-color: lightgrey;
-  color: grey;
-}
+/*//LOGO UOV//*/
 
-div.filternav {
-  margin-top: 10px;
-  overflow-x: scroll;
-  white-space: nowrap;
-}
-
-div.filternav::-webkit-scrollbar {
-  display: none;
-}
-
-div.filternav svg {
-  width: 15px;
-  padding-right: 10px;
-  opacity: .3;
-  height: 10px;
-}
-
-/* filter PSUEDO  Hover */
-div.filternav a:hover {
-  color: white;
-  font-weight: bold;
-  background-color: #E7772B;
-}
-
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    N A V B A R   //////////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
-/* nav.navbar */
-nav.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: lightgrey;
+nav.header img.logoov {
+  margin-top: -.5em;
+  width: 5em;
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  z-index: 10;
-  height: 50px;
+  position: fixed;
 }
 
-svg.prof, .homeicoon {
-  display: block;
-  position: absolute;
-  width: 20px;
-  top: 0;
-}
-
-nav.navbar li {
-  float: left;
-  align-items: center;
-}
-
-nav.navbar li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 0.9em;
-}
-
-/* home/account hover PSUEDO */
-nav.navbar svg:hover #profile,
-nav.navbar svg:hover #profil {
-  fill: #E7772B;
-}
-
-nav.navbar svg:hover #home {
-  fill: #E7772B;
-}
-
+/*//ZOEK BALK TONEN OP CLICK//*/
 input.zoekbalkboven {
   visibility: hidden;
   opacity: 0;
   background: none;
-  padding: 20px;
+  padding: 1.6em;
   height: .1em;
   margin-top: .9em;
   margin-right: 4em;
@@ -173,7 +97,9 @@ input.zoekbalkboven {
   transition: width 300ms ease;
 }
 
+/****** SORTEREN  *******/
 /* Form sorteren populair */
+
 form.sorteren select value:hover {
   background-color: #e7772b;
 }
@@ -184,101 +110,17 @@ form.sorteren {
   position: absolute;
 }
 
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    STORY STYLING     /////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
-img.busgif {
-  visibility: hidden;
-  position: absolute;
-  width: 22em;
-  top: 20em;
-  right: -2em;
-  margin-left: auto;
-  margin-right: auto;
-  animation: loading 3s ease;
-  opacity: 0;
-  z-index: 6;
-}
+/****** ARTICLES STORIES *******/
 
-div.boxbus {
-  visibility: hidden;
-  position: absolute;
-  height: 100%;
-  top: 3.2em;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.47);
-  box-shadow: 0px 4px 10px -6px rgba(0, 0, 0, 0.75);
-  opacity: 0;
-  animation: loading 4s ease;
-  z-index: 5;
-}
+/*| Articles bevat de volgende elementen
+-- Header image
+-- Titel
+-- Paragraaf
+-- Bookmark svg
+-- Comment SVG
+-- Form comment sectie
+|*/
 
-@keyframes loading {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-
-img.bus_achter_animatie {
-  width: 15em;
-  bottom: 2em;
-  position: absolute;
-  z-index: 2;
-  right: -4em;
-}
-
-@keyframes busaccountachtergrondanim {}
-
-div.bookmark svg {
-  width: 2.5em;
-  display: flex;
-  position: relative;
-  bottom: 11.5rem;
-  z-index: 1;
-  left: 95%;
-}
-
-section.bookmark {
-  position: absolute;
-}
-
-div.bookmark svg:hover #star {
-  cursor: pointer;
-  fill: #fecb37;
-}
-
-div.bookmark.bookmark-color path {
-  fill: #fecb37;
-  stroke: none;
-  width: 200px;
-}
-
-h2.smalltext, h2.smalltext2 {
-  padding-left: 3em;
-  font-size: 1em;
-  font-weight: 400;
-  color: grey;
-}
-
-section.wrap, section.wrap2 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-section.wrap h2 {
-  margin-left: .3em;
-  position: relative;
-}
 
 article {
   background: white;
@@ -294,7 +136,6 @@ article {
 }
 
 article:hover {
-  /* border: solid #e7772b 6px; */
   Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
 }
 
@@ -329,134 +170,27 @@ h3, p {
   padding-left: 1em;
 }
 
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    F I L T E R BOx   //////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
-/*
-https://codepen.io/zFunx/pen/dWbevd
-
-*/
-form.filter h2 {
-  margin-left: 1em;
-  background: #FF9800;
-  color: white;
-  margin-bottom: -1em;
-  height: 2em;
-  text-align: center;
-  padding-top: 1em;
-  border-radius: 2px;
-  width:100%;
-}
-
-form.filter {
-  display: grid;
-  grid-gap: 1.2em;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-input[type="checkbox"] {
-  color: #e7772b;
-}
-
-input[type="checkbox"]+label::before,
-input[type="checkbox"]+label::after {
-  content: "";
-  border: 0.1em solid #e7772b;
-  border-radius: 0.2em;
-  display: inline-flex;
-  width: 1em;
-  height: 1em;
-  padding-left: 0.2em;
-  padding-bottom: 0.3em;
-  margin-right: 0.5em;
-  margin: .3em;
-  color: #e7772b;
-  transition: .2s;
-  cursor: pointer;
-  float: left;
-}
-
-input[type="checkbox"]+label::before {
-  content: none;
-}
-
-input[type="checkbox"]:checked+label::after {
-  content: "\2714";
-  font-weight: bold;
-}
-
-form.filter label {
-  position: relative;
-  /* background-color: blue; */
-  padding: 5px;
-  border-bottom: solid 1px lightgrey;
-  margin-left: 1em;
-}
-
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    F I L T E R   //////////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
-form.filter li {
-  list-style-type: none;
-  padding-top: 10px;
-}
-
-form.filter h3 {
-  color: #54a5dd;
-}
-
-form.filter input {
-  margin-right: 10px;
-}
-
-button.button {
-  /*toon filter*/
-  background: white;
-  text-decoration: none;
-  padding: 4px;
-  color: #54a5dd;
-  border: solid 1px #54a5dd;
-  border-radius: 5px;
-}
-button.button a{
-  text-decoration: none;
-}
-
-button.button:hover{
-  cursor:pointer;
-  font-weight: 500;
-  background:#54a5dd;
-}
-
-.button {
-  padding: 10px;
-}
-
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////     filter  styling  ///////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
-form.filter {
-  background: #ffffff;
-}
-
-.filter h2 {
-  color: #e7772b;
-  font-size: 1.2em;
+h2.smalltext, h2.smalltext2 {
+  padding-left: 3em;
+  font-size: 1em;
   font-weight: 400;
+  color: grey;
 }
 
-.filter label {
-  margin-right: 1em;
-  width: 11.8em;
+section.wrap, section.wrap2 {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/*/////////////////////////    chat fave comment   //////////////////// */
+section.wrap h2 {
+  margin-left: .3em;
+  position: relative;
+}
+
+/*// SVG CHAT SVG  //*/
 div.containchatfave {
   left: 75%;
-  width: 100px;
+  width: 10%;
   position: relative;
   top: -.2em;
   display: block;
@@ -477,8 +211,6 @@ div.chat svg {
 
 .containchatfave:active {
   cursor: pointer;
-  /* padding-bottom: 9em;
-  transition: all 300ms ease; */
 }
 
 div.containchatfave.show-reviewcontent {
@@ -491,6 +223,7 @@ div.containchatfave.show-reviewcontent {
 }
 
 img.chatgif {
+  /* - width voor styling - */
   width: 44.1px;
   position: relative;
   left: 1.6em;
@@ -506,10 +239,12 @@ div img.chatgif.show-comment-gif {
   opacity: 0;
 }
 
+/*// COMMENTSECTION  //*/
 div.commentvlak {
   padding: 1em;
 }
-div.commentvlak textarea{
+
+div.commentvlak textarea {
   margin-left: .6em;
 }
 
@@ -554,17 +289,32 @@ div.commentverschijn.show-comment {
   display: block;
 }
 
-@keyframes showcomment {
-  0% {
-    padding-bottom: 0em;
-  }
-
-  100% {
-    padding-bottom: 4em;
-  }
+/*// SVG BOOKMARK STER  //*/
+div.bookmark svg {
+  width: 2.5em;
+  display: flex;
+  position: relative;
+  bottom: 11.5rem;
+  z-index: 1;
+  left: 95%;
 }
 
-/*/////////////////////////    ster animatie   //////////////////// */
+section.bookmark {
+  position: absolute;
+}
+
+div.bookmark svg:hover #star {
+  cursor: pointer;
+  fill: #fecb37;
+}
+
+div.bookmark.bookmark-color path {
+  fill: #fecb37;
+  stroke: none;
+  width: 200px;
+}
+
+/*// SVG BOOKMARK STER ANIMATIE  //*/
 div.steranimatie {
   width: 20em;
   position: absolute;
@@ -603,7 +353,7 @@ div.steranimatie h2 {
   animation: popanim 3s ease;
 }
 
-/*nummer 1 toevoeging bij favoriet */
+/*nummer 1 toevoeging naast de navbottom profiel svg */
 div.eentje {
   color: red;
   z-index: 89;
@@ -617,11 +367,21 @@ div.eentje {
   /* background: greenyellow; */
 }
 
-div.eentje.spananimate {
-  animation: spanan 400ms cubic-bezier(0.07, 0.76, 0.73, 0.27);
-  animation-iteration-count: 10;
+/*----------------------------------*/
+/*------- KEYFRAMES ANIMATION ------*/
+/*----------------------------------*/
+/* || commentaar vak schuift naar beneden ||*/
+@keyframes showcomment {
+  0% {
+    padding-bottom: 0em;
+  }
+
+  100% {
+    padding-bottom: 4em;
+  }
 }
 
+/* || de nummer 1 verschijnt naast de profiel svg ||*/
 @keyframes spanan {
   0% {
     transform: rotate(0);
@@ -636,6 +396,7 @@ div.eentje.spananimate {
   }
 }
 
+/* || bookmark ster kom tevoorschijn met opacity ||*/
 @keyframes popanim {
   0% {
     opacity: .5;
@@ -659,26 +420,128 @@ div.eentje.spananimate {
   }
 }
 
-.filteractive {
-  background-color: lightgrey;
-  width: 20%;
-  text-align: center;
-  border-radius: 10px;
-  padding: .1em;
-  color: grey;
-  margin: .5em;
-  cursor: pointer;
+/****** FILTER LEFT WIDESCREEN *******/
+/*///// CHECKBOX FILTER STYLING    /////////
+//////  https://codepen.io/zFunx/pen/dWbevd  /////*/
+
+/*| Filter alleen te zien op desktop/laptop|*/
+
+
+form.filter {
+  background: #ffffff;
+  border: solid 1px lightgray;
 }
 
-footer {
-  height: 10em;
-  background-color: #675c53;
+form.filter h2 {
+  background: #FF9800;
+  color: white;
+  margin-bottom: -1em;
+  height: 2em;
+  text-align: center;
+  padding-top: 1em;
+  border-radius: 2px;
   width: 100%;
+  font-size: 1.2em;
+  font-weight: 400;
 }
+
+form.filter li {
+  list-style-type: none;
+  padding-top: 10em;
+}
+
+form.filter h3 {
+  color: #54a5dd;
+}
+
+form.filter input {
+  margin-right: 10em;
+}
+
+form.filter label {
+  position: relative;
+  padding: 5px;
+  border-bottom: solid 1px lightgrey;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 11.8em;
+}
+
+form.filter {
+  display: grid;
+  grid-gap: 1.2em;
+}
+
+/*// CHECKBOX STYLING  //*/
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] {
+  color: #e7772b;
+}
+
+form input[type="checkbox"]:hover {
+  color: red;
+}
+
+input[type="checkbox"]+label::before,
+input[type="checkbox"]+label::after {
+  content: "";
+  border: 0.1em solid #e7772b;
+  border-radius: 0.2em;
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.5em;
+  margin: .3em;
+  color: #e7772b;
+  transition: .2s;
+  cursor: pointer;
+  float: left;
+}
+
+input[type="checkbox"]+label::before {
+  content: none;
+}
+
+input[type="checkbox"]:checked+label::after {
+  content: "\2714";
+  font-weight: bold;
+}
+
+/*// FILTER BUTTON ONDER  //*/
+button.button {
+  /*toon filter*/
+  background: white;
+  text-decoration: none;
+  padding: 1em;
+  color: #54a5dd;
+  border: solid 1px #54a5dd;
+  border-radius: 5px;
+}
+
+button.button a {
+  text-decoration: none;
+}
+
+button.button:hover {
+  cursor: pointer;
+  font-weight: 500;
+  background: #54a5dd;
+}
+
+/****** FILTER BUBBLE ACTIEF *******/
+
+/* de gif zijn in een container geplaats genaamd
+.humorgifalles */
+
 
 div.humorgifalles img {
   width: 14em;
-      margin-bottom: -2em;
+  margin-bottom: -2em;
 }
 
 img.humorpng {
@@ -709,27 +572,127 @@ div.humorballon div {
   color: white;
 }
 
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    Mobile screen     /////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
+/****** FILTER TABLET MOBILE  *******/
+
+
+div.filternav a {
+  display: inline-block;
+  text-align: center;
+  padding: .5em;
+  text-decoration: none;
+  background-color: lightgrey;
+  color: grey;
+}
+
+div.filternav {
+  margin-top: 2em;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+div.filternav::-webkit-scrollbar {
+  display: none;
+}
+
+div.filternav svg {
+  width: 2em;
+  padding-right: -.1em;
+  opacity: .3;
+  height: .8em;
+}
+
+/* filter PSUEDO  Hover */
+div.filternav a:hover {
+  color: white;
+  font-weight: bold;
+  background-color: #E7772B;
+}
+
+/*___________________________*/
+/****** NAVBAR BOTTOM *******/
+/*___________________________*/
+
+/*| Navbar bottom is voor Tablet en Mobile
+-- Home SVG
+-- Profile SVG
+|*/
+
+nav.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  z-index: 10;
+  height: 2.8em;
+}
+
+nav.navbar li {
+  float: left;
+  align-items: center;
+}
+
+nav.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+/*// SVG HOME //*/
+
+svg.prof, .homeicoon {
+  display: block;
+  position: absolute;
+  width: 1.5em;
+  top: 0;
+}
+
+/*// SVG PROFILE //*/
+/* home|account hover PSUEDO */
+nav.navbar svg:hover #profile,
+nav.navbar svg:hover #profil {
+  fill: #E7772B;
+}
+
+nav.navbar svg:hover #home {
+  fill: #E7772B;
+}
+
+/****** FOOTER *******/
+footer {
+  height: 10em;
+  background-color: #675c53;
+  width: 100%;
+}
+
+/*----------------------------------*/
+/*---------- MEDIAQUERIES ----------*/
+/*----------------------------------*/
+
+
+/************************************/
+/*|||||||||  SMARTPHONE ||||||||||||*/
+/***********************************/
+
+/* designed mobile first but for extra styling
+this media querie comes in handy */
+
+
 @media only screen and (min-width:50px) and (max-width: 616px) {
   header img.introplaatje {
     margin-top: 4em;
     width: 100%;
   }
 
-  /* .comment{
-    position: relative;
-    top: -3.1em;
-    width: 23px;
-    right: -43vh;
-  }
-  .chat{
-    position: relative;
-    top: -5.2em;
-    width: 23px;
-    left: 47vh;
-  } */
   /* T O P  */
   img.profile {
     display: none;
@@ -744,10 +707,6 @@ div.humorballon div {
   div.filternav a {
     display:
   }
-}
-
-.verasme {
-  display: none;
 }
 
 form.filter {
@@ -771,9 +730,9 @@ form.filter {
   z-index: 2;
 }
 
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    Tablet screen     /////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
+/************************************/
+/*|||||||||||  TABLET  ||||||||||||*/
+/***********************************/
 @media only screen and (min-width: 617px) and (max-width:768px) {
   .busgif {
     right: 12em;
@@ -841,14 +800,15 @@ form.filter {
     margin-left: 2em;
   }
 
-  span {
-    padding-right: 21em;
+  div.eentje.spananimate {
+    animation: spanan 400ms cubic-bezier(0.07, 0.76, 0.73, 0.27);
+    animation-iteration-count: 10;
   }
 }
 
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    1024 screen     /////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
+/************************************/
+/*||||||||||||  DESKTOP ||||||||||||*/
+/***********************************/
 @media only screen and (min-width: 769px) and (max-width:1440px) {
   form.sorteren {
     margin-top: 4.9vh;
@@ -886,96 +846,11 @@ form.filter {
     position: relative;
   }
 
-  /*/////////////////////////    Z O E K   //////////////////////////////// */
-  .zoeken {
-    padding-top: 20px;
-    width: 100%;
-    height: 300px;
-    background-color: #fbd731;
-  }
-
-  .boxunder {
-    background: white;
-    width: 40em;
-    height: 11em;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    margin-top: 60px;
-    Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
-  }
-
-  h4 {
-    font-size: 1em;
-    padding: 10px;
-    padding-top: 10px;
-    color: #e7772b;
-  }
-
-  .introzoek, h4 {
-    margin-top: -6px;
-    padding-left: 20px;
-  }
-
-  .zoekbalk {
-    padding: 20px;
-    width: 40em;
-    height: 1%;
-    margin-top: -10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border: solid .2px lightgrey;
-    opacity: 1;
-  }
-
-  .buttonz {
-    font-size: .9em;
-    position: relative;
-    left: 40em;
-    top: -2.2em;
-    text-decoration: none;
-    background-color: lightgrey;
-    padding: 9px 15px;
-    border-radius: 8px;
-    color: white;
-    z-index: 1;
-  }
-
-  .buttonz:hover {
-    background: #e7772b;
-    transition: .2s ease-in;
-    Box-shadow: 0 8px 18px 0 rgba(231, 119, 43, .3);
-  }
-
-  nav.navbar ul {
-    display: none;
-  }
-
   .filternav {
     display: none;
   }
 
-  h2.smalltext {
-    margin-left: 11.3em;
-    margin-top: 3em;
-  }
-
-  /*//////////////////////   ontdek meer verhalen   //////////////////////////// */
-  div.verasme {
-    width: 14.5em;
-    margin-left: 2em;
-    margin-bottom: 1em;
-    text-align: center;
-    Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
-  }
-
-  button.ondekmeer {
-    width: 10em;
-    padding: 1em;
-  }
-
-  /*//////////////////////   filter media queries   //////////////////////////// */
+  /*//   filter media queries   ///////////////////////// */
   form.filter {
     display: grid;
     float: left;
@@ -984,19 +859,15 @@ form.filter {
     margin-top: 5.1em;
   }
 
-  /*//////////////////////   Section article   //////////////////////////// */
-  form.filter h2 {
-    margin-left: 1em;
-  }
-
   div.steranimatie {
     right: 30%;
   }
+
+  nav.navbar {
+    display: none;
+  }
 }
 
-/*/////////////////////////////////////////////////////////////////////// */
-/*/////////////////////////    Wide screen     /////////////////////// */
-/*/////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 1025px) and (max-width:1866px) {
   img.humorklikgif {
     margin-left: 16.5em;
@@ -1030,36 +901,6 @@ form.filter {
     position: relative;
   }
 
-  /*/////////////////////////    Z O E K   //////////////////////////////// */
-  .zoeken {
-    padding-top: 20px;
-    width: 100%;
-    height: 300px;
-    background-color: #fbd731;
-  }
-
-  div.boxunder {
-    background: white;
-    width: 40em;
-    height: 11em;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    margin-top: 60px;
-    Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
-  }
-
-  h4 {
-    font-size: 1em;
-    padding: 10px;
-    padding-top: 10px;
-    color: #e7772b;
-  }
-
-  nav.navbar ul {
-    display: none;
-  }
-
   .filternav {
     display: none;
   }
@@ -1069,7 +910,7 @@ form.filter {
     margin-top: 3em;
   }
 
-  /*//////////////////////   ontdek meer verhalen   //////////////////////////// */
+  /*//  ontdek meer verhalen   //////////////////////////// */
   div.verasme {
     width: 14.5em;
     margin-left: 2em;
@@ -1083,18 +924,13 @@ form.filter {
     padding: 1em;
   }
 
-  /*//////////////////////   filter media queries   //////////////////////////// */
+  /*// filter media queries   //////////////////////////// */
   form.filter {
     display: grid;
     float: left;
     margin-left: 2em;
     position: initial;
     margin-top: 5.1em;
-  }
-
-  /*//////////////////////   Section article   //////////////////////////// */
-  form.filter h2 {
-    margin-left: 1em;
   }
 
   div.steranimatie {
@@ -1107,5 +943,9 @@ form.filter {
 
   form.sorteren {
     margin-top: 4.9vh;
+  }
+
+  nav.navbar {
+    display: none;
   }
 }
