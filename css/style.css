@@ -61,6 +61,7 @@ div.searchl.search-move {
   transition: all 400ms ease;
 }
 
+/* profiel svg */
 nav.header a img.profile {
   right: 1em;
   width: 1.3em;
@@ -121,7 +122,7 @@ form.sorteren {
 -- Form comment sectie
 |*/
 
-
+/*| article styling |*/
 article {
   background: white;
   Box-shadow: 0 2px 8px 0 rgba(103, 92, 83, .1);
@@ -139,6 +140,7 @@ article:hover {
   Box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
 }
 
+/*| article afbeelding |*/
 article header img.storypic {
   width: 100%;
   height: 11em;
@@ -155,6 +157,7 @@ section h3 {
   margin-left: .5em;
 }
 
+/*| paragraaf bij een article |*/
 section p {
   display: flex;
   position: relative;
@@ -177,6 +180,7 @@ h2.smalltext, h2.smalltext2 {
   color: grey;
 }
 
+/*| article, paragraaf, header, svg's |*/
 section.wrap, section.wrap2 {
   display: flex;
   flex-wrap: wrap;
@@ -204,6 +208,7 @@ div.chat svg {
   bottom: 2.1em;
 }
 
+
 .comment {
   margin-right: 1em;
   display: block;
@@ -212,6 +217,8 @@ div.chat svg {
 .containchatfave:active {
   cursor: pointer;
 }
+
+/*| chat animatie typend |*/
 
 div.containchatfave.show-reviewcontent {
   padding-bottom: 1em;
@@ -235,6 +242,16 @@ div img.chatgif.show-comment-gif {
   display: block;
 }
 
+/*chat and fave svg hover mode*/
+div.comment svg:hover path{
+
+  stroke:orange;
+}
+div.chat svg:hover path {
+
+  stroke:orange;
+}
+
 .chat.displaynone {
   opacity: 0;
 }
@@ -242,6 +259,7 @@ div img.chatgif.show-comment-gif {
 /*// COMMENTSECTIE  //*/
 
 /* de input */
+
 div.commentvlak {
   padding: 1em;
 }
@@ -255,6 +273,7 @@ form input.stuurdit{
 }
 
 /* verstuurde commentaar */
+
 div.commentaren {
   margin-top: 1em;
   padding: 1em;
@@ -282,7 +301,6 @@ div.commentaren div.commenttext {
 
 div.commentaren div.verscom {
   border-radius: .3em;
-  /* background: #f9f9f9; */
   height: 4em;
 }
 
@@ -322,6 +340,7 @@ div.bookmark.bookmark-color path {
 }
 
 /*// SVG BOOKMARK STER ANIMATIE  //*/
+
 div.steranimatie {
   width: 20em;
   position: absolute;
@@ -538,6 +557,8 @@ button.button:hover {
   cursor: pointer;
   font-weight: 500;
   background: #54a5dd;
+  color:white;
+  font-weight:600;
 }
 
 /****** FILTER BUBBLE ACTIEF *******/
