@@ -1,0 +1,444 @@
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@keyframes strobe {
+  0% {
+    margin-left: 1em;
+    opacity: .4;
+    filter: hue-rotate(400deg) blur(1px);
+  }
+
+  100% {
+    margin-left: -1em;
+    opacity: .5;
+    filter: hue-rotate(3.142rad) blur(1px);
+  }
+}
+
+@keyframes strobe2 {
+  0% {
+    margin-left: -1em;
+    opacity: .4;
+    filter: hue-rotate(100deg) blur(1px);
+  }
+
+  100% {
+    margin-left: 1em;
+    opacity: .5;
+    filter: hue-rotate(100deg) blur(1px);
+  }
+}
+
+img.stonedpng {
+  animation: strobe 600ms infinite ease;
+}
+
+li {
+  margin-bottom: 30em;
+  padding: 12px;
+  list-style-type: none;
+}
+
+img.stonedpng2 {
+  position: absolute;
+  animation: strobe2 600ms infinite ease;
+}
+
+img.stonedpng1 {
+  position: absolute;
+}
+
+img.logoov {
+  width: 6em;
+  display: block;
+  position: absolute;
+  top: -5em;
+  opacity: .5;
+  z-index: 99;
+
+}
+img.logoov :hover{
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+img {
+  filter: blur(0);
+  transition: all 500ms ease;
+}
+
+@keyframes scaleanim {
+  0% {
+    transform: scale();
+  }
+
+  100% {}
+}
+.stonedimg img{
+  position: absolute;
+  z-index: -1;
+  width:50%;
+  transform: translateX(13em);
+
+}
+div.bus img {
+  opacity: .4;
+  z-index: -3;
+  bottom: -5em;
+  transform: translateZ(-4px)scale(4);
+  position: absolute;
+  bottom:-100em;
+}
+
+div.smokeey {
+  transform: translateZ(-7px)scale(14);
+  opacity: .2;
+  position: absolute;
+  margin-top: -168em;
+}
+div.paralaxcontainer.revealanimation{
+  display: block;
+}
+div.paralaxcontainer {
+  perspective: 1px;
+  padding: 2em;
+  text-align: center;
+  line-height: 1.8em;
+  height: 100vh;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+div.paralaxcontainer p {
+  margin-top: 15.3em;
+  height: 100vh;
+}
+
+.herhaling {
+  color: rgb(115, 255, 140);
+  position: relative;
+  transform: translateZ(-1px)scale(2);
+  opacity: .4;
+  top: 4.2em;
+  transform-style: preserve-3d;
+}
+
+.herhaling2 {
+  color: red;
+  position: relative;
+  transform: translateZ(-2px)scale(3);
+  opacity: .8;
+  top: -105em;
+}
+
+.herhaling3 {
+  color: yellow;
+  position: relative;
+  transform: translateZ(-3px)scale(4);
+  top: -154em;
+  opacity: .3;
+}
+
+.herhaling4 {
+  color: rgb(246, 137, 199);
+  position: relative;
+  transform: translateZ(-4px)scale(5);
+  top: -203em;
+  opacity: .4;
+}
+
+.herhaling5 {
+  color: rgb(158, 194, 255);
+  position: relative;
+  transform: translateZ(-5px)scale(10);
+  top: -248em;
+  opacity: .4;
+}
+
+.herhaling6 {
+  color: rgb(151, 224, 111);
+  position: relative;
+  transform: translateZ(-6px)scale(14);
+  top: -181em;
+  opacity: .4;
+}
+
+.herhaling7 {
+  color: rgb(151, 224, 111);
+  position: relative;
+  transform: translateZ(-7px)scale(12);
+  top: -115em;
+  opacity: .4;
+}
+
+.herhaling8 {
+  color: rgb(225, 119, 227);
+  position: relative;
+  transform: translateZ(-8px)scale(18);
+  top: -590em;
+  opacity: .4;
+}
+
+.p1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -65em;
+  z-index: 2;
+}
+
+p.bigger {
+  font-size: 2em;
+  z-index: 3;
+}
+
+.vherhaling {
+  color: yellow;
+  position: relative;
+  transform: translateZ(-1px)scale(2);
+  top: 50em;
+  opacity: .4;
+}
+
+.vherhaling2 {
+  color: lightseagreen;
+  position: relative;
+  transform: translateZ(-2px)scale(6);
+  top: -19em;
+  opacity: .4;
+}
+
+.vherhaling3 {
+  color: darkorange;
+  position: relative;
+  transform: translateZ(-3px)scale(5);
+  top: -48em;
+  opacity: .4;
+}
+
+.vherhaling4 {
+  color: deeppink;
+  position: relative;
+  transform: translateZ(-4px)scale(9);
+  top: -77em;
+  opacity: .4;
+}
+
+.vherhaling5 {
+  color: crimson;
+  position: relative;
+  transform: translateZ(-5px)scale(10);
+  top: -107em;
+  opacity: .4;
+}
+
+.vherhaling6 {
+  color: cornflowerblue;
+  position: relative;
+  transform: translateZ(-6px)scale(15);
+  top: -107em;
+  opacity: .4;
+}
+
+.vherhaling7 {
+  color: lightsalmon;
+  position: relative;
+  transform: translateZ(-7px)scale(23);
+  top: -107em;
+  opacity: .4;
+}
+
+.vherhaling8 {
+  color: pink;
+  position: relative;
+  transform: translateZ(-8px)scale(5);
+  top: -107em;
+  opacity: .4;
+}
+
+.vherhaling9 {
+  color: darkcyan;
+  position: relative;
+  transform: translateZ(-9px)scale(18);
+  top: -107em;
+  opacity: .4;
+}
+
+.vherhaling10 {
+  color: palegoldenrod;
+  position: relative;
+  transform: translateZ(-10px)scale(9);
+  top: -107em;
+  opacity: .4;
+}
+
+.vherhaling11 {
+  color: lightskyblue;
+  position: relative;
+  transform: translateZ(-11px)scale(21);
+  top: -107em;
+  opacity: .4;
+}
+
+/* p{
+  color:purple;
+  text-align: center;
+  filter:blur(1px);
+  opacity:.4;
+  position: absolute;
+  top:9em;
+  z-index: -1;
+} */
+p.herhaling-hover {
+  display: none;
+  font-size: 3em;
+  font-weight: 800;
+  transition: all 500ms ease;
+}
+
+p.p3 {
+  font-size: 3em;
+  text-align: center;
+  justify-content: center;
+  opacity: .4;
+  position: absolute;
+  z-index: -1;
+}
+
+p.p2 {
+  color: pink;
+  text-align: center;
+  filter: blur(2px);
+  opacity: .2;
+  position: absolute;
+  font-size: 2em;
+  top: 0em;
+  z-index: -1;
+  animation: left 10s ease infinite;
+}
+
+.commentvlak {
+  border-radius: .5em;
+  height: 13em;
+  width: 90%;
+  background: #675c53;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.commentvlak h2 {
+  margin-left: 1.8em;
+}
+
+textarea {
+  width: 52%;
+  position: absolute;
+  display: block;
+  right: 32%;
+  border-radius: .3em;
+  background: whitesmoke;
+}
+
+.verstuur {
+  margin-left: 65%;
+  position: absolute;
+  margin-top: 0.3em;
+  background: #ffa619;
+  border-radius: .4em;
+  color: white;
+  padding: .5em;
+}
+
+.commentaren {
+  width: 63%;
+  background: #f9f9f9;
+  color: black;
+  padding: 1em;
+  border-radius: .2em;
+  margin-top: -6em;
+  left: 14%;
+  position: absolute;
+  height: 2em;
+}
+
+.verscom {
+  font-size: .5em;
+}
+
+.verscom h2 {
+  margin-top: -.3em;
+  color: orange;
+}
+
+.verscom h3 {
+  color: lightgray;
+  font-weight: 100;
+  font-size: 0.7em;
+  margin-top: -4em;
+  position: absolute;
+  left: 22em;
+}
+.stonedimg2 img{
+  display: none;
+}
+
+/*/////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////    Wide screen     /////////////////////// */
+/*/////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 769px) and (max-width:1866px) {
+  .commentvlak {
+    height: 13em;
+    width: 37%;
+  }
+
+  textarea {
+    width: 23%;
+    right: 41%;
+  }
+
+  .verstuur {
+    margin-left: 28%;
+  }
+
+  .commentaren {
+    width: 25%;
+    padding: 1em;
+    left: 36%;
+  }
+
+  div.paralaxcontainer {
+    padding: 29em;
+    margin-top: -26em;
+  }
+
+  .stonedimg img{
+    transform: translateX(52em);
+  }
+  .stonedimg2 img{
+  display: block;
+  width: 50%;
+  position: absolute;
+  transform: translateY(25em) translateX(-11em);
+  opacity: 0.5;
+  }
+}
