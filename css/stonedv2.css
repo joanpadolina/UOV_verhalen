@@ -7,18 +7,19 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @keyframes strobe {
   0% {
     margin-left: 1em;
-    opacity: .4;
+
     filter: hue-rotate(400deg) blur(1px);
   }
 
   100% {
     margin-left: -1em;
-    opacity: .5;
+
     filter: hue-rotate(3.142rad) blur(1px);
   }
 }
@@ -26,13 +27,13 @@ body {
 @keyframes strobe2 {
   0% {
     margin-left: -1em;
-    opacity: .4;
+
     filter: hue-rotate(100deg) blur(1px);
   }
 
   100% {
     margin-left: 1em;
-    opacity: .5;
+
     filter: hue-rotate(100deg) blur(1px);
   }
 }
@@ -63,9 +64,9 @@ img.logoov {
   top: -5em;
   opacity: .5;
   z-index: 99;
-
 }
-img.logoov :hover{
+
+img.logoov:hover {
   cursor: pointer;
 }
 
@@ -93,20 +94,86 @@ img {
 
   100% {}
 }
-.stonedimg img{
+
+.stonedimg {
+  width: 100%;
+  height: 6em;
+  top: 11em;
   position: absolute;
-  z-index: -1;
-  width:50%;
-  transform: translateX(13em);
+}
+
+.stonedimg img {
+  position: relative;
+  z-index: 1;
+  margin-top: -1em;
+  width: 60%;
+}
+
+
+
+div.paralaxcontainer {
+  opacity: 0;
+}
+
+div.stonedimg.imgmove {
+  transform: translateX(9em);
+  opacity: .4;
+}
+
+img.pngstoned2 {
+  animation: strobe 1s infinite ease;
+}
+
+img.pngstoned3 {
+  animation: strobe2 1s infinite ease;
+}
+
+img.pngstoned2, img.pngstoned3 {
+  position: absolute;
+  top: 0em;
+  transform: translateX(3.6em);
+  z-index: -2;
+  opacity: .6;
+}
+
+@keyframes show-paragraaf {
+  0% {
+    transform: translateX(2em);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.paralaxcontainer.showp {
+  animation: show-paragraaf 2s ease;
+  opacity: 1;
+}
+
+.pngstoned.shovepng{
+  transform: translateX(5em);
+  opacity: .6;
+  display: none;
+}
+.pngstoned2.byebyepng1{
+transform:translateX(5em);
+opacity: 0;
 
 }
+.pngstoned3.byebyepng2{
+transform:translateX(5em);
+opacity: 0;
+
+}
+
 div.bus img {
   opacity: .4;
   z-index: -3;
   bottom: -5em;
   transform: translateZ(-4px)scale(4);
   position: absolute;
-  bottom:-100em;
+  bottom: -100em;
 }
 
 div.smokeey {
@@ -115,9 +182,7 @@ div.smokeey {
   position: absolute;
   margin-top: -168em;
 }
-div.paralaxcontainer.revealanimation{
-  display: block;
-}
+
 div.paralaxcontainer {
   perspective: 1px;
   padding: 2em;
@@ -132,6 +197,12 @@ div.paralaxcontainer {
 div.paralaxcontainer p {
   margin-top: 15.3em;
   height: 100vh;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .herhaling {
@@ -178,7 +249,7 @@ div.paralaxcontainer p {
 .herhaling6 {
   color: rgb(151, 224, 111);
   position: relative;
-  transform: translateZ(-6px)scale(14);
+  transform: translateZ(-6px)scale(13) translateX(-3em);
   top: -181em;
   opacity: .4;
 }
@@ -398,10 +469,19 @@ textarea {
   position: absolute;
   left: 22em;
 }
-.stonedimg2 img{
+
+.stonedimg2 img {
   display: none;
 }
 
+img.stonedfoot{
+  width:60%;
+  cursor:pointer;
+}
+
+img.stonedfoot:hover{
+ animation: strobe2 600ms ease infinite;
+}
 /*/////////////////////////////////////////////////////////////////////// */
 /*/////////////////////////    Wide screen     /////////////////////// */
 /*/////////////////////////////////////////////////////////////////////// */
@@ -427,18 +507,41 @@ textarea {
   }
 
   div.paralaxcontainer {
-    padding: 29em;
-    margin-top: -26em;
+    padding-top: 8em;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+    width: 100%;
   }
 
-  .stonedimg img{
+  div.paralaxcontainer p {
+    width: 38%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+
+  /* .stonedimg img {
     transform: translateX(52em);
   }
-  .stonedimg2 img{
-  display: block;
-  width: 50%;
-  position: absolute;
-  transform: translateY(25em) translateX(-11em);
-  opacity: 0.5;
+
+  .stonedimg2 img {
+    display: block;
+    width: 50%;
+    position: absolute;
+    transform: translateY(25em) translateX(-11em);
+    opacity: 0.5;
+  } */
+  .p1 {
+    top: -66.4em;
   }
+
+  .herhaling {
+    /*  */
+  }
+
+  img.pngstoned2, img.pngstoned3 {
+    transform: translateX(17.6em);
+  }
+
 }

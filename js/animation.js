@@ -74,20 +74,11 @@ humorknop.addEventListener('click', function(){
   humorweg.style.display = 'none';}, 500);
 });
 
-// Commentaar plaatsen
+// verhalen website
 
-var nameAdd = document.querySelector('#comments');
-var commentHier = document.querySelector('.commenttext');
-var verstuurComm = document.querySelector('.stuurdit');
-verstuurComm.addEventListener('submit', function(){
-  nameAdd.textContent= commentHier.value;
-})
+var stoney = document.querySelector('.stonedimg');
+var verhaalp = document.querySelector('.paralaxcontainer');
 
-
-
-// // Account meer laten zien
-// var loginboxgroter = document.querySelector('.accountbox');
-// var nieuwknop = document.querySelector('.buttonnieuw');
-//  nieuwknop.addEventListener('click', function(){
-//    loginboxgroter.classList.toggle('appear-herhaalpw');
-//  });
+stoney.addEventListener('click', function(){
+  verhaalp.classList.toggle('showp');
+});

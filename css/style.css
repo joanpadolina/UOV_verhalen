@@ -12,18 +12,16 @@ body {
   background-color: #fefefe;
   margin: 0;
   box-sizing: border-box;
-
 }
 
 /****** NAVBARTOP *******/
-
 /*| navbartop bevat de volgende elementen
+-- header index img
 -- Logo van uov
 -- Storytogo tekst
 -- vergrootglas svg
 -- account svg
 |*/
-
 nav.header h1.storytogo {
   text-align: center;
   width: 100%;
@@ -69,7 +67,6 @@ nav.header a img.profile {
 }
 
 /*//LOGO UOV//*/
-
 nav.header img.logoov {
   margin-top: -.5em;
   width: 5em;
@@ -100,7 +97,6 @@ input.zoekbalkboven {
 
 /****** SORTEREN  *******/
 /* Form sorteren populair */
-
 form.sorteren select value:hover {
   background-color: #e7772b;
 }
@@ -112,7 +108,6 @@ form.sorteren {
 }
 
 /****** ARTICLES STORIES *******/
-
 /*| Articles bevat de volgende elementen
 -- Header image
 -- Titel
@@ -121,7 +116,6 @@ form.sorteren {
 -- Comment SVG
 -- Form comment sectie
 |*/
-
 /*| article styling |*/
 article {
   background: white;
@@ -208,7 +202,6 @@ div.chat svg {
   bottom: 2.1em;
 }
 
-
 .comment {
   margin-right: 1em;
   display: block;
@@ -219,7 +212,6 @@ div.chat svg {
 }
 
 /*| chat animatie typend |*/
-
 div.containchatfave.show-reviewcontent {
   padding-bottom: 1em;
   transition: all 300ms ease;
@@ -243,13 +235,12 @@ div img.chatgif.show-comment-gif {
 }
 
 /*chat and fave svg hover mode*/
-div.comment svg:hover path{
-
-  stroke:orange;
+div.comment svg:hover path {
+  stroke: orange;
 }
-div.chat svg:hover path {
 
-  stroke:orange;
+div.chat svg:hover path {
+  stroke: orange;
 }
 
 .chat.displaynone {
@@ -257,9 +248,7 @@ div.chat svg:hover path {
 }
 
 /*// COMMENTSECTIE  //*/
-
 /* de input */
-
 div.commentvlak {
   padding: 1em;
 }
@@ -268,12 +257,11 @@ div.commentvlak textarea {
   margin-left: .6em;
 }
 
-form input.stuurdit{
-  margin-left:17em;
+form input.stuurdit {
+  margin-left: 17em;
 }
 
 /* verstuurde commentaar */
-
 div.commentaren {
   margin-top: 1em;
   padding: 1em;
@@ -340,7 +328,6 @@ div.bookmark.bookmark-color path {
 }
 
 /*// SVG BOOKMARK STER ANIMATIE  //*/
-
 div.steranimatie {
   width: 20em;
   position: absolute;
@@ -449,10 +436,7 @@ div.eentje {
 /****** FILTER LEFT WIDESCREEN *******/
 /*///// CHECKBOX FILTER STYLING    /////////
 //////  https://codepen.io/zFunx/pen/dWbevd  /////*/
-
 /*| Filter alleen te zien op desktop/laptop|*/
-
-
 form.filter {
   background: #ffffff;
   border: solid 1px lightgray;
@@ -557,16 +541,13 @@ button.button:hover {
   cursor: pointer;
   font-weight: 500;
   background: #54a5dd;
-  color:white;
-  font-weight:600;
+  color: white;
+  font-weight: 600;
 }
 
 /****** FILTER BUBBLE ACTIEF *******/
-
 /* de gif zijn in een container geplaats genaamd
 .humorgifalles */
-
-
 div.humorgifalles img {
   width: 14em;
   margin-bottom: -2em;
@@ -601,8 +582,6 @@ div.humorballon div {
 }
 
 /****** FILTER TABLET MOBILE  *******/
-
-
 div.filternav a {
   display: inline-block;
   text-align: center;
@@ -613,7 +592,6 @@ div.filternav a {
 }
 
 div.filternav {
-  margin-top: 2em;
   overflow-x: scroll;
   white-space: nowrap;
 }
@@ -639,12 +617,10 @@ div.filternav a:hover {
 /*___________________________*/
 /****** NAVBAR BOTTOM *******/
 /*___________________________*/
-
 /*| Navbar bottom is voor Tablet en Mobile
 -- Home SVG
 -- Profile SVG
 |*/
-
 nav.navbar ul {
   list-style-type: none;
   margin: 0;
@@ -676,7 +652,6 @@ nav.navbar li a {
 }
 
 /*// SVG HOME //*/
-
 svg.prof, .homeicoon {
   display: block;
   position: absolute;
@@ -698,23 +673,39 @@ nav.navbar svg:hover #home {
 /****** FOOTER *******/
 footer {
   height: 10em;
-  background-color: #675c53;
+  box-shadow: 0px 15px 20px 13px rgba(0, 0, 0, 0.1);
   width: 100%;
+}
+
+footer section h2.footerp {
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: #e7772b;
+}
+footer section.footertekst{
+  text-align: center;
+}
+
+div.containtlogofoot {
+  width: 100%;
+}
+
+footer img.logouovor {
+  position: relative;
+  width: 5em;
+  margin-bottom: -7em;
 }
 
 /*----------------------------------*/
 /*---------- MEDIAQUERIES ----------*/
 /*----------------------------------*/
-
-
 /************************************/
 /*|||||||||  SMARTPHONE ||||||||||||*/
 /***********************************/
-
 /* designed mobile first but for extra styling
 this media querie comes in handy */
-
-
 @media only screen and (min-width:50px) and (max-width: 616px) {
   header img.introplaatje {
     margin-top: 4em;
@@ -757,7 +748,7 @@ form.filter {
   transition: left 400ms ease;
   z-index: 2;
 }
-
+}
 /************************************/
 /*|||||||||||  TABLET  ||||||||||||*/
 /***********************************/
@@ -832,6 +823,7 @@ form.filter {
     animation: spanan 400ms cubic-bezier(0.07, 0.76, 0.73, 0.27);
     animation-iteration-count: 10;
   }
+
 }
 
 /************************************/
@@ -924,9 +916,10 @@ form.filter {
   header img.introplaatje {
     margin-left: auto;
     margin-right: auto;
-    width: 55em;
+    width: 100%;
     display: block;
     position: relative;
+    margin-top: -8em;
   }
 
   .filternav {
@@ -976,4 +969,5 @@ form.filter {
   nav.navbar {
     display: none;
   }
+
 }
