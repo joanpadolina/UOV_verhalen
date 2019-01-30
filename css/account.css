@@ -227,11 +227,11 @@ img.bus_achter_animatie {
 
 @keyframes busaccountachtergrondanim {
   from {
-    right: -14em;
+      transform: translateX(5em);
   }
 
   to {
-    right: 30em;
+  transform: translateX(-50em);
   }
 }
 
@@ -303,11 +303,11 @@ img.bus_achter_animatie {
 
   @keyframes busaccountachtergrondanim {
     from {
-      right: -14em;
+      transform: translateX(5em);
     }
 
     to {
-      right: 50em;
+      transform: translateX(-80em);
     }
   }
 
@@ -328,10 +328,10 @@ img.bus_achter_animatie {
 
     @keyframes busaccountachtergrondanim {
       from {
-        right: -14em;
+        transform: translateX(10em);
       }
 
       to {
-        right: 80em;
+        transform: translateX(-100em);
       }
     }
