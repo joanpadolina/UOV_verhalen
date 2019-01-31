@@ -26,7 +26,8 @@ Er wordt op deze website gebruikt gemaakt van keyframes animatie, hierdoor kan s
 
 > Checkbox voor de filter credits: https://codepen.io/zFunx/pen/dWbevd
 
-Om animaties te tonen is er gebruik gemaakt van de onclick functie in javascript. De classes zijn opgehaald en getoond met een druk op de knop.
+---------------------------------------------------------------
 
+Dit document maakt gebruik van 4 HTML bestanden
 
 Einde document.
