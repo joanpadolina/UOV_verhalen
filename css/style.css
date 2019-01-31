@@ -325,7 +325,7 @@ div.bookmark svg:hover #star {
 div.bookmark.bookmark-color path {
   fill: #fecb37;
   stroke: none;
-  width: 200px;
+  width: 200px; /*widthvoor styling*/
 }
 
 /*// SVG BOOKMARK STER ANIMATIE  //*/
@@ -708,7 +708,7 @@ footer img.logouovor {
 /***********************************/
 /* designed mobile first but for extra styling
 this media querie comes in handy */
-@media only screen and (min-width:50px) and (max-width: 616px) {
+@media only screen and (min-width:3.125em) and (max-width: 38.5em) {
   header img.introplaatje {
     margin-top: 4em;
     width: 100%;
@@ -755,7 +755,7 @@ form.filter {
 /************************************/
 /*|||||||||||  TABLET  ||||||||||||*/
 /***********************************/
-@media only screen and (min-width: 617px) and (max-width:768px) {
+@media only screen and (min-width: 38.5625em) and (max-width:48em) {
   .busgif {
     right: 12em;
   }
@@ -794,13 +794,6 @@ form.filter {
     grid-area: content;
   }
 
-  .zoeken {
-    grid-column: 2;
-    height: 100px;
-    padding-top: 20px;
-    width: 100%;
-    background-color: #fbd731;
-  }
 
   article, .anderook {
     grid-column: auto;
@@ -831,7 +824,7 @@ form.filter {
 /************************************/
 /*||||||||||||  DESKTOP ||||||||||||*/
 /***********************************/
-@media only screen and (min-width: 769px) and (max-width:1440px) {
+@media only screen and (min-width: 48.0625em) and (max-width:90em) {
   form.sorteren {
     margin-top: 4.9vh;
   }
@@ -890,7 +883,7 @@ form.filter {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width:1866px) {
+@media only screen and (min-width:64.0625em) and (max-width:116.625em) {
   img.humorklikgif {
     margin-left: 16.5em;
   }
